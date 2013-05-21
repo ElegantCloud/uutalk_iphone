@@ -7,6 +7,8 @@
 //
 
 #import "ECAppDelegate.h"
+#import "CommonToolkit/CommonToolkit.h"
+#import "ECLoginViewController.h"
 
 @implementation ECAppDelegate
 
@@ -14,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECLoginViewController alloc] init] andMode:navigationController];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -16,6 +16,14 @@
 		F81B5BC91749F69F00279D32 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F81B5BC81749F69F00279D32 /* Default.png */; };
 		F81B5BCB1749F69F00279D32 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81B5BCA1749F69F00279D32 /* Default@2x.png */; };
 		F81B5BCD1749F69F00279D32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81B5BCC1749F69F00279D32 /* Default-568h@2x.png */; };
+		F81B5BD51749F6CD00279D32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F81B5BD71749F6CD00279D32 /* Localizable.strings */; };
+		F84CA24D174A081F000E368D /* CommonToolkitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F84CA24B174A081F000E368D /* CommonToolkitBundle.bundle */; };
+		F84CA24E174A081F000E368D /* Pinyin4jBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F84CA24C174A081F000E368D /* Pinyin4jBundle.bundle */; };
+		F84CA252174A0C04000E368D /* ECBaseUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84CA251174A0C04000E368D /* ECBaseUIView.m */; };
+		F87AC84D174B50A400CA8A2B /* ECLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AC84C174B50A400CA8A2B /* ECLoginViewController.m */; };
+		F87AC850174B50E200CA8A2B /* ECLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AC84F174B50E200CA8A2B /* ECLoginView.m */; };
+		F87AC853174B5B1B00CA8A2B /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F87AC852174B5B1B00CA8A2B /* bg.jpg */; };
+		F87AC85A174B5E7B00CA8A2B /* CommonToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC859174B5E7B00CA8A2B /* CommonToolkit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +32,6 @@
 		F81B5BB81749F69F00279D32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F81B5BBA1749F69F00279D32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F81B5BBE1749F69F00279D32 /* uutalk_iphone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uutalk_iphone-Info.plist"; sourceTree = "<group>"; };
-		F81B5BC01749F69F00279D32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F81B5BC21749F69F00279D32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F81B5BC41749F69F00279D32 /* uutalk_iphone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uutalk_iphone-Prefix.pch"; sourceTree = "<group>"; };
 		F81B5BC51749F69F00279D32 /* ECAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +39,20 @@
 		F81B5BC81749F69F00279D32 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F81B5BCA1749F69F00279D32 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F81B5BCC1749F69F00279D32 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F81B5BDA1749F72D00279D32 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F81B5BDB1749F72D00279D32 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F84CA24B174A081F000E368D /* CommonToolkitBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonToolkitBundle.bundle; sourceTree = "<group>"; };
+		F84CA24C174A081F000E368D /* Pinyin4jBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyin4jBundle.bundle; sourceTree = "<group>"; };
+		F84CA250174A0C04000E368D /* ECBaseUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECBaseUIView.h; path = AppViews/ECBaseUIView.h; sourceTree = "<group>"; };
+		F84CA251174A0C04000E368D /* ECBaseUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBaseUIView.m; path = AppViews/ECBaseUIView.m; sourceTree = "<group>"; };
+		F84CA254174A125A000E368D /* ECConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECConstants.h; path = Config/ECConstants.h; sourceTree = "<group>"; };
+		F84CA255174A125A000E368D /* ECUrlConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECUrlConfig.h; path = Config/ECUrlConfig.h; sourceTree = "<group>"; };
+		F87AC84B174B50A400CA8A2B /* ECLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECLoginViewController.h; path = AppViews/System/Login/ECLoginViewController.h; sourceTree = "<group>"; };
+		F87AC84C174B50A400CA8A2B /* ECLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECLoginViewController.m; path = AppViews/System/Login/ECLoginViewController.m; sourceTree = "<group>"; };
+		F87AC84E174B50E200CA8A2B /* ECLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECLoginView.h; path = AppViews/System/Login/ECLoginView.h; sourceTree = "<group>"; };
+		F87AC84F174B50E200CA8A2B /* ECLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECLoginView.m; path = AppViews/System/Login/ECLoginView.m; sourceTree = "<group>"; };
+		F87AC852174B5B1B00CA8A2B /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = common/bg.jpg; sourceTree = "<group>"; };
+		F87AC859174B5E7B00CA8A2B /* CommonToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonToolkit.framework; path = Frameworks/CommonToolkit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87AC85A174B5E7B00CA8A2B /* CommonToolkit.framework in Frameworks */,
 				F81B5BB71749F69F00279D32 /* UIKit.framework in Frameworks */,
 				F81B5BB91749F69F00279D32 /* Foundation.framework in Frameworks */,
 				F81B5BBB1749F69F00279D32 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +73,8 @@
 		F81B5BA71749F69F00279D32 = {
 			isa = PBXGroup;
 			children = (
+				F87AC859174B5E7B00CA8A2B /* CommonToolkit.framework */,
+				F84CA249174A081F000E368D /* Resources */,
 				F81B5BBC1749F69F00279D32 /* uutalk_iphone */,
 				F81B5BB51749F69F00279D32 /* Frameworks */,
 				F81B5BB31749F69F00279D32 /* Products */,
@@ -78,6 +102,8 @@
 		F81B5BBC1749F69F00279D32 /* uutalk_iphone */ = {
 			isa = PBXGroup;
 			children = (
+				F84CA253174A123B000E368D /* Config */,
+				F84CA24F174A08AA000E368D /* AppViews */,
 				F81B5BC51749F69F00279D32 /* ECAppDelegate.h */,
 				F81B5BC61749F69F00279D32 /* ECAppDelegate.m */,
 				F81B5BBD1749F69F00279D32 /* Supporting Files */,
@@ -95,8 +121,74 @@
 				F81B5BC81749F69F00279D32 /* Default.png */,
 				F81B5BCA1749F69F00279D32 /* Default@2x.png */,
 				F81B5BCC1749F69F00279D32 /* Default-568h@2x.png */,
+				F81B5BD71749F6CD00279D32 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F84CA249174A081F000E368D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F87AC851174B5AFE00CA8A2B /* common */,
+				F84CA24A174A081F000E368D /* bundles */,
+			);
+			name = Resources;
+			path = uutalk_iphone/Resources;
+			sourceTree = "<group>";
+		};
+		F84CA24A174A081F000E368D /* bundles */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA24B174A081F000E368D /* CommonToolkitBundle.bundle */,
+				F84CA24C174A081F000E368D /* Pinyin4jBundle.bundle */,
+			);
+			path = bundles;
+			sourceTree = "<group>";
+		};
+		F84CA24F174A08AA000E368D /* AppViews */ = {
+			isa = PBXGroup;
+			children = (
+				F87AC848174B500A00CA8A2B /* System */,
+				F84CA250174A0C04000E368D /* ECBaseUIView.h */,
+				F84CA251174A0C04000E368D /* ECBaseUIView.m */,
+			);
+			name = AppViews;
+			sourceTree = "<group>";
+		};
+		F84CA253174A123B000E368D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA254174A125A000E368D /* ECConstants.h */,
+				F84CA255174A125A000E368D /* ECUrlConfig.h */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		F87AC848174B500A00CA8A2B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F87AC84A174B501200CA8A2B /* Login */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		F87AC84A174B501200CA8A2B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F87AC84B174B50A400CA8A2B /* ECLoginViewController.h */,
+				F87AC84C174B50A400CA8A2B /* ECLoginViewController.m */,
+				F87AC84E174B50E200CA8A2B /* ECLoginView.h */,
+				F87AC84F174B50E200CA8A2B /* ECLoginView.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F87AC851174B5AFE00CA8A2B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F87AC852174B5B1B00CA8A2B /* bg.jpg */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +227,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = F81B5BA71749F69F00279D32;
 			productRefGroup = F81B5BB31749F69F00279D32 /* Products */;
@@ -155,6 +248,10 @@
 				F81B5BC91749F69F00279D32 /* Default.png in Resources */,
 				F81B5BCB1749F69F00279D32 /* Default@2x.png in Resources */,
 				F81B5BCD1749F69F00279D32 /* Default-568h@2x.png in Resources */,
+				F81B5BD51749F6CD00279D32 /* Localizable.strings in Resources */,
+				F84CA24D174A081F000E368D /* CommonToolkitBundle.bundle in Resources */,
+				F84CA24E174A081F000E368D /* Pinyin4jBundle.bundle in Resources */,
+				F87AC853174B5B1B00CA8A2B /* bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +264,9 @@
 			files = (
 				F81B5BC31749F69F00279D32 /* main.m in Sources */,
 				F81B5BC71749F69F00279D32 /* ECAppDelegate.m in Sources */,
+				F84CA252174A0C04000E368D /* ECBaseUIView.m in Sources */,
+				F87AC84D174B50A400CA8A2B /* ECLoginViewController.m in Sources */,
+				F87AC850174B50E200CA8A2B /* ECLoginView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,9 +276,17 @@
 		F81B5BBF1749F69F00279D32 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F81B5BC01749F69F00279D32 /* en */,
+				F81B5BDA1749F72D00279D32 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F81B5BD71749F6CD00279D32 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F81B5BDB1749F72D00279D32 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -236,6 +344,10 @@
 		F81B5BD11749F69F00279D32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "uutalk_iphone/uutalk_iphone-Prefix.pch";
 				INFOPLIST_FILE = "uutalk_iphone/uutalk_iphone-Info.plist";
@@ -247,6 +359,10 @@
 		F81B5BD21749F69F00279D32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "uutalk_iphone/uutalk_iphone-Prefix.pch";
 				INFOPLIST_FILE = "uutalk_iphone/uutalk_iphone-Info.plist";
@@ -274,6 +390,7 @@
 				F81B5BD21749F69F00279D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
