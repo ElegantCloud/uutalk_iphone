@@ -8,6 +8,15 @@
 
 #import "ECBaseUIView.h"
 
-@interface ECLoginView : ECBaseUIView
+@interface ECLoginView : ECBaseUIView {
+    UITextField *_userNameInput;
+    UITextField *_pwdInput;
+    
+    UISwitch *_autoLoginSwitch;
+
+    UIButton *_loginButton;
+    
+    BOOL _useSavedPwd;
+}
 
 @end

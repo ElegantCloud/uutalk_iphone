@@ -11,4 +11,5 @@
 
 @interface ECLoginViewController : UIViewController
 
+- (void)login;
 @end

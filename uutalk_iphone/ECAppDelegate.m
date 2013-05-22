@@ -9,14 +9,22 @@
 #import "ECAppDelegate.h"
 #import "CommonToolkit/CommonToolkit.h"
 #import "ECLoginViewController.h"
+#import "ECConstants.h"
+#import "UserBean+UUTalk.h"
+#import "ECConfig.h"
 
 @implementation ECAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self loadAccount];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECLoginViewController alloc] init] andMode:navigationController];
+    BOOL needLogin = [self isNeedLogin];
+    if (needLogin) {
+        self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECLoginViewController alloc] init] andMode:navigationController];
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -47,5 +55,54 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - account operations
+
+- (void)loadAccount {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *username = [userDefaults objectForKey:USERNAME];
+    NSString *password = [userDefaults objectForKey:PASSWORD];
+    NSString *userkey = [userDefaults objectForKey:USERKEY];
+    NSString *countryCode = [userDefaults objectForKey:COUNTRYCODE];
+    NSString *dialCountryCode = [userDefaults objectForKey:DEFAULT_DIAL_COUNTRY_CODE];
+    NSString *vosphone = [userDefaults objectForKey:VOSPHONE];
+    NSString *vosphonePwd = [userDefaults objectForKey:VOSPHONE_PWD];
+    NSString *callbackPhoneNumber = [userDefaults objectForKey:CALLBACK_PHONE_NUMBER];
+    NSString *callbackPhoneNumberCountryCode = [userDefaults objectForKey:CALLBACK_PHONE_NUMBER_COUNTRY_CODE];
+    
+    UserBean *userBean = [[UserManager shareUserManager] userBean];
+    userBean.name = username;
+    userBean.password = password;
+    if (password) {
+        userBean.autoLogin = YES;
+    } else {
+        userBean.autoLogin = NO;
+    }
+    userBean.userKey = userkey;
+    userBean.countryCode = countryCode;
+    if (!dialCountryCode || [dialCountryCode isEqualToString:@""]) {
+        userBean.defaultDialCountryCode = DEFAULT_COUNTRY_CODE;
+    } else {
+        userBean.defaultDialCountryCode = dialCountryCode;
+    }
+    userBean.vosphone = vosphone;
+    userBean.vosphonePwd = vosphonePwd;
+    userBean.callbackPhoneNumber = callbackPhoneNumber;
+    userBean.callbackPhoneNumberCountryCode = callbackPhoneNumberCountryCode;
+    
+    NSLog(@"load account: %@", userBean.description);
+}
+
+- (BOOL)isNeedLogin {
+    BOOL flag = NO;
+    UserBean *userBean = [[UserManager shareUserManager] userBean];
+    if (!userBean.name || !userBean.password || !userBean.userKey) {
+        flag = YES;
+    }
+    
+    return flag;
+}
+
+
 
 @end

@@ -20,10 +20,25 @@
 		F84CA24D174A081F000E368D /* CommonToolkitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F84CA24B174A081F000E368D /* CommonToolkitBundle.bundle */; };
 		F84CA24E174A081F000E368D /* Pinyin4jBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F84CA24C174A081F000E368D /* Pinyin4jBundle.bundle */; };
 		F84CA252174A0C04000E368D /* ECBaseUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84CA251174A0C04000E368D /* ECBaseUIView.m */; };
+		F8778160174CB9CA00B9909D /* UserBean+UUTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = F877815F174CB9CA00B9909D /* UserBean+UUTalk.m */; };
 		F87AC84D174B50A400CA8A2B /* ECLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AC84C174B50A400CA8A2B /* ECLoginViewController.m */; };
 		F87AC850174B50E200CA8A2B /* ECLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AC84F174B50E200CA8A2B /* ECLoginView.m */; };
-		F87AC853174B5B1B00CA8A2B /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F87AC852174B5B1B00CA8A2B /* bg.jpg */; };
 		F87AC85A174B5E7B00CA8A2B /* CommonToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC859174B5E7B00CA8A2B /* CommonToolkit.framework */; };
+		F87AC85C174B640F00CA8A2B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC85B174B640F00CA8A2B /* AddressBook.framework */; };
+		F87AC85E174B642A00CA8A2B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC85D174B642A00CA8A2B /* CFNetwork.framework */; };
+		F87AC860174B645A00CA8A2B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC85F174B645A00CA8A2B /* QuartzCore.framework */; };
+		F87AC862174B646A00CA8A2B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC861174B646A00CA8A2B /* CoreText.framework */; };
+		F87AC864174B647A00CA8A2B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC863174B647A00CA8A2B /* CoreTelephony.framework */; };
+		F87AC868174B649E00CA8A2B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC867174B649E00CA8A2B /* SystemConfiguration.framework */; };
+		F87AC86A174B64B900CA8A2B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC869174B64B900CA8A2B /* MobileCoreServices.framework */; };
+		F87AC86C174B64C900CA8A2B /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC86B174B64C900CA8A2B /* libbz2.1.0.dylib */; };
+		F87AC86E174B64DA00CA8A2B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC86D174B64DA00CA8A2B /* libz.1.2.5.dylib */; };
+		F87AC871174B650600CA8A2B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AC86F174B64F000CA8A2B /* libicucore.dylib */; };
+		F87AC875174B69FD00CA8A2B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F87AC872174B69FD00CA8A2B /* bg.png */; };
+		F87AC876174B69FD00CA8A2B /* bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87AC873174B69FD00CA8A2B /* bg-568h@2x.png */; };
+		F87AC877174B69FD00CA8A2B /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87AC874174B69FD00CA8A2B /* bg@2x.png */; };
+		F8C973C5174C75450066F37E /* btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C4174C75450066F37E /* btn_green.png */; };
+		F8C973C9174CA5EA0066F37E /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C8174CA5EA0066F37E /* lock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,12 +62,30 @@
 		F84CA251174A0C04000E368D /* ECBaseUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBaseUIView.m; path = AppViews/ECBaseUIView.m; sourceTree = "<group>"; };
 		F84CA254174A125A000E368D /* ECConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECConstants.h; path = Config/ECConstants.h; sourceTree = "<group>"; };
 		F84CA255174A125A000E368D /* ECUrlConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECUrlConfig.h; path = Config/ECUrlConfig.h; sourceTree = "<group>"; };
+		F877815E174CB9CA00B9909D /* UserBean+UUTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UserBean+UUTalk.h"; path = "AppViews/System/User/UserBean+UUTalk.h"; sourceTree = "<group>"; };
+		F877815F174CB9CA00B9909D /* UserBean+UUTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UserBean+UUTalk.m"; path = "AppViews/System/User/UserBean+UUTalk.m"; sourceTree = "<group>"; };
+		F8778161174CC92F00B9909D /* ECConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECConfig.h; path = Config/ECConfig.h; sourceTree = "<group>"; };
 		F87AC84B174B50A400CA8A2B /* ECLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECLoginViewController.h; path = AppViews/System/Login/ECLoginViewController.h; sourceTree = "<group>"; };
 		F87AC84C174B50A400CA8A2B /* ECLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECLoginViewController.m; path = AppViews/System/Login/ECLoginViewController.m; sourceTree = "<group>"; };
 		F87AC84E174B50E200CA8A2B /* ECLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECLoginView.h; path = AppViews/System/Login/ECLoginView.h; sourceTree = "<group>"; };
 		F87AC84F174B50E200CA8A2B /* ECLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECLoginView.m; path = AppViews/System/Login/ECLoginView.m; sourceTree = "<group>"; };
-		F87AC852174B5B1B00CA8A2B /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = common/bg.jpg; sourceTree = "<group>"; };
 		F87AC859174B5E7B00CA8A2B /* CommonToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonToolkit.framework; path = Frameworks/CommonToolkit.framework; sourceTree = "<group>"; };
+		F87AC85B174B640F00CA8A2B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		F87AC85D174B642A00CA8A2B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F87AC85F174B645A00CA8A2B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F87AC861174B646A00CA8A2B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F87AC863174B647A00CA8A2B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F87AC865174B648B00CA8A2B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F87AC867174B649E00CA8A2B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F87AC869174B64B900CA8A2B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F87AC86B174B64C900CA8A2B /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		F87AC86D174B64DA00CA8A2B /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		F87AC86F174B64F000CA8A2B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F87AC872174B69FD00CA8A2B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = common/bg.png; sourceTree = "<group>"; };
+		F87AC873174B69FD00CA8A2B /* bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-568h@2x.png"; path = "common/bg-568h@2x.png"; sourceTree = "<group>"; };
+		F87AC874174B69FD00CA8A2B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "common/bg@2x.png"; sourceTree = "<group>"; };
+		F8C973C4174C75450066F37E /* btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_green.png; path = common/btn_green.png; sourceTree = "<group>"; };
+		F8C973C8174CA5EA0066F37E /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = login/lock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +93,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87AC871174B650600CA8A2B /* libicucore.dylib in Frameworks */,
+				F87AC86E174B64DA00CA8A2B /* libz.1.2.5.dylib in Frameworks */,
+				F87AC86C174B64C900CA8A2B /* libbz2.1.0.dylib in Frameworks */,
+				F87AC86A174B64B900CA8A2B /* MobileCoreServices.framework in Frameworks */,
+				F87AC868174B649E00CA8A2B /* SystemConfiguration.framework in Frameworks */,
+				F87AC864174B647A00CA8A2B /* CoreTelephony.framework in Frameworks */,
+				F87AC862174B646A00CA8A2B /* CoreText.framework in Frameworks */,
+				F87AC860174B645A00CA8A2B /* QuartzCore.framework in Frameworks */,
+				F81B5BBB1749F69F00279D32 /* CoreGraphics.framework in Frameworks */,
+				F87AC85E174B642A00CA8A2B /* CFNetwork.framework in Frameworks */,
+				F87AC85C174B640F00CA8A2B /* AddressBook.framework in Frameworks */,
 				F87AC85A174B5E7B00CA8A2B /* CommonToolkit.framework in Frameworks */,
 				F81B5BB71749F69F00279D32 /* UIKit.framework in Frameworks */,
 				F81B5BB91749F69F00279D32 /* Foundation.framework in Frameworks */,
-				F81B5BBB1749F69F00279D32 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +135,17 @@
 		F81B5BB51749F69F00279D32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F87AC86F174B64F000CA8A2B /* libicucore.dylib */,
+				F87AC86D174B64DA00CA8A2B /* libz.1.2.5.dylib */,
+				F87AC86B174B64C900CA8A2B /* libbz2.1.0.dylib */,
+				F87AC869174B64B900CA8A2B /* MobileCoreServices.framework */,
+				F87AC867174B649E00CA8A2B /* SystemConfiguration.framework */,
+				F87AC865174B648B00CA8A2B /* MessageUI.framework */,
+				F87AC863174B647A00CA8A2B /* CoreTelephony.framework */,
+				F87AC861174B646A00CA8A2B /* CoreText.framework */,
+				F87AC85F174B645A00CA8A2B /* QuartzCore.framework */,
+				F87AC85D174B642A00CA8A2B /* CFNetwork.framework */,
+				F87AC85B174B640F00CA8A2B /* AddressBook.framework */,
 				F81B5BB61749F69F00279D32 /* UIKit.framework */,
 				F81B5BB81749F69F00279D32 /* Foundation.framework */,
 				F81B5BBA1749F69F00279D32 /* CoreGraphics.framework */,
@@ -129,6 +183,7 @@
 		F84CA249174A081F000E368D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8C973C7174CA5CF0066F37E /* login */,
 				F87AC851174B5AFE00CA8A2B /* common */,
 				F84CA24A174A081F000E368D /* bundles */,
 			);
@@ -160,13 +215,24 @@
 			children = (
 				F84CA254174A125A000E368D /* ECConstants.h */,
 				F84CA255174A125A000E368D /* ECUrlConfig.h */,
+				F8778161174CC92F00B9909D /* ECConfig.h */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		F877815C174CB99100B9909D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F877815E174CB9CA00B9909D /* UserBean+UUTalk.h */,
+				F877815F174CB9CA00B9909D /* UserBean+UUTalk.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		F87AC848174B500A00CA8A2B /* System */ = {
 			isa = PBXGroup;
 			children = (
+				F877815C174CB99100B9909D /* User */,
 				F87AC84A174B501200CA8A2B /* Login */,
 			);
 			name = System;
@@ -186,9 +252,20 @@
 		F87AC851174B5AFE00CA8A2B /* common */ = {
 			isa = PBXGroup;
 			children = (
-				F87AC852174B5B1B00CA8A2B /* bg.jpg */,
+				F8C973C4174C75450066F37E /* btn_green.png */,
+				F87AC872174B69FD00CA8A2B /* bg.png */,
+				F87AC873174B69FD00CA8A2B /* bg-568h@2x.png */,
+				F87AC874174B69FD00CA8A2B /* bg@2x.png */,
 			);
 			name = common;
+			sourceTree = "<group>";
+		};
+		F8C973C7174CA5CF0066F37E /* login */ = {
+			isa = PBXGroup;
+			children = (
+				F8C973C8174CA5EA0066F37E /* lock.png */,
+			);
+			name = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +328,11 @@
 				F81B5BD51749F6CD00279D32 /* Localizable.strings in Resources */,
 				F84CA24D174A081F000E368D /* CommonToolkitBundle.bundle in Resources */,
 				F84CA24E174A081F000E368D /* Pinyin4jBundle.bundle in Resources */,
-				F87AC853174B5B1B00CA8A2B /* bg.jpg in Resources */,
+				F87AC875174B69FD00CA8A2B /* bg.png in Resources */,
+				F87AC876174B69FD00CA8A2B /* bg-568h@2x.png in Resources */,
+				F87AC877174B69FD00CA8A2B /* bg@2x.png in Resources */,
+				F8C973C5174C75450066F37E /* btn_green.png in Resources */,
+				F8C973C9174CA5EA0066F37E /* lock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +348,7 @@
 				F84CA252174A0C04000E368D /* ECBaseUIView.m in Sources */,
 				F87AC84D174B50A400CA8A2B /* ECLoginViewController.m in Sources */,
 				F87AC850174B50E200CA8A2B /* ECLoginView.m in Sources */,
+				F8778160174CB9CA00B9909D /* UserBean+UUTalk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
