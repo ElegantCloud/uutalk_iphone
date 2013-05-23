@@ -12,6 +12,7 @@
 #import "ECConstants.h"
 #import "UserBean+UUTalk.h"
 #import "ECConfig.h"
+#import "ECMainTabController.h"
 
 @implementation ECAppDelegate
 
@@ -24,6 +25,8 @@
     BOOL needLogin = [self isNeedLogin];
     if (needLogin) {
         self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECLoginViewController alloc] init] andMode:navigationController];
+    } else {
+        self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECMainTabController alloc] init] andMode:navigationController];
     }
     [self.window makeKeyAndVisible];
     return YES;

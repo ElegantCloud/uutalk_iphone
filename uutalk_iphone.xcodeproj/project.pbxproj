@@ -39,6 +39,13 @@
 		F87AC877174B69FD00CA8A2B /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87AC874174B69FD00CA8A2B /* bg@2x.png */; };
 		F8C973C5174C75450066F37E /* btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C4174C75450066F37E /* btn_green.png */; };
 		F8C973C9174CA5EA0066F37E /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C8174CA5EA0066F37E /* lock.png */; };
+		F8F656CF174DF73200803E4E /* ECMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656CE174DF73200803E4E /* ECMainTabController.m */; };
+		F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */; };
+		F8F656D7174DFB4900803E4E /* tab_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656D6174DFB4900803E4E /* tab_more@2x.png */; };
+		F8F656D9174DFE1000803E4E /* tab_more.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656D8174DFE1000803E4E /* tab_more.png */; };
+		F8F656DD174DFF3100803E4E /* ECDialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */; };
+		F8F656E0174E035D00803E4E /* tab_dial.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DE174E035C00803E4E /* tab_dial.png */; };
+		F8F656E1174E035D00803E4E /* tab_dial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DF174E035D00803E4E /* tab_dial@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +93,16 @@
 		F87AC874174B69FD00CA8A2B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "common/bg@2x.png"; sourceTree = "<group>"; };
 		F8C973C4174C75450066F37E /* btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_green.png; path = common/btn_green.png; sourceTree = "<group>"; };
 		F8C973C8174CA5EA0066F37E /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = login/lock.png; sourceTree = "<group>"; };
+		F8F656CD174DF73200803E4E /* ECMainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECMainTabController.h; path = AppViews/MainPage/ECMainTabController.h; sourceTree = "<group>"; };
+		F8F656CE174DF73200803E4E /* ECMainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECMainTabController.m; path = AppViews/MainPage/ECMainTabController.m; sourceTree = "<group>"; };
+		F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSettingViewController.h; path = AppViews/Settings/ECSettingViewController.h; sourceTree = "<group>"; };
+		F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSettingViewController.m; path = AppViews/Settings/ECSettingViewController.m; sourceTree = "<group>"; };
+		F8F656D6174DFB4900803E4E /* tab_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_more@2x.png"; path = "mainpage/tab_more@2x.png"; sourceTree = "<group>"; };
+		F8F656D8174DFE1000803E4E /* tab_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_more.png; path = mainpage/tab_more.png; sourceTree = "<group>"; };
+		F8F656DB174DFF3100803E4E /* ECDialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECDialContentViewController.h; path = AppViews/Dial/ECDialContentViewController.h; sourceTree = "<group>"; };
+		F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECDialContentViewController.m; path = AppViews/Dial/ECDialContentViewController.m; sourceTree = "<group>"; };
+		F8F656DE174E035C00803E4E /* tab_dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_dial.png; path = mainpage/tab_dial.png; sourceTree = "<group>"; };
+		F8F656DF174E035D00803E4E /* tab_dial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_dial@2x.png"; path = "mainpage/tab_dial@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +200,7 @@
 		F84CA249174A081F000E368D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8F656D5174DFB1900803E4E /* mainpage */,
 				F8C973C7174CA5CF0066F37E /* login */,
 				F87AC851174B5AFE00CA8A2B /* common */,
 				F84CA24A174A081F000E368D /* bundles */,
@@ -203,6 +221,9 @@
 		F84CA24F174A08AA000E368D /* AppViews */ = {
 			isa = PBXGroup;
 			children = (
+				F8F656DA174DFE5F00803E4E /* Dial */,
+				F8F656D1174DF79000803E4E /* Settings */,
+				F8F656CB174DF6B400803E4E /* MainPage */,
 				F87AC848174B500A00CA8A2B /* System */,
 				F84CA250174A0C04000E368D /* ECBaseUIView.h */,
 				F84CA251174A0C04000E368D /* ECBaseUIView.m */,
@@ -266,6 +287,44 @@
 				F8C973C8174CA5EA0066F37E /* lock.png */,
 			);
 			name = login;
+			sourceTree = "<group>";
+		};
+		F8F656CB174DF6B400803E4E /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				F8F656CD174DF73200803E4E /* ECMainTabController.h */,
+				F8F656CE174DF73200803E4E /* ECMainTabController.m */,
+			);
+			name = MainPage;
+			sourceTree = "<group>";
+		};
+		F8F656D1174DF79000803E4E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */,
+				F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F8F656D5174DFB1900803E4E /* mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				F8F656DE174E035C00803E4E /* tab_dial.png */,
+				F8F656DF174E035D00803E4E /* tab_dial@2x.png */,
+				F8F656D8174DFE1000803E4E /* tab_more.png */,
+				F8F656D6174DFB4900803E4E /* tab_more@2x.png */,
+			);
+			name = mainpage;
+			sourceTree = "<group>";
+		};
+		F8F656DA174DFE5F00803E4E /* Dial */ = {
+			isa = PBXGroup;
+			children = (
+				F8F656DB174DFF3100803E4E /* ECDialContentViewController.h */,
+				F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */,
+			);
+			name = Dial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +392,10 @@
 				F87AC877174B69FD00CA8A2B /* bg@2x.png in Resources */,
 				F8C973C5174C75450066F37E /* btn_green.png in Resources */,
 				F8C973C9174CA5EA0066F37E /* lock.png in Resources */,
+				F8F656D7174DFB4900803E4E /* tab_more@2x.png in Resources */,
+				F8F656D9174DFE1000803E4E /* tab_more.png in Resources */,
+				F8F656E0174E035D00803E4E /* tab_dial.png in Resources */,
+				F8F656E1174E035D00803E4E /* tab_dial@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +412,9 @@
 				F87AC84D174B50A400CA8A2B /* ECLoginViewController.m in Sources */,
 				F87AC850174B50E200CA8A2B /* ECLoginView.m in Sources */,
 				F8778160174CB9CA00B9909D /* UserBean+UUTalk.m in Sources */,
+				F8F656CF174DF73200803E4E /* ECMainTabController.m in Sources */,
+				F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */,
+				F8F656DD174DFF3100803E4E /* ECDialContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

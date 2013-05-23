@@ -11,6 +11,7 @@
 #import "ECUrlConfig.h"
 #import "UserBean+UUTalk.h"
 #import "ECConstants.h"
+#import "ECMainTabController.h"
 
 @interface ECLoginViewController ()
 
@@ -108,7 +109,7 @@
                     [userDefaults setObject:userBean.callbackPhoneNumberCountryCode forKey:CALLBACK_PHONE_NUMBER_COUNTRY_CODE];
 
                     // jump to main view
-                    [[[iToast makeText:@"login successfully"] setDuration:iToastDurationLong] show];
+                    [self.navigationController pushViewController:[[ECMainTabController alloc] init] animated:YES];
                 } else if ([result isEqualToString:@"1"] || [result isEqualToString:@"2"]) {
                     // login failed
                     [[[iToast makeText:NSLocalizedString(@"Wrong phone number or password", "")] setDuration:iToastDurationLong] show];

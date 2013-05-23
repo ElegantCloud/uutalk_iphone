@@ -19,3 +19,8 @@
 "Logining" = "正在登录…";
 "Wrong phone number or password" = "用户名或密码错误！";
 "Error in login, please retry." = "登录出错，请稍后重试！";
+
+
+// Main Page
+"dial" = "拨号";
+"more" = "更多";
