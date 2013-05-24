@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81297D3174F6CB1002487A2 /* CountryCodeManager.m */; };
 		F81B5BB71749F69F00279D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BB61749F69F00279D32 /* UIKit.framework */; };
 		F81B5BB91749F69F00279D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BB81749F69F00279D32 /* Foundation.framework */; };
 		F81B5BBB1749F69F00279D32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BBA1749F69F00279D32 /* CoreGraphics.framework */; };
@@ -46,9 +47,13 @@
 		F8F656DD174DFF3100803E4E /* ECDialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */; };
 		F8F656E0174E035D00803E4E /* tab_dial.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DE174E035C00803E4E /* tab_dial.png */; };
 		F8F656E1174E035D00803E4E /* tab_dial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DF174E035D00803E4E /* tab_dial@2x.png */; };
+		F8F656E5174E08AB00803E4E /* ECRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */; };
+		F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656E7174E08C500803E4E /* ECRegisterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F81297D2174F6CB1002487A2 /* CountryCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryCodeManager.h; path = Util/CountryCodeManager.h; sourceTree = "<group>"; };
+		F81297D3174F6CB1002487A2 /* CountryCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryCodeManager.m; path = Util/CountryCodeManager.m; sourceTree = "<group>"; };
 		F81B5BB21749F69F00279D32 /* uutalk_iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uutalk_iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81B5BB61749F69F00279D32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F81B5BB81749F69F00279D32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +108,10 @@
 		F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECDialContentViewController.m; path = AppViews/Dial/ECDialContentViewController.m; sourceTree = "<group>"; };
 		F8F656DE174E035C00803E4E /* tab_dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_dial.png; path = mainpage/tab_dial.png; sourceTree = "<group>"; };
 		F8F656DF174E035D00803E4E /* tab_dial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_dial@2x.png"; path = "mainpage/tab_dial@2x.png"; sourceTree = "<group>"; };
+		F8F656E3174E08AB00803E4E /* ECRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECRegisterViewController.h; path = AppViews/System/Register/ECRegisterViewController.h; sourceTree = "<group>"; };
+		F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECRegisterViewController.m; path = AppViews/System/Register/ECRegisterViewController.m; sourceTree = "<group>"; };
+		F8F656E6174E08C500803E4E /* ECRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECRegisterView.h; path = AppViews/System/Register/ECRegisterView.h; sourceTree = "<group>"; };
+		F8F656E7174E08C500803E4E /* ECRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECRegisterView.m; path = AppViews/System/Register/ECRegisterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +139,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F81297CD174F6C72002487A2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F81297D2174F6CB1002487A2 /* CountryCodeManager.h */,
+				F81297D3174F6CB1002487A2 /* CountryCodeManager.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		F81B5BA71749F69F00279D32 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +191,7 @@
 		F81B5BBC1749F69F00279D32 /* uutalk_iphone */ = {
 			isa = PBXGroup;
 			children = (
+				F81297CD174F6C72002487A2 /* Util */,
 				F84CA253174A123B000E368D /* Config */,
 				F84CA24F174A08AA000E368D /* AppViews */,
 				F81B5BC51749F69F00279D32 /* ECAppDelegate.h */,
@@ -253,6 +272,7 @@
 		F87AC848174B500A00CA8A2B /* System */ = {
 			isa = PBXGroup;
 			children = (
+				F8F656E2174E083900803E4E /* Register */,
 				F877815C174CB99100B9909D /* User */,
 				F87AC84A174B501200CA8A2B /* Login */,
 			);
@@ -325,6 +345,17 @@
 				F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */,
 			);
 			name = Dial;
+			sourceTree = "<group>";
+		};
+		F8F656E2174E083900803E4E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F8F656E3174E08AB00803E4E /* ECRegisterViewController.h */,
+				F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */,
+				F8F656E6174E08C500803E4E /* ECRegisterView.h */,
+				F8F656E7174E08C500803E4E /* ECRegisterView.m */,
+			);
+			name = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +446,9 @@
 				F8F656CF174DF73200803E4E /* ECMainTabController.m in Sources */,
 				F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */,
 				F8F656DD174DFF3100803E4E /* ECDialContentViewController.m in Sources */,
+				F8F656E5174E08AB00803E4E /* ECRegisterViewController.m in Sources */,
+				F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */,
+				F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "uutalk_iphone/uutalk_iphone-Prefix.pch";
 				INFOPLIST_FILE = "uutalk_iphone/uutalk_iphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,6 +549,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "uutalk_iphone/uutalk_iphone-Prefix.pch";
 				INFOPLIST_FILE = "uutalk_iphone/uutalk_iphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -16,7 +16,7 @@
 #define INPUT_FIELD_WIDTH   250
 #define INPUT_FIELD_HEIGHT  35
 #define LOGIN_BUTTON_WIDTH  250
-#define LOGIN_BUTTON_HEIGHT 41
+#define LOGIN_BUTTON_HEIGHT 40
 #define SWITCH_WDITH        50
 #define SWITCH_HEIGHT       30
 #define GAP                 8
@@ -40,7 +40,7 @@
 - (void)initUI {
     self.backgroundImg = [UIImage imageNamed:@"bg"];
 
-    UIView *loginFormView = [[UIView alloc] initWithFrame:CGRectMake((self.frame.size.width - LOGIN_FORM_WIDTH) / 2, (self.frame.size.height - LOGIN_FORM_HEIGHT) / 2, LOGIN_FORM_WIDTH, LOGIN_FORM_HEIGHT)];
+    UIView *loginFormView = [[UIView alloc] initWithFrame:CGRectMake((self.frame.size.width - LOGIN_FORM_WIDTH) / 2, 30, LOGIN_FORM_WIDTH, LOGIN_FORM_HEIGHT)];
     loginFormView.backgroundColor = [UIColor colorWithIntegerRed:0x87 integerGreen:0xce integerBlue:0xff alpha:0.5];
     [loginFormView.layer setCornerRadius:6];
         
@@ -87,6 +87,7 @@
     [newUserRegButton setTitleColor:[UIColor colorWithIntegerRed:0xff integerGreen:0x45 integerBlue:0 alpha:1] forState:UIControlStateNormal];
     [newUserRegButton setTitleColor:[UIColor colorWithIntegerRed:0x48 integerGreen:0x76 integerBlue:0xff alpha:1] forState:UIControlStateHighlighted];
     [newUserRegButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [newUserRegButton addTarget:self action:@selector(registerAction) forControlEvents:UIControlEventTouchUpInside];
     [loginFormView addSubview:newUserRegButton];
     
        
@@ -157,6 +158,11 @@
     }
 }
 
+- (void)registerAction {
+    if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToRegisterView)]) {
+        [self.viewControllerRef performSelector:@selector(jumpToRegisterView)];
+    }
 
+}
 
 @end

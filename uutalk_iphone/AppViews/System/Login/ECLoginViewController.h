@@ -12,4 +12,5 @@
 @interface ECLoginViewController : UIViewController
 
 - (void)login;
+- (void)jumpToRegisterView;
 @end
