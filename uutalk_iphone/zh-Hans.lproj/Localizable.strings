@@ -64,3 +64,23 @@
 // Main Page
 "dial" = "拨号";
 "more" = "更多";
+
+
+// More Page
+"Account" = "账户";
+"Query" = "查询";
+"Setting" = "设置";
+"Help" = "帮助";
+"Money Gain" = "赚话费";
+"Account Top Up" = "账户充值";
+"My Suites" = "我的套餐";
+"Password Reset" = "修改密码";
+"Find Password" = "找回密码";
+"Sign Out" = "注销登录并退出";
+"Balance Query" = "余额查询";
+"Fee Query" = "费率查询";
+"Dial Setting" = "拨打设置";
+"Local Area Code Setting" = "本地区号设置";
+"Callback Number Setting" = "回拨号码设置";
+"Login Setting" = "登录设置";
+"About" = "关于我们";

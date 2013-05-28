@@ -74,7 +74,7 @@
     self.backgroundImg = [UIImage imageNamed:@"bg"];
     _titleView.text = NSLocalizedString(@"new user", "");
     self.titleView = _titleView;
-    self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Back", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
+    self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"login", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
    
 
     // ### user register step 1
@@ -92,6 +92,7 @@
     getValidateCodeButton.titleLabel.font = [UIFont fontWithName:CHINESE_BOLD_FONT size:16.0];
     [getValidateCodeButton setTitle:NSLocalizedString(@"get validate code", "get validate code button string") forState:UIControlStateNormal];
     [getValidateCodeButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
+    [getValidateCodeButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
     [getValidateCodeButton addTarget:self action:@selector(getValidationCodeAction) forControlEvents:UIControlEventTouchUpInside];
     [_mStep1View addSubview:getValidateCodeButton];
     
@@ -118,6 +119,7 @@
     nextButton.titleLabel.font = [UIFont fontWithName:CHINESE_BOLD_FONT size:16.0];
     [nextButton setTitle:NSLocalizedString(@"Next", "next step") forState:UIControlStateNormal];
     [nextButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
+    [nextButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
     [nextButton addTarget:self action:@selector(verifyCodeAction) forControlEvents:UIControlEventTouchUpInside];
     [_mStep2View addSubview:nextButton];
     
@@ -140,6 +142,7 @@
     finishButton.titleLabel.font = nextButton.titleLabel.font;
     [finishButton setTitle:NSLocalizedString(@"Finish Register", nil) forState:UIControlStateNormal];
     [finishButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
+    [finishButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
     [finishButton addTarget:self action:@selector(finishRegistrationAction) forControlEvents:UIControlEventTouchUpInside];
     [_mStep3View addSubview:finishButton];
     

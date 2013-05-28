@@ -7,6 +7,8 @@
 //
 
 #import "ECSettingViewController.h"
+#import "CommonToolkit/CommonToolkit.h"
+#import "ECSettingView.h"
 
 @interface ECSettingViewController ()
 
@@ -18,9 +20,14 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        self = [self initWithCompatibleView:[[ECSettingView alloc] init]];
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLoad

@@ -74,6 +74,7 @@
     _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _loginButton.frame = CGRectMake((loginFormView.frame.size.width - LOGIN_BUTTON_WIDTH) / 2, autoLoginLabel.frame.origin.y + autoLoginLabel.frame.size.height + GAP, LOGIN_BUTTON_WIDTH, LOGIN_BUTTON_HEIGHT);
     [_loginButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
+    [_loginButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
     [_loginButton setTitle:NSLocalizedString(@"login", "") forState:UIControlStateNormal];
     _loginButton.titleLabel.font = [UIFont fontWithName:CHINESE_FONT size:16];
     [_loginButton addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];

@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80ADCA517544F52000B523A /* ECSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80ADCA417544F52000B523A /* ECSettingView.m */; };
+		F80ADCA71754953F000B523A /* into_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCA61754953F000B523A /* into_icon.png */; };
+		F80ADCA917549D6D000B523A /* uutalk.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCA817549D6D000B523A /* uutalk.png */; };
+		F80ADCAB17549D73000B523A /* uutalk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCAA17549D73000B523A /* uutalk@2x.png */; };
+		F80ADCBA17549E0A000B523A /* changepsw.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCAD17549E0A000B523A /* changepsw.png */; };
+		F80ADCBB17549E0A000B523A /* charge.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCAE17549E0A000B523A /* charge.png */; };
+		F80ADCBC17549E0A000B523A /* getpsw.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCAF17549E0A000B523A /* getpsw.png */; };
+		F80ADCBD17549E0A000B523A /* menuexit.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB017549E0A000B523A /* menuexit.png */; };
+		F80ADCBE17549E0A000B523A /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB117549E0A000B523A /* money.png */; };
+		F80ADCBF17549E0A000B523A /* search_remainmoney.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB217549E0A000B523A /* search_remainmoney.png */; };
+		F80ADCC017549E0A000B523A /* setauthnumber.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB317549E0A000B523A /* setauthnumber.png */; };
+		F80ADCC117549E0A000B523A /* setting_countrycode.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB417549E0A000B523A /* setting_countrycode.png */; };
+		F80ADCC217549E0A000B523A /* setting_dial.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB517549E0A000B523A /* setting_dial.png */; };
+		F80ADCC317549E0A000B523A /* setting_setup.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB617549E0A000B523A /* setting_setup.png */; };
+		F80ADCC417549E0A000B523A /* suite.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB717549E0A000B523A /* suite.png */; };
+		F80ADCC617549E0A000B523A /* zifeichaxun.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB917549E0A000B523A /* zifeichaxun.png */; };
 		F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81297D3174F6CB1002487A2 /* CountryCodeManager.m */; };
 		F81B5BB71749F69F00279D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BB61749F69F00279D32 /* UIKit.framework */; };
 		F81B5BB91749F69F00279D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BB81749F69F00279D32 /* Foundation.framework */; };
@@ -40,6 +56,7 @@
 		F87AC877174B69FD00CA8A2B /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87AC874174B69FD00CA8A2B /* bg@2x.png */; };
 		F8C973C5174C75450066F37E /* btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C4174C75450066F37E /* btn_green.png */; };
 		F8C973C9174CA5EA0066F37E /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C8174CA5EA0066F37E /* lock.png */; };
+		F8DCB9E417530E4A00DF8C78 /* btn_dark_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */; };
 		F8F656CF174DF73200803E4E /* ECMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656CE174DF73200803E4E /* ECMainTabController.m */; };
 		F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */; };
 		F8F656D7174DFB4900803E4E /* tab_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656D6174DFB4900803E4E /* tab_more@2x.png */; };
@@ -52,6 +69,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F80ADCA317544F52000B523A /* ECSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSettingView.h; path = AppViews/Settings/ECSettingView.h; sourceTree = "<group>"; };
+		F80ADCA417544F52000B523A /* ECSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSettingView.m; path = AppViews/Settings/ECSettingView.m; sourceTree = "<group>"; };
+		F80ADCA61754953F000B523A /* into_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = into_icon.png; path = common/into_icon.png; sourceTree = "<group>"; };
+		F80ADCA817549D6D000B523A /* uutalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uutalk.png; path = ../../uutalk.png; sourceTree = "<group>"; };
+		F80ADCAA17549D73000B523A /* uutalk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uutalk@2x.png"; path = "../../uutalk@2x.png"; sourceTree = "<group>"; };
+		F80ADCAD17549E0A000B523A /* changepsw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = changepsw.png; path = setting/changepsw.png; sourceTree = "<group>"; };
+		F80ADCAE17549E0A000B523A /* charge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = charge.png; path = setting/charge.png; sourceTree = "<group>"; };
+		F80ADCAF17549E0A000B523A /* getpsw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = getpsw.png; path = setting/getpsw.png; sourceTree = "<group>"; };
+		F80ADCB017549E0A000B523A /* menuexit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuexit.png; path = setting/menuexit.png; sourceTree = "<group>"; };
+		F80ADCB117549E0A000B523A /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = money.png; path = setting/money.png; sourceTree = "<group>"; };
+		F80ADCB217549E0A000B523A /* search_remainmoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search_remainmoney.png; path = setting/search_remainmoney.png; sourceTree = "<group>"; };
+		F80ADCB317549E0A000B523A /* setauthnumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setauthnumber.png; path = setting/setauthnumber.png; sourceTree = "<group>"; };
+		F80ADCB417549E0A000B523A /* setting_countrycode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_countrycode.png; path = setting/setting_countrycode.png; sourceTree = "<group>"; };
+		F80ADCB517549E0A000B523A /* setting_dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_dial.png; path = setting/setting_dial.png; sourceTree = "<group>"; };
+		F80ADCB617549E0A000B523A /* setting_setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_setup.png; path = setting/setting_setup.png; sourceTree = "<group>"; };
+		F80ADCB717549E0A000B523A /* suite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = suite.png; path = setting/suite.png; sourceTree = "<group>"; };
+		F80ADCB917549E0A000B523A /* zifeichaxun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zifeichaxun.png; path = setting/zifeichaxun.png; sourceTree = "<group>"; };
 		F81297D2174F6CB1002487A2 /* CountryCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryCodeManager.h; path = Util/CountryCodeManager.h; sourceTree = "<group>"; };
 		F81297D3174F6CB1002487A2 /* CountryCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryCodeManager.m; path = Util/CountryCodeManager.m; sourceTree = "<group>"; };
 		F81B5BB21749F69F00279D32 /* uutalk_iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uutalk_iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +132,7 @@
 		F87AC874174B69FD00CA8A2B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "common/bg@2x.png"; sourceTree = "<group>"; };
 		F8C973C4174C75450066F37E /* btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_green.png; path = common/btn_green.png; sourceTree = "<group>"; };
 		F8C973C8174CA5EA0066F37E /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = login/lock.png; sourceTree = "<group>"; };
+		F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_dark_green.png; path = common/btn_dark_green.png; sourceTree = "<group>"; };
 		F8F656CD174DF73200803E4E /* ECMainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECMainTabController.h; path = AppViews/MainPage/ECMainTabController.h; sourceTree = "<group>"; };
 		F8F656CE174DF73200803E4E /* ECMainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECMainTabController.m; path = AppViews/MainPage/ECMainTabController.m; sourceTree = "<group>"; };
 		F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSettingViewController.h; path = AppViews/Settings/ECSettingViewController.h; sourceTree = "<group>"; };
@@ -139,6 +174,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80ADCAC17549DFB000B523A /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				F80ADCAD17549E0A000B523A /* changepsw.png */,
+				F80ADCAE17549E0A000B523A /* charge.png */,
+				F80ADCAF17549E0A000B523A /* getpsw.png */,
+				F80ADCB017549E0A000B523A /* menuexit.png */,
+				F80ADCB117549E0A000B523A /* money.png */,
+				F80ADCB217549E0A000B523A /* search_remainmoney.png */,
+				F80ADCB317549E0A000B523A /* setauthnumber.png */,
+				F80ADCB417549E0A000B523A /* setting_countrycode.png */,
+				F80ADCB517549E0A000B523A /* setting_dial.png */,
+				F80ADCB617549E0A000B523A /* setting_setup.png */,
+				F80ADCB717549E0A000B523A /* suite.png */,
+				F80ADCB917549E0A000B523A /* zifeichaxun.png */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
 		F81297CD174F6C72002487A2 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +273,7 @@
 		F84CA249174A081F000E368D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F80ADCAC17549DFB000B523A /* setting */,
 				F8F656D5174DFB1900803E4E /* mainpage */,
 				F8C973C7174CA5CF0066F37E /* login */,
 				F87AC851174B5AFE00CA8A2B /* common */,
@@ -293,6 +348,10 @@
 		F87AC851174B5AFE00CA8A2B /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F80ADCAA17549D73000B523A /* uutalk@2x.png */,
+				F80ADCA817549D6D000B523A /* uutalk.png */,
+				F80ADCA61754953F000B523A /* into_icon.png */,
+				F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */,
 				F8C973C4174C75450066F37E /* btn_green.png */,
 				F87AC872174B69FD00CA8A2B /* bg.png */,
 				F87AC873174B69FD00CA8A2B /* bg-568h@2x.png */,
@@ -323,6 +382,8 @@
 			children = (
 				F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */,
 				F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */,
+				F80ADCA317544F52000B523A /* ECSettingView.h */,
+				F80ADCA417544F52000B523A /* ECSettingView.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -427,6 +488,22 @@
 				F8F656D9174DFE1000803E4E /* tab_more.png in Resources */,
 				F8F656E0174E035D00803E4E /* tab_dial.png in Resources */,
 				F8F656E1174E035D00803E4E /* tab_dial@2x.png in Resources */,
+				F8DCB9E417530E4A00DF8C78 /* btn_dark_green.png in Resources */,
+				F80ADCA71754953F000B523A /* into_icon.png in Resources */,
+				F80ADCA917549D6D000B523A /* uutalk.png in Resources */,
+				F80ADCAB17549D73000B523A /* uutalk@2x.png in Resources */,
+				F80ADCBA17549E0A000B523A /* changepsw.png in Resources */,
+				F80ADCBB17549E0A000B523A /* charge.png in Resources */,
+				F80ADCBC17549E0A000B523A /* getpsw.png in Resources */,
+				F80ADCBD17549E0A000B523A /* menuexit.png in Resources */,
+				F80ADCBE17549E0A000B523A /* money.png in Resources */,
+				F80ADCBF17549E0A000B523A /* search_remainmoney.png in Resources */,
+				F80ADCC017549E0A000B523A /* setauthnumber.png in Resources */,
+				F80ADCC117549E0A000B523A /* setting_countrycode.png in Resources */,
+				F80ADCC217549E0A000B523A /* setting_dial.png in Resources */,
+				F80ADCC317549E0A000B523A /* setting_setup.png in Resources */,
+				F80ADCC417549E0A000B523A /* suite.png in Resources */,
+				F80ADCC617549E0A000B523A /* zifeichaxun.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +526,7 @@
 				F8F656E5174E08AB00803E4E /* ECRegisterViewController.m in Sources */,
 				F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */,
 				F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */,
+				F80ADCA517544F52000B523A /* ECSettingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

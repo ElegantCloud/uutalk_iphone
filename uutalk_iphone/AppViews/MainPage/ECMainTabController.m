@@ -21,8 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         UIViewController *dialTabController = [[ECDialContentViewController alloc] init];
-        UIViewController *settingController = [[ECSettingViewController alloc] init];
-        
+        UINavigationController *settingController = [[UINavigationController alloc] initWithRootViewController:[[ECSettingViewController alloc] init]];
         [dialTabController.tabBarItem initWithTitle:NSLocalizedString(@"dial", "") image:[UIImage imageNamed:@"tab_dial"] tag:2];
         [settingController.tabBarItem initWithTitle:NSLocalizedString(@"more", "") image:[UIImage imageNamed:@"tab_more"] tag:4];
         self.viewControllers = [NSArray arrayWithObjects:dialTabController, settingController, nil];
@@ -31,6 +30,11 @@
     }
     return self;
 }
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [self.navigationController setNavigationBarHidden:NO animated:NO];
+//    [super viewWillAppear:animated];
+//}
 
 - (void)viewDidLoad
 {

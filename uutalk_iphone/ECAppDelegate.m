@@ -26,7 +26,7 @@
     if (needLogin) {
         self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECLoginViewController alloc] init] andMode:navigationController];
     } else {
-        self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECMainTabController alloc] init] andMode:navigationController];
+        self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECMainTabController alloc] init] andMode:normalController];
     }
     [self.window makeKeyAndVisible];
     return YES;
