@@ -23,6 +23,8 @@
 		F80ADCC317549E0A000B523A /* setting_setup.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB617549E0A000B523A /* setting_setup.png */; };
 		F80ADCC417549E0A000B523A /* suite.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB717549E0A000B523A /* suite.png */; };
 		F80ADCC617549E0A000B523A /* zifeichaxun.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCB917549E0A000B523A /* zifeichaxun.png */; };
+		F811A65E1755D8A600FCDC0C /* ECMoneyGainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F811A65D1755D8A600FCDC0C /* ECMoneyGainView.m */; };
+		F811A6611755D8BE00FCDC0C /* ECMoneyGainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F811A6601755D8BE00FCDC0C /* ECMoneyGainViewController.m */; };
 		F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81297D3174F6CB1002487A2 /* CountryCodeManager.m */; };
 		F81B5BB71749F69F00279D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BB61749F69F00279D32 /* UIKit.framework */; };
 		F81B5BB91749F69F00279D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81B5BB81749F69F00279D32 /* Foundation.framework */; };
@@ -86,6 +88,10 @@
 		F80ADCB617549E0A000B523A /* setting_setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_setup.png; path = setting/setting_setup.png; sourceTree = "<group>"; };
 		F80ADCB717549E0A000B523A /* suite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = suite.png; path = setting/suite.png; sourceTree = "<group>"; };
 		F80ADCB917549E0A000B523A /* zifeichaxun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zifeichaxun.png; path = setting/zifeichaxun.png; sourceTree = "<group>"; };
+		F811A65C1755D8A600FCDC0C /* ECMoneyGainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECMoneyGainView.h; path = AppViews/Settings/MoneyGain/ECMoneyGainView.h; sourceTree = "<group>"; };
+		F811A65D1755D8A600FCDC0C /* ECMoneyGainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECMoneyGainView.m; path = AppViews/Settings/MoneyGain/ECMoneyGainView.m; sourceTree = "<group>"; };
+		F811A65F1755D8BE00FCDC0C /* ECMoneyGainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECMoneyGainViewController.h; path = AppViews/Settings/MoneyGain/ECMoneyGainViewController.h; sourceTree = "<group>"; };
+		F811A6601755D8BE00FCDC0C /* ECMoneyGainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECMoneyGainViewController.m; path = AppViews/Settings/MoneyGain/ECMoneyGainViewController.m; sourceTree = "<group>"; };
 		F81297D2174F6CB1002487A2 /* CountryCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryCodeManager.h; path = Util/CountryCodeManager.h; sourceTree = "<group>"; };
 		F81297D3174F6CB1002487A2 /* CountryCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryCodeManager.m; path = Util/CountryCodeManager.m; sourceTree = "<group>"; };
 		F81B5BB21749F69F00279D32 /* uutalk_iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uutalk_iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +197,17 @@
 				F80ADCB917549E0A000B523A /* zifeichaxun.png */,
 			);
 			name = setting;
+			sourceTree = "<group>";
+		};
+		F811A65B1755D6B100FCDC0C /* MoneyGain */ = {
+			isa = PBXGroup;
+			children = (
+				F811A65C1755D8A600FCDC0C /* ECMoneyGainView.h */,
+				F811A65D1755D8A600FCDC0C /* ECMoneyGainView.m */,
+				F811A65F1755D8BE00FCDC0C /* ECMoneyGainViewController.h */,
+				F811A6601755D8BE00FCDC0C /* ECMoneyGainViewController.m */,
+			);
+			name = MoneyGain;
 			sourceTree = "<group>";
 		};
 		F81297CD174F6C72002487A2 /* Util */ = {
@@ -380,6 +397,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F811A65B1755D6B100FCDC0C /* MoneyGain */,
 				F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */,
 				F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */,
 				F80ADCA317544F52000B523A /* ECSettingView.h */,
@@ -527,6 +545,8 @@
 				F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */,
 				F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */,
 				F80ADCA517544F52000B523A /* ECSettingView.m in Sources */,
+				F811A65E1755D8A600FCDC0C /* ECMoneyGainView.m in Sources */,
+				F811A6611755D8BE00FCDC0C /* ECMoneyGainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

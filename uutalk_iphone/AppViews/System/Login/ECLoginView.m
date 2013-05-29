@@ -33,6 +33,7 @@
     if (self) {
          _useSavedPwd = YES;
         [self initUI];
+       
     }
     return self;
 }

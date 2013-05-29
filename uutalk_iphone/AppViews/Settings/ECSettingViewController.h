@@ -10,4 +10,6 @@
 
 @interface ECSettingViewController : UIViewController
 
+- (void)jumpToMoneyGain;
+
 @end

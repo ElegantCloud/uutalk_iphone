@@ -157,6 +157,15 @@ static CGFloat GAP = 6;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"setting item selected - secion: %d row: %d", indexPath.section, indexPath.row);
+    NSArray *items = [_sectionArray objectAtIndex:indexPath.section];
+    NSString *name = [items objectAtIndex:indexPath.row];
+    NSLog(@"selected: %@", name);
+    if ([name isEqualToString:NSLocalizedString(@"Money Gain", "")]) {
+       
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToMoneyGain)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToMoneyGain)];
+        }
+    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.
