@@ -7,7 +7,8 @@
 //
 
 #import "ECDialContentViewController.h"
-
+#import "ECDialView.h"
+#import "ECSipServiceManager.h"
 @interface ECDialContentViewController ()
 
 @end
@@ -19,6 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self = [self initWithCompatibleView:[[ECDialView alloc] init]];
     }
     return self;
 }
@@ -35,4 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dial:(NSString *)number {
+    [[ECSipServiceManager shareSipServiceManager] makeCall:number];
+}
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ECDialContentViewController : UIViewController
-
+- (void)dial:(NSString *)number;
 @end

@@ -9,6 +9,11 @@
 #import "ECMainTabController.h"
 #import "ECSettingViewController.h"
 #import "ECDialContentViewController.h"
+#import "CommonToolkit/CommonToolkit.h"
+#import "UserBean+UUTalk.h"
+#import "ECSipRegisterBean.h"
+#import "ECSipServiceManager.h"
+#import "ECConfig.h"
 
 @interface ECMainTabController ()
 
@@ -25,7 +30,10 @@
         [dialTabController.tabBarItem initWithTitle:NSLocalizedString(@"dial", "") image:[UIImage imageNamed:@"tab_dial"] tag:2];
         [settingController.tabBarItem initWithTitle:NSLocalizedString(@"more", "") image:[UIImage imageNamed:@"tab_more"] tag:4];
         self.viewControllers = [NSArray arrayWithObjects:dialTabController, settingController, nil];
-        self.selectedViewController = settingController;
+        self.selectedViewController = dialTabController;
+        
+        
+        [self registerSipAccount];
         
     }
     return self;
@@ -46,6 +54,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)registerSipAccount {
+    UserBean *user = [[UserManager shareUserManager] userBean];
+    ECSipRegisterBean *sipBean = [[ECSipRegisterBean alloc] init];
+    sipBean.sipUserName = user.vosphone;
+    sipBean.sipPwd = user.vosphonePwd;
+    sipBean.sipPort = [NSNumber numberWithInt:7788];
+    sipBean.sipRealm = SIP_REALM;
+    sipBean.sipServer = SIP_SERVER;
+    
+    [[ECSipServiceManager shareSipServiceManager] registerSipAccount:sipBean];
 }
 
 @end

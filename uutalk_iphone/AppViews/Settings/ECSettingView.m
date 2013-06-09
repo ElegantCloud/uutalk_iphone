@@ -55,12 +55,12 @@ static CGFloat GAP = 6;
 
 #define SECTION_TITLES     [NSArray arrayWithObjects:NSLocalizedString(@"Account", ""), NSLocalizedString(@"Query", ""), NSLocalizedString(@"Setting", ""), NSLocalizedString(@"Help", ""), nil]
 
-#define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Money Gain", ""), NSLocalizedString(@"Account Top Up", ""), NSLocalizedString(@"My Suites", ""), NSLocalizedString(@"Password Reset", ""), NSLocalizedString(@"Find Password", ""), NSLocalizedString(@"Sign Out", ""), nil]
+#define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Account Top Up", ""), NSLocalizedString(@"Password Reset", ""), NSLocalizedString(@"Find Password", ""), NSLocalizedString(@"Sign Out", ""), nil]
 #define QUERY_ITEMS        [NSArray arrayWithObjects:NSLocalizedString(@"Balance Query", ""), NSLocalizedString(@"Fee Query", ""), nil]
 #define SETTING_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Dial Setting", ""), NSLocalizedString(@"Local Area Code Setting", ""), NSLocalizedString(@"Callback Number Setting", ""), NSLocalizedString(@"Login Setting", ""), nil]
 #define HELP_ITEMS         [NSArray arrayWithObjects:NSLocalizedString(@"About", ""), nil]
 
-#define ACCOUNT_ICONS       [NSArray arrayWithObjects:@"money", @"charge", @"suite", @"changepsw", @"getpsw", @"menuexit", nil]
+#define ACCOUNT_ICONS       [NSArray arrayWithObjects:@"charge", @"changepsw", @"getpsw", @"menuexit", nil]
 #define QUERY_ICONS         [NSArray arrayWithObjects:@"search_remainmoney", @"zifeichaxun", nil]
 #define SETTING_ICONS       [NSArray arrayWithObjects:@"setting_dial", @"setting_countrycode", @"setauthnumber", @"setting_setup", nil]
 #define HELP_ICONS          [NSArray arrayWithObjects:@"uutalk", nil]

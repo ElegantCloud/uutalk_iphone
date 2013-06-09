@@ -13,11 +13,14 @@
 #import "UserBean+UUTalk.h"
 #import "ECConfig.h"
 #import "ECMainTabController.h"
+#import "ECSipServiceManager.h"
 
 @implementation ECAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[ECSipServiceManager shareSipServiceManager] initSipEngine];
+    
     [self loadAccount];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -28,6 +31,10 @@
     } else {
         self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECMainTabController alloc] init] andMode:normalController];
     }
+    
+
+//    [NSThread detachNewThreadSelector:@selector(initSipEngine) toTarget:[ECSipServiceManager shareSipServiceManager] withObject:nil];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
