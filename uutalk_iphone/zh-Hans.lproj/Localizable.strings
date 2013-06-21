@@ -9,6 +9,10 @@
 
 // Common
 "Back" = "返回";
+"Exit" = "退出";
+"UU-Talk Alert" = "悠聊提示";
+"Fail to init phone engine, need exit." = "电话引擎初始化失败，请退出。";
+"OK" = "好";
 
 // Login related
 "Welcome to use uutalk" = "欢迎使用悠聊";
@@ -87,3 +91,18 @@
 
 // Money Gain
 "Plese Choose Share Method" = "请选择分享方式";
+
+// Top-up
+"Balance:" = "余额：";
+"Please select top-up method" = "请选择充值方式";
+"yuan" = "元";
+"UU-Talk Card" = "悠聊充值卡";
+"Top Up" = "充值";
+"please input card number" = "请输入充值卡卡号";
+"please input card password" = "请输入充值卡密码";
+"Top up successfully" = "充值成功！";
+"charging_now" = "正在完成充值…";
+"charge_failed_no_account_exist" = "充值失败，账户不存在！";
+"charge_failed_invalid_card_number" = "充值失败，卡号或密码不正确！";
+"card_already_used" = "对不起，充值卡已被使用！";
+"charge_failed" = "充值操作失败，请稍后重试！";

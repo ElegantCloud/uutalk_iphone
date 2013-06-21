@@ -40,4 +40,8 @@
 - (void)dial:(NSString *)number {
     [[ECSipServiceManager shareSipServiceManager] makeCall:number];
 }
+
+- (void)hangup {
+    [[ECSipServiceManager shareSipServiceManager] hangup];
+}
 @end

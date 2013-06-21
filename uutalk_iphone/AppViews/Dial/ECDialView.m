@@ -10,6 +10,8 @@
 
 @interface ECDialView () {
     UITextField *_numberInput;
+    UIButton *_dialButton;
+    UIButton *_hangupButton;
 }
 
 @end
@@ -25,11 +27,16 @@
         self.frame = CGRectMake(screenBounds.origin.x, screenBounds.origin.y, screenBounds.size.width, screenBounds.size.height - ([[UIDevice currentDevice] statusBarHeight] + [[UIDevice currentDevice] navigationBarHeight]) - 50);
         
         _numberInput = [self makeTextFieldWithPlaceholder:@"Input Number" frame:CGRectMake(0, 10, self.frame.size.width, 30) keyboardType:UIKeyboardTypePhonePad];
-        UIButton *dialButton = [self makeButtonWithTitle:@"Dial" frame:CGRectMake(0, _numberInput.frame.origin.y + _numberInput.frame.size.height + 5, self.frame.size.width, 30)];
-        [dialButton addTarget:self action:@selector(dial) forControlEvents:UIControlEventTouchUpInside];
+        _dialButton = [self makeButtonWithTitle:@"Dial" frame:CGRectMake(0, _numberInput.frame.origin.y + _numberInput.frame.size.height + 5, self.frame.size.width, 30)];
+        [_dialButton addTarget:self action:@selector(dial) forControlEvents:UIControlEventTouchUpInside];
+        
+        _hangupButton = [self makeButtonWithTitle:@"Hang up" frame:CGRectMake(0, _dialButton.frame.origin.y + _dialButton.frame.size.height + 5, _dialButton.frame.size.width, _dialButton.frame.size.height)];
+        [_hangupButton addTarget:self action:@selector(hangup) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:_numberInput];
-        [self addSubview:dialButton];
+        [self addSubview:_dialButton];
+        [self addSubview:_hangupButton];
+        
     }
     return self;
 }
@@ -46,6 +53,22 @@
     }
 }
 
+
+- (void)hangup {
+    if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(hangup)]) {
+        [self.viewControllerRef performSelector:@selector(hangup)];
+    }
+}
+
+- (void)enableDial {
+    [_dialButton setEnabled:YES];
+    [_hangupButton setEnabled:NO];
+}
+
+- (void)enableHangup {
+    [_dialButton setEnabled:NO];
+    [_hangupButton setEnabled:YES];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

@@ -13,3 +13,5 @@
 #define CHECK_PHONE_CODE_URL        [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/user/checkPhoneCode"]
 #define USER_REGISTER_URL           [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/user/regUser"]
 #define USER_LOGIN_URL              [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/user/login"]
+#define BALANCE_URL                 [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/accountBalance"]
+#define CARD_CHARGE_URL             [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/cardCharge"]

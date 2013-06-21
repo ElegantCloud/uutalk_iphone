@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "ECSipRegisterBean.h"
+#import "ECConstants.h"
 
 @interface ECSipServiceManager : NSObject
 
 + (ECSipServiceManager *)shareSipServiceManager;
 
-- (void)initSipEngine;
+- (BOOL)initSipEngine;
 
 - (void)registerSipAccount:(ECSipRegisterBean *)sipRegisterBean;
 - (void)makeCall:(NSString *)number;
+- (void)hangup;
+- (void)onCallStateChange:(NSNumber *)state;
 @end

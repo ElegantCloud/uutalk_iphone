@@ -19,7 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[ECSipServiceManager shareSipServiceManager] initSipEngine];
+    BOOL result = [[ECSipServiceManager shareSipServiceManager] initSipEngine];
+    
+    if (result == NO) {
+        // sip engine init failed, alert and exit
+        RIButtonItem *cancelItem = [RIButtonItem item];
+        cancelItem.label = NSLocalizedString(@"Exit", "");
+        cancelItem.action = ^{exit(0);};
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"UU-Talk Alert", "") message:NSLocalizedString(@"Fail to init phone engine, need exit.", "") cancelButtonItem:cancelItem otherButtonItems:nil, nil] show];
+        return NO;
+    }
     
     [self loadAccount];
     
@@ -31,10 +40,7 @@
     } else {
         self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECMainTabController alloc] init] andMode:normalController];
     }
-    
-
-//    [NSThread detachNewThreadSelector:@selector(initSipEngine) toTarget:[ECSipServiceManager shareSipServiceManager] withObject:nil];
-    
+        
     [self.window makeKeyAndVisible];
     return YES;
 }

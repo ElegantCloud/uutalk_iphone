@@ -11,5 +11,5 @@
 @interface ECSettingViewController : UIViewController
 
 - (void)jumpToMoneyGain;
-
+- (void)jumpToTopup;
 @end

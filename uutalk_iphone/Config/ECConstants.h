@@ -14,6 +14,12 @@
 #define CHARACTER_BOLD_FONT     @"Arial-BoldMT"
 
 
+typedef enum CALL_STATE {
+    CALLING = 0,
+    CALL_ESTABLISHED = 1,
+    CALL_DISCONNECTED = 2
+} EC_CALL_STATE;
+
 // Account CONSTANTS
 static NSString *PASSWORD = @"password";
 static NSString *USERKEY = @"userkey";
@@ -24,3 +30,6 @@ static NSString *CALLBACK_PHONE_NUMBER_COUNTRY_CODE = @"bindphone_country_code";
 static NSString *VOSPHONE = @"vosphone";
 static NSString *VOSPHONE_PWD = @"vosphone_pwd";
 static NSString *DEFAULT_DIAL_COUNTRY_CODE = @"defaultDialCountryCode";
+
+
+

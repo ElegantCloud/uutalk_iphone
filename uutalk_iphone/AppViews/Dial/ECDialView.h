@@ -10,4 +10,6 @@
 #import "ECBaseUIView.h"
 @interface ECDialView : ECBaseUIView
 
+- (void)enableDial;
+- (void)enableHangup;
 @end

@@ -10,6 +10,7 @@
 #import "CommonToolkit/CommonToolkit.h"
 #import "ECSettingView.h"
 #import "ECMoneyGainViewController.h"
+#import "ECTopupViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -43,9 +44,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)jumpToViewController:(UIViewController *)viewController {
+    viewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 - (void)jumpToMoneyGain {
     UIViewController *moneyGainController = [[ECMoneyGainViewController alloc] init];
-    moneyGainController.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:moneyGainController animated:YES];
+    [self jumpToViewController:moneyGainController];
+}
+
+- (void)jumpToTopup {
+    UIViewController *topupController = [[ECTopupViewController alloc] init];
+    [self jumpToViewController:topupController];
 }
 @end

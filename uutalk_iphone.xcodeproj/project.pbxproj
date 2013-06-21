@@ -43,28 +43,28 @@
 		F81B5BCD1749F69F00279D32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81B5BCC1749F69F00279D32 /* Default-568h@2x.png */; };
 		F81B5BD51749F6CD00279D32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F81B5BD71749F6CD00279D32 /* Localizable.strings */; };
 		F81C6D611761BBE400824601 /* ECSipServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C6D601761BBE400824601 /* ECSipServiceManager.m */; };
-		F81C6D631761E06000824601 /* pjsua_app.c in Sources */ = {isa = PBXBuildFile; fileRef = F81C6D621761E06000824601 /* pjsua_app.c */; };
-		F84495481762DA2500EDFC6E /* libpj-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AD4217574B4A007D0757 /* libpj-arm-apple-darwin9.a */; };
-		F84495491762DA3100EDFC6E /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AD5F17574B4A007D0757 /* libpjlib-util-arm-apple-darwin9.a */; };
-		F844954A1762DA3D00EDFC6E /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADC817574B4A007D0757 /* libpjmedia-arm-apple-darwin9.a */; };
-		F844954B1762DA3D00EDFC6E /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADC917574B4A007D0757 /* libpjmedia-audiodev-arm-apple-darwin9.a */; };
-		F844954C1762DA3D00EDFC6E /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADCB17574B4A007D0757 /* libpjmedia-codec-arm-apple-darwin9.a */; };
-		F844954D1762DA3D00EDFC6E /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADCE17574B4A007D0757 /* libpjmedia-videodev-arm-apple-darwin9.a */; };
-		F844954E1762DA3D00EDFC6E /* libpjsdp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADD017574B4A007D0757 /* libpjsdp-arm-apple-darwin9.a */; };
-		F844954F1762DA4900EDFC6E /* libpjnath-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADE517574B4A007D0757 /* libpjnath-arm-apple-darwin9.a */; };
-		F84495501762DA5A00EDFC6E /* libpjsip-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE2317574B4A007D0757 /* libpjsip-arm-apple-darwin9.a */; };
-		F84495511762DA5A00EDFC6E /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE2517574B4A007D0757 /* libpjsip-simple-arm-apple-darwin9.a */; };
-		F84495521762DA5A00EDFC6E /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE2717574B4A007D0757 /* libpjsip-ua-arm-apple-darwin9.a */; };
-		F84495531762DA5A00EDFC6E /* libpjsua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE2917574B4A007D0757 /* libpjsua-arm-apple-darwin9.a */; };
-		F84495541762DA6700EDFC6E /* libg7221codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE2D17574B4A007D0757 /* libg7221codec-arm-apple-darwin9.a */; };
-		F84495551762DA6700EDFC6E /* libgsmcodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE3017574B4A007D0757 /* libgsmcodec-arm-apple-darwin9.a */; };
-		F84495561762DA6700EDFC6E /* libilbccodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE3217574B4A007D0757 /* libilbccodec-arm-apple-darwin9.a */; };
-		F84495571762DA6700EDFC6E /* libmilenage-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE3417574B4A007D0757 /* libmilenage-arm-apple-darwin9.a */; };
-		F84495581762DA6700EDFC6E /* libresample-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE3717574B4A007D0757 /* libresample-arm-apple-darwin9.a */; };
-		F84495591762DA6700EDFC6E /* libspeex-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE3917574B4A007D0757 /* libspeex-arm-apple-darwin9.a */; };
-		F844955A1762DA6700EDFC6E /* libsrtp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AE3B17574B4A007D0757 /* libsrtp-arm-apple-darwin9.a */; };
+		F81C6D631761E06000824601 /* pjsua_app.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C6D621761E06000824601 /* pjsua_app.m */; };
 		F84495621762DBC100EDFC6E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84495611762DBC100EDFC6E /* AudioToolbox.framework */; };
 		F84495651763160500EDFC6E /* ECSipRegisterBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F84495641763160400EDFC6E /* ECSipRegisterBean.m */; };
+		F84A32DB177309E7002C73B6 /* libpj-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32DA177309E7002C73B6 /* libpj-i386-apple-darwin9.a */; };
+		F84A32DE177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32DD177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a */; };
+		F84A32E417730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32DF17730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a */; };
+		F84A32E517730A0C002C73B6 /* libpjmedia-codec-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32E017730A0C002C73B6 /* libpjmedia-codec-i386-apple-darwin9.a */; };
+		F84A32E617730A0C002C73B6 /* libpjmedia-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32E117730A0C002C73B6 /* libpjmedia-i386-apple-darwin9.a */; };
+		F84A32E717730A0C002C73B6 /* libpjmedia-videodev-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32E217730A0C002C73B6 /* libpjmedia-videodev-i386-apple-darwin9.a */; };
+		F84A32E817730A0C002C73B6 /* libpjsdp-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32E317730A0C002C73B6 /* libpjsdp-i386-apple-darwin9.a */; };
+		F84A32EA17730A21002C73B6 /* libpjnath-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32E917730A21002C73B6 /* libpjnath-i386-apple-darwin9.a */; };
+		F84A32EF17730A31002C73B6 /* libpjsip-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32EB17730A30002C73B6 /* libpjsip-i386-apple-darwin9.a */; };
+		F84A32F017730A31002C73B6 /* libpjsip-simple-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32EC17730A30002C73B6 /* libpjsip-simple-i386-apple-darwin9.a */; };
+		F84A32F117730A31002C73B6 /* libpjsip-ua-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32ED17730A31002C73B6 /* libpjsip-ua-i386-apple-darwin9.a */; };
+		F84A32F217730A31002C73B6 /* libpjsua-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32EE17730A31002C73B6 /* libpjsua-i386-apple-darwin9.a */; };
+		F84A32FA17730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F317730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a */; };
+		F84A32FB17730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F417730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a */; };
+		F84A32FC17730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F517730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a */; };
+		F84A32FD17730A4F002C73B6 /* libmilenage-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F617730A4F002C73B6 /* libmilenage-i386-apple-darwin9.a */; };
+		F84A32FE17730A4F002C73B6 /* libresample-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F717730A4F002C73B6 /* libresample-i386-apple-darwin9.a */; };
+		F84A32FF17730A4F002C73B6 /* libspeex-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F817730A4F002C73B6 /* libspeex-i386-apple-darwin9.a */; };
+		F84A330017730A4F002C73B6 /* libsrtp-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32F917730A4F002C73B6 /* libsrtp-i386-apple-darwin9.a */; };
 		F84CA24D174A081F000E368D /* CommonToolkitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F84CA24B174A081F000E368D /* CommonToolkitBundle.bundle */; };
 		F84CA24E174A081F000E368D /* Pinyin4jBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F84CA24C174A081F000E368D /* Pinyin4jBundle.bundle */; };
 		F84CA252174A0C04000E368D /* ECBaseUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84CA251174A0C04000E368D /* ECBaseUIView.m */; };
@@ -97,6 +97,13 @@
 		F8F656E1174E035D00803E4E /* tab_dial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DF174E035D00803E4E /* tab_dial@2x.png */; };
 		F8F656E5174E08AB00803E4E /* ECRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */; };
 		F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656E7174E08C500803E4E /* ECRegisterView.m */; };
+		F8FEF33917742AAB00370A56 /* ECTopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEF33817742AAB00370A56 /* ECTopupView.m */; };
+		F8FEF33C17742AC400370A56 /* ECTopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEF33B17742AC400370A56 /* ECTopupViewController.m */; };
+		F8FEF3411774422000370A56 /* uutalk_charge_card.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FEF3431774422000370A56 /* uutalk_charge_card.png */; };
+		F8FEF3451774454F00370A56 /* btn_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FEF3441774454F00370A56 /* btn_gray.png */; };
+		F8FEF34817744DDB00370A56 /* uutalk_charge_card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FEF34617744DDB00370A56 /* uutalk_charge_card@2x.png */; };
+		F8FEF34B1774567900370A56 /* ECUUTalkCardChargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEF34A1774567800370A56 /* ECUUTalkCardChargeViewController.m */; };
+		F8FEF34E1774569500370A56 /* ECUUTalkCardChargeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEF34D1774569400370A56 /* ECUUTalkCardChargeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -446,13 +453,32 @@
 		F81B5BDB1749F72D00279D32 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F81C6D5F1761BBE400824601 /* ECSipServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSipServiceManager.h; path = SipService/ECSipServiceManager.h; sourceTree = "<group>"; };
 		F81C6D601761BBE400824601 /* ECSipServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSipServiceManager.m; path = SipService/ECSipServiceManager.m; sourceTree = "<group>"; };
-		F81C6D621761E06000824601 /* pjsua_app.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pjsua_app.c; path = SipService/pjsua_app.c; sourceTree = "<group>"; };
+		F81C6D621761E06000824601 /* pjsua_app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pjsua_app.m; path = SipService/pjsua_app.m; sourceTree = "<group>"; };
 		F844955B1762DB7300EDFC6E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F844955D1762DB9300EDFC6E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F844955F1762DBA200EDFC6E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		F84495611762DBC100EDFC6E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F84495631763160400EDFC6E /* ECSipRegisterBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSipRegisterBean.h; path = SipService/ECSipRegisterBean.h; sourceTree = "<group>"; };
 		F84495641763160400EDFC6E /* ECSipRegisterBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSipRegisterBean.m; path = SipService/ECSipRegisterBean.m; sourceTree = "<group>"; };
+		F84A32DA177309E7002C73B6 /* libpj-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpj-i386-apple-darwin9.a"; path = "Libraries/pjlib/lib/libpj-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32DD177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjlib-util-i386-apple-darwin9.a"; path = "Libraries/pjlib-util/lib/libpjlib-util-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32DF17730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev-i386-apple-darwin9.a"; path = "Libraries/pjmedia/lib/libpjmedia-audiodev-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32E017730A0C002C73B6 /* libpjmedia-codec-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-codec-i386-apple-darwin9.a"; path = "Libraries/pjmedia/lib/libpjmedia-codec-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32E117730A0C002C73B6 /* libpjmedia-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-i386-apple-darwin9.a"; path = "Libraries/pjmedia/lib/libpjmedia-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32E217730A0C002C73B6 /* libpjmedia-videodev-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-videodev-i386-apple-darwin9.a"; path = "Libraries/pjmedia/lib/libpjmedia-videodev-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32E317730A0C002C73B6 /* libpjsdp-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsdp-i386-apple-darwin9.a"; path = "Libraries/pjmedia/lib/libpjsdp-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32E917730A21002C73B6 /* libpjnath-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjnath-i386-apple-darwin9.a"; path = "Libraries/pjnath/lib/libpjnath-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32EB17730A30002C73B6 /* libpjsip-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-i386-apple-darwin9.a"; path = "Libraries/pjsip/lib/libpjsip-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32EC17730A30002C73B6 /* libpjsip-simple-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-simple-i386-apple-darwin9.a"; path = "Libraries/pjsip/lib/libpjsip-simple-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32ED17730A31002C73B6 /* libpjsip-ua-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-ua-i386-apple-darwin9.a"; path = "Libraries/pjsip/lib/libpjsip-ua-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32EE17730A31002C73B6 /* libpjsua-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsua-i386-apple-darwin9.a"; path = "Libraries/pjsip/lib/libpjsua-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F317730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libg7221codec-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libg7221codec-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F417730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsmcodec-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libgsmcodec-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F517730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libilbccodec-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libilbccodec-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F617730A4F002C73B6 /* libmilenage-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmilenage-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libmilenage-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F717730A4F002C73B6 /* libresample-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libresample-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libresample-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F817730A4F002C73B6 /* libspeex-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libspeex-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libspeex-i386-apple-darwin9.a"; sourceTree = "<group>"; };
+		F84A32F917730A4F002C73B6 /* libsrtp-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsrtp-i386-apple-darwin9.a"; path = "Libraries/third_party/lib/libsrtp-i386-apple-darwin9.a"; sourceTree = "<group>"; };
 		F84CA24B174A081F000E368D /* CommonToolkitBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonToolkitBundle.bundle; sourceTree = "<group>"; };
 		F84CA24C174A081F000E368D /* Pinyin4jBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyin4jBundle.bundle; sourceTree = "<group>"; };
 		F84CA250174A0C04000E368D /* ECBaseUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECBaseUIView.h; path = AppViews/ECBaseUIView.h; sourceTree = "<group>"; };
@@ -498,6 +524,17 @@
 		F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECRegisterViewController.m; path = AppViews/System/Register/ECRegisterViewController.m; sourceTree = "<group>"; };
 		F8F656E6174E08C500803E4E /* ECRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECRegisterView.h; path = AppViews/System/Register/ECRegisterView.h; sourceTree = "<group>"; };
 		F8F656E7174E08C500803E4E /* ECRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECRegisterView.m; path = AppViews/System/Register/ECRegisterView.m; sourceTree = "<group>"; };
+		F8FEF33717742AAB00370A56 /* ECTopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECTopupView.h; path = AppViews/Settings/Topup/ECTopupView.h; sourceTree = "<group>"; };
+		F8FEF33817742AAB00370A56 /* ECTopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECTopupView.m; path = AppViews/Settings/Topup/ECTopupView.m; sourceTree = "<group>"; };
+		F8FEF33A17742AC400370A56 /* ECTopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECTopupViewController.h; path = AppViews/Settings/Topup/ECTopupViewController.h; sourceTree = "<group>"; };
+		F8FEF33B17742AC400370A56 /* ECTopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECTopupViewController.m; path = AppViews/Settings/Topup/ECTopupViewController.m; sourceTree = "<group>"; };
+		F8FEF3421774422000370A56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/uutalk_charge_card.png"; sourceTree = "<group>"; };
+		F8FEF3441774454F00370A56 /* btn_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_gray.png; path = common/btn_gray.png; sourceTree = "<group>"; };
+		F8FEF34717744DDB00370A56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "setting/zh-Hans.lproj/uutalk_charge_card@2x.png"; sourceTree = "<group>"; };
+		F8FEF3491774567800370A56 /* ECUUTalkCardChargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECUUTalkCardChargeViewController.h; path = AppViews/Settings/Topup/ECUUTalkCardChargeViewController.h; sourceTree = "<group>"; };
+		F8FEF34A1774567800370A56 /* ECUUTalkCardChargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECUUTalkCardChargeViewController.m; path = AppViews/Settings/Topup/ECUUTalkCardChargeViewController.m; sourceTree = "<group>"; };
+		F8FEF34C1774569400370A56 /* ECUUTalkCardChargeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECUUTalkCardChargeView.h; path = AppViews/Settings/Topup/ECUUTalkCardChargeView.h; sourceTree = "<group>"; };
+		F8FEF34D1774569400370A56 /* ECUUTalkCardChargeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECUUTalkCardChargeView.m; path = AppViews/Settings/Topup/ECUUTalkCardChargeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,26 +542,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84A32FA17730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a in Frameworks */,
+				F84A32FB17730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a in Frameworks */,
+				F84A32FC17730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a in Frameworks */,
+				F84A32FD17730A4F002C73B6 /* libmilenage-i386-apple-darwin9.a in Frameworks */,
+				F84A32FE17730A4F002C73B6 /* libresample-i386-apple-darwin9.a in Frameworks */,
+				F84A32FF17730A4F002C73B6 /* libspeex-i386-apple-darwin9.a in Frameworks */,
+				F84A330017730A4F002C73B6 /* libsrtp-i386-apple-darwin9.a in Frameworks */,
+				F84A32EF17730A31002C73B6 /* libpjsip-i386-apple-darwin9.a in Frameworks */,
+				F84A32F017730A31002C73B6 /* libpjsip-simple-i386-apple-darwin9.a in Frameworks */,
+				F84A32F117730A31002C73B6 /* libpjsip-ua-i386-apple-darwin9.a in Frameworks */,
+				F84A32F217730A31002C73B6 /* libpjsua-i386-apple-darwin9.a in Frameworks */,
+				F84A32EA17730A21002C73B6 /* libpjnath-i386-apple-darwin9.a in Frameworks */,
+				F84A32E417730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a in Frameworks */,
+				F84A32E517730A0C002C73B6 /* libpjmedia-codec-i386-apple-darwin9.a in Frameworks */,
+				F84A32E617730A0C002C73B6 /* libpjmedia-i386-apple-darwin9.a in Frameworks */,
+				F84A32E717730A0C002C73B6 /* libpjmedia-videodev-i386-apple-darwin9.a in Frameworks */,
+				F84A32E817730A0C002C73B6 /* libpjsdp-i386-apple-darwin9.a in Frameworks */,
+				F84A32DE177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a in Frameworks */,
+				F84A32DB177309E7002C73B6 /* libpj-i386-apple-darwin9.a in Frameworks */,
 				F84495621762DBC100EDFC6E /* AudioToolbox.framework in Frameworks */,
-				F84495541762DA6700EDFC6E /* libg7221codec-arm-apple-darwin9.a in Frameworks */,
-				F84495551762DA6700EDFC6E /* libgsmcodec-arm-apple-darwin9.a in Frameworks */,
-				F84495561762DA6700EDFC6E /* libilbccodec-arm-apple-darwin9.a in Frameworks */,
-				F84495571762DA6700EDFC6E /* libmilenage-arm-apple-darwin9.a in Frameworks */,
-				F84495581762DA6700EDFC6E /* libresample-arm-apple-darwin9.a in Frameworks */,
-				F84495591762DA6700EDFC6E /* libspeex-arm-apple-darwin9.a in Frameworks */,
-				F844955A1762DA6700EDFC6E /* libsrtp-arm-apple-darwin9.a in Frameworks */,
-				F84495501762DA5A00EDFC6E /* libpjsip-arm-apple-darwin9.a in Frameworks */,
-				F84495511762DA5A00EDFC6E /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */,
-				F84495521762DA5A00EDFC6E /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */,
-				F84495531762DA5A00EDFC6E /* libpjsua-arm-apple-darwin9.a in Frameworks */,
-				F844954F1762DA4900EDFC6E /* libpjnath-arm-apple-darwin9.a in Frameworks */,
-				F844954A1762DA3D00EDFC6E /* libpjmedia-arm-apple-darwin9.a in Frameworks */,
-				F844954B1762DA3D00EDFC6E /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */,
-				F844954C1762DA3D00EDFC6E /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */,
-				F844954D1762DA3D00EDFC6E /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */,
-				F844954E1762DA3D00EDFC6E /* libpjsdp-arm-apple-darwin9.a in Frameworks */,
-				F84495491762DA3100EDFC6E /* libpjlib-util-arm-apple-darwin9.a in Frameworks */,
-				F84495481762DA2500EDFC6E /* libpj-arm-apple-darwin9.a in Frameworks */,
 				F87AC871174B650600CA8A2B /* libicucore.dylib in Frameworks */,
 				F87AC86E174B64DA00CA8A2B /* libz.1.2.5.dylib in Frameworks */,
 				F87AC86C174B64C900CA8A2B /* libbz2.1.0.dylib in Frameworks */,
@@ -548,6 +585,8 @@
 		F80ADCAC17549DFB000B523A /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				F8FEF34617744DDB00370A56 /* uutalk_charge_card@2x.png */,
+				F8FEF3431774422000370A56 /* uutalk_charge_card.png */,
 				F80ADCAD17549E0A000B523A /* changepsw.png */,
 				F80ADCAE17549E0A000B523A /* charge.png */,
 				F80ADCAF17549E0A000B523A /* getpsw.png */,
@@ -1145,6 +1184,25 @@
 		F81B5BA71749F69F00279D32 = {
 			isa = PBXGroup;
 			children = (
+				F84A32F317730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a */,
+				F84A32F417730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a */,
+				F84A32F517730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a */,
+				F84A32F617730A4F002C73B6 /* libmilenage-i386-apple-darwin9.a */,
+				F84A32F717730A4F002C73B6 /* libresample-i386-apple-darwin9.a */,
+				F84A32F817730A4F002C73B6 /* libspeex-i386-apple-darwin9.a */,
+				F84A32F917730A4F002C73B6 /* libsrtp-i386-apple-darwin9.a */,
+				F84A32EB17730A30002C73B6 /* libpjsip-i386-apple-darwin9.a */,
+				F84A32EC17730A30002C73B6 /* libpjsip-simple-i386-apple-darwin9.a */,
+				F84A32ED17730A31002C73B6 /* libpjsip-ua-i386-apple-darwin9.a */,
+				F84A32EE17730A31002C73B6 /* libpjsua-i386-apple-darwin9.a */,
+				F84A32E917730A21002C73B6 /* libpjnath-i386-apple-darwin9.a */,
+				F84A32DF17730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a */,
+				F84A32E017730A0C002C73B6 /* libpjmedia-codec-i386-apple-darwin9.a */,
+				F84A32E117730A0C002C73B6 /* libpjmedia-i386-apple-darwin9.a */,
+				F84A32E217730A0C002C73B6 /* libpjmedia-videodev-i386-apple-darwin9.a */,
+				F84A32E317730A0C002C73B6 /* libpjsdp-i386-apple-darwin9.a */,
+				F84A32DD177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a */,
+				F84A32DA177309E7002C73B6 /* libpj-i386-apple-darwin9.a */,
 				F816ACDE1757495A007D0757 /* Libraries */,
 				F87AC859174B5E7B00CA8A2B /* CommonToolkit.framework */,
 				F84CA249174A081F000E368D /* Resources */,
@@ -1219,7 +1277,7 @@
 		F81C6D5E1761BBAB00824601 /* SipService */ = {
 			isa = PBXGroup;
 			children = (
-				F81C6D621761E06000824601 /* pjsua_app.c */,
+				F81C6D621761E06000824601 /* pjsua_app.m */,
 				F81C6D5F1761BBE400824601 /* ECSipServiceManager.h */,
 				F81C6D601761BBE400824601 /* ECSipServiceManager.m */,
 				F84495631763160400EDFC6E /* ECSipRegisterBean.h */,
@@ -1306,6 +1364,7 @@
 		F87AC851174B5AFE00CA8A2B /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F8FEF3441774454F00370A56 /* btn_gray.png */,
 				F80ADCAA17549D73000B523A /* uutalk@2x.png */,
 				F80ADCA817549D6D000B523A /* uutalk.png */,
 				F80ADCA61754953F000B523A /* into_icon.png */,
@@ -1338,6 +1397,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F8FEF33617742A7A00370A56 /* Topup */,
 				F811A65B1755D6B100FCDC0C /* MoneyGain */,
 				F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */,
 				F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */,
@@ -1378,6 +1438,21 @@
 				F8F656E7174E08C500803E4E /* ECRegisterView.m */,
 			);
 			name = Register;
+			sourceTree = "<group>";
+		};
+		F8FEF33617742A7A00370A56 /* Topup */ = {
+			isa = PBXGroup;
+			children = (
+				F8FEF33717742AAB00370A56 /* ECTopupView.h */,
+				F8FEF33817742AAB00370A56 /* ECTopupView.m */,
+				F8FEF33A17742AC400370A56 /* ECTopupViewController.h */,
+				F8FEF33B17742AC400370A56 /* ECTopupViewController.m */,
+				F8FEF3491774567800370A56 /* ECUUTalkCardChargeViewController.h */,
+				F8FEF34A1774567800370A56 /* ECUUTalkCardChargeViewController.m */,
+				F8FEF34C1774569400370A56 /* ECUUTalkCardChargeView.h */,
+				F8FEF34D1774569400370A56 /* ECUUTalkCardChargeView.m */,
+			);
+			name = Topup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1470,6 +1545,9 @@
 				F816AE4317574B4A007D0757 /* config_auto.h.in in Resources */,
 				F816AE4417574B4A007D0757 /* config_auto.h.in in Resources */,
 				F816AE5117574B4B007D0757 /* sip_autoconf.h.in in Resources */,
+				F8FEF3411774422000370A56 /* uutalk_charge_card.png in Resources */,
+				F8FEF3451774454F00370A56 /* btn_gray.png in Resources */,
+				F8FEF34817744DDB00370A56 /* uutalk_charge_card@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1496,9 +1574,13 @@
 				F811A65E1755D8A600FCDC0C /* ECMoneyGainView.m in Sources */,
 				F811A6611755D8BE00FCDC0C /* ECMoneyGainViewController.m in Sources */,
 				F81C6D611761BBE400824601 /* ECSipServiceManager.m in Sources */,
-				F81C6D631761E06000824601 /* pjsua_app.c in Sources */,
+				F81C6D631761E06000824601 /* pjsua_app.m in Sources */,
 				F84495651763160500EDFC6E /* ECSipRegisterBean.m in Sources */,
 				F8073ABE17647FAB00A1F171 /* ECDialView.m in Sources */,
+				F8FEF33917742AAB00370A56 /* ECTopupView.m in Sources */,
+				F8FEF33C17742AC400370A56 /* ECTopupViewController.m in Sources */,
+				F8FEF34B1774567900370A56 /* ECUUTalkCardChargeViewController.m in Sources */,
+				F8FEF34E1774569500370A56 /* ECUUTalkCardChargeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1519,6 +1601,23 @@
 				F81B5BDB1749F72D00279D32 /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F8FEF3431774422000370A56 /* uutalk_charge_card.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FEF3421774422000370A56 /* zh-Hans */,
+			);
+			name = uutalk_charge_card.png;
+			path = setting;
+			sourceTree = "<group>";
+		};
+		F8FEF34617744DDB00370A56 /* uutalk_charge_card@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FEF34717744DDB00370A56 /* zh-Hans */,
+			);
+			name = "uutalk_charge_card@2x.png";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

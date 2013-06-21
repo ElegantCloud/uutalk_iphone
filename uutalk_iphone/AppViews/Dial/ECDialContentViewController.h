@@ -10,4 +10,5 @@
 
 @interface ECDialContentViewController : UIViewController
 - (void)dial:(NSString *)number;
+- (void)hangup;
 @end

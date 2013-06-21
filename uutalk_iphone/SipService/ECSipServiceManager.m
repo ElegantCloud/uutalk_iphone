@@ -7,6 +7,7 @@
 //
 
 #import "ECSipServiceManager.h"
+#import "CommonToolkit/iToast.h"
 #import "pjlib.h"
 #import "pjsua.h"
 #import "ECConfig.h"
@@ -39,7 +40,7 @@ char *argv[] = {""};
     return instance;
 }
 
-- (void)initSipEngine {
+- (BOOL)initSipEngine {
     app_restart = PJ_FALSE;
     if (app_init(1, argv) == PJ_SUCCESS) {
        // init success
@@ -47,14 +48,15 @@ char *argv[] = {""};
         pj_status_t status = pjsua_start();
         if (status != PJ_SUCCESS) {
             [self sipEngineInitFailed];
-            return;
+            return NO;
         }
         
         
-        
+        return YES;
     } else {
         //TODO: init failed
         [self sipEngineInitFailed];
+        return NO;
     }
 }
 
@@ -88,5 +90,27 @@ char *argv[] = {""};
 - (void)makeCall:(NSString *)number {
     NSString *sipNumberUri = [NSString stringWithFormat:@"sip:%@@%@:%d", number, SIP_SERVER, SIP_PORT];
     make_call([sipNumberUri cStringUsingEncoding:NSUTF8StringEncoding]);
+}
+
+- (void)hangup {
+    pjsua_call_hangup_all();
+}
+
+- (void)onCallStateChange:(NSNumber *)state {
+    EC_CALL_STATE call_state = [state intValue];
+    
+    switch (call_state) {
+        case CALLING:
+            [[[iToast makeText:@"Calling"] setDuration:iToastDurationNormal] show];
+            break;
+        case CALL_ESTABLISHED:
+            [[[iToast makeText:@"Call Established"] setDuration:iToastDurationNormal] show];
+            break;
+        case CALL_DISCONNECTED:
+            [[[iToast makeText:@"Call Disconnected"] setDuration:iToastDurationNormal] show];
+            break;
+        default:
+            break;
+    }
 }
 @end

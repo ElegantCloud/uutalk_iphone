@@ -165,6 +165,10 @@ static CGFloat GAP = 6;
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToMoneyGain)]) {
             [self.viewControllerRef performSelector:@selector(jumpToMoneyGain)];
         }
+    } else if ([name isEqualToString:NSLocalizedString(@"Account Top Up", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToTopup)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToTopup)];
+        }
     }
 }
 /*

@@ -17,8 +17,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include "pjsua-lib/pjsua.h"
-
+#import <Foundation/Foundation.h>
+#import "ECSipServiceManager.h"
+#import "pjsua-lib/pjsua.h"
+#import "ECConstants.h"
 
 #define THIS_FILE	"pjsua_app.c"
 #define NO_LIMIT	(int)0x7FFFFFFF
@@ -2544,20 +2546,48 @@ static void call_timeout_callback(pj_timer_heap_t *timer_heap,
     pjsua_call_hangup(call_id, 200, NULL, &msg_data);
 }
 
+static void postCallState(pjsua_call_id call_id, pjsua_call_info *call_info) {
+    NSLog(@"## postCallState - Call %d state changed to %s", call_id, call_info->state_text.ptr);
+    ECSipServiceManager *ssm = [ECSipServiceManager shareSipServiceManager];
+    switch (call_info->state) {
+        case PJSIP_INV_STATE_CALLING:
+            [ssm performSelectorOnMainThread:@selector(onCallStateChange:) withObject:[NSNumber numberWithInt:CALLING] waitUntilDone:NO];
+            break;
+
+        case PJSIP_INV_STATE_CONNECTING:
+            [ssm performSelectorOnMainThread:@selector(onCallStateChange:) withObject:[NSNumber numberWithInt:CALL_ESTABLISHED] waitUntilDone:NO];
+
+            break;
+                        
+        case PJSIP_INV_STATE_DISCONNECTED:
+            [ssm performSelectorOnMainThread:@selector(onCallStateChange:) withObject:[NSNumber numberWithInt:CALL_DISCONNECTED] waitUntilDone:NO];
+            
+            break;
+        default:
+            break;
+    }
+    
+}
+
 
 /*
  * Handler when invite state has changed.
  */
 static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
 {
+    NSLog(@"on_call_state");
     pjsua_call_info call_info;
     
     PJ_UNUSED_ARG(e);
     
     pjsua_call_get_info(call_id, &call_info);
     
+    PJ_LOG(3,(THIS_FILE, "Call %d state changed to %s",
+              call_id,
+              call_info.state_text.ptr));
+    
     if (call_info.state == PJSIP_INV_STATE_DISCONNECTED) {
-        
+        NSLog(@"PJSIP_INV_STATE_DISCONNECTED");
         /* Stop all ringback for this call */
         ring_stop(call_id);
         
@@ -2599,6 +2629,8 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
         if (app_config.duration!=NO_LIMIT &&
             call_info.state == PJSIP_INV_STATE_CONFIRMED)
         {
+            NSLog(@"PJSIP_INV_STATE_CONFIRMED");
+            
             /* Schedule timer to hangup call after the specified duration */
             struct call_data *cd = &app_config.call_data[call_id];
             pjsip_endpoint *endpt = pjsua_get_pjsip_endpt();
@@ -2611,6 +2643,8 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
         }
         
         if (call_info.state == PJSIP_INV_STATE_EARLY) {
+            NSLog(@"PJSIP_INV_STATE_EARLY");
+            
             int code;
             pj_str_t reason;
             pjsip_msg *msg;
@@ -2648,6 +2682,11 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
             current_call = call_id;
         
     }
+    
+    if (call_info.state != PJSIP_INV_STATE_NULL)
+    {
+        postCallState(call_id, &call_info);
+    }
 }
 
 
@@ -2657,6 +2696,8 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
 static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id,
                              pjsip_rx_data *rdata)
 {
+    NSLog(@"on_incoming_call");
+    
     pjsua_call_info call_info;
     
     PJ_UNUSED_ARG(acc_id);
@@ -2712,6 +2753,7 @@ static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id,
                   call_info.remote_info.ptr,
                   call_info.local_info.ptr));
     }
+    postCallState(call_id, &call_info);
 }
 
 
@@ -2722,6 +2764,8 @@ static void on_call_tsx_state(pjsua_call_id call_id,
                               pjsip_transaction *tsx,
                               pjsip_event *e)
 {
+    NSLog(@"on_call_tsx_state");
+    
     const pjsip_method info_method =
     {
         PJSIP_OTHER_METHOD,
@@ -2807,6 +2851,7 @@ static void on_call_tsx_state(pjsua_call_id call_id,
 static void on_call_generic_media_state(pjsua_call_info *ci, unsigned mi,
                                         pj_bool_t *has_error)
 {
+    NSLog(@"on_call_generic_media_state");
     const char *status_name[] = {
         "None",
         "Active",
@@ -2829,6 +2874,7 @@ static void on_call_generic_media_state(pjsua_call_info *ci, unsigned mi,
 static void on_call_audio_state(pjsua_call_info *ci, unsigned mi,
                                 pj_bool_t *has_error)
 {
+    NSLog(@"on_call_audio_state");
     PJ_UNUSED_ARG(has_error);
     
     /* Stop ringback */
@@ -2980,6 +3026,8 @@ static void on_call_video_state(pjsua_call_info *ci, unsigned mi,
  */
 static void on_call_media_state(pjsua_call_id call_id)
 {
+    NSLog(@"on_call_media_state");
+    
     pjsua_call_info call_info;
     unsigned mi;
     pj_bool_t has_error = PJ_FALSE;
@@ -3030,6 +3078,7 @@ static void on_call_media_state(pjsua_call_id call_id)
  */
 static void call_on_dtmf_callback(pjsua_call_id call_id, int dtmf)
 {
+    NSLog(@"Incoming DTMF on call %d: %c", call_id, dtmf);
     PJ_LOG(3,(THIS_FILE, "Incoming DTMF on call %d: %c", call_id, dtmf));
 }
 
@@ -3040,6 +3089,7 @@ static pjsip_redirect_op call_on_redirected(pjsua_call_id call_id,
                                             const pjsip_uri *target,
                                             const pjsip_event *e)
 {
+    NSLog(@"call_on_redirected");
     PJ_UNUSED_ARG(e);
     
     if (app_config.redir_op == PJSIP_REDIRECT_PENDING) {
@@ -3066,6 +3116,7 @@ static pjsip_redirect_op call_on_redirected(pjsua_call_id call_id,
  */
 static void on_reg_state(pjsua_acc_id acc_id)
 {
+    NSLog(@"on_reg_state");
     PJ_UNUSED_ARG(acc_id);
     
     // Log already written.
@@ -3194,6 +3245,7 @@ static void on_call_transfer_status(pjsua_call_id call_id,
                                     pj_bool_t final,
                                     pj_bool_t *p_cont)
 {
+    NSLog(@"on_call_transfer_status");
     PJ_LOG(3,(THIS_FILE, "Call %d: transfer status=%d (%.*s) %s",
               call_id, status_code,
               (int)status_text->slen, status_text->ptr,
@@ -3215,6 +3267,7 @@ static void on_call_transfer_status(pjsua_call_id call_id,
 static void on_call_replaced(pjsua_call_id old_call_id,
                              pjsua_call_id new_call_id)
 {
+    NSLog(@"on_call_replaced");
     pjsua_call_info old_ci, new_ci;
     
     pjsua_call_get_info(old_call_id, &old_ci);
@@ -3292,6 +3345,8 @@ static void on_transport_state(pjsip_transport *tp,
         {
             PJ_LOG(3,(THIS_FILE, "SIP %s transport is connected to %s",
                       tp->type_name, host_port));
+            NSLog(@"SIP %s transport is connected to %s",
+                  tp->type_name, host_port);
         }
             break;
             
@@ -3383,11 +3438,13 @@ static void on_call_media_event(pjsua_call_id call_id,
                                 unsigned med_idx,
                                 pjmedia_event *event)
 {
+    NSLog(@"on_call_media_event");
     char event_name[5];
     
     PJ_LOG(5,(THIS_FILE, "Event %s",
               pjmedia_fourcc_name(event->type, event_name)));
-    
+    NSLog(@"Event %s",
+          pjmedia_fourcc_name(event->type, event_name));
 #if PJSUA_HAS_VIDEO
     if (event->type == PJMEDIA_EVENT_FMT_CHANGED) {
         /* Adjust renderer window size to original video size */
