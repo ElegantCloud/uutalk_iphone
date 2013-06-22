@@ -101,6 +101,7 @@
     [findPwdButton setTitleColor:[UIColor colorWithIntegerRed:0x48 integerGreen:0x76 integerBlue:0xff alpha:1] forState:UIControlStateHighlighted];
     findPwdButton.titleLabel.font = [UIFont fontWithName:CHINESE_FONT size:14];
     [findPwdButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    [findPwdButton addTarget:self action:@selector(findPwdAction) forControlEvents:UIControlEventTouchUpInside];
 
     [loginFormView addSubview:findPwdButton];
     
@@ -167,4 +168,9 @@
 
 }
 
+- (void)findPwdAction {
+    if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToFindPwdView)]) {
+        [self.viewControllerRef performSelector:@selector(jumpToFindPwdView)];
+    }
+}
 @end

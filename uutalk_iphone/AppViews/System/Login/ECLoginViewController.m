@@ -13,6 +13,8 @@
 #import "ECConstants.h"
 #import "ECMainTabController.h"
 #import "ECRegisterViewController.h"
+#import "ECFindPasswordViewController.h";
+
 @interface ECLoginViewController ()
 
 @end
@@ -133,15 +135,25 @@ login_error:
     
 }
 
-- (void)jumpToRegisterView {
-    ECRegisterViewController *regController = [[ECRegisterViewController alloc] init];
-    
+- (void)jumpToViewController:(UIViewController *)viewCtrl {
     [UIView beginAnimations:@"animationID" context:nil];
     [UIView setAnimationDuration:0.4f];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationRepeatAutoreverses:NO];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:YES];
-    [self.navigationController pushViewController:regController animated:NO];
+    [self.navigationController pushViewController:viewCtrl animated:NO];
     [UIView commitAnimations];
-  }
+}
+
+- (void)jumpToRegisterView {
+    ECRegisterViewController *regController = [[ECRegisterViewController alloc] init];
+    
+    [self jumpToViewController:regController];
+}
+
+- (void)jumpToFindPwdView {
+    ECFindPasswordViewController *viewCtrl = [[ECFindPasswordViewController alloc] init];
+    [viewCtrl setFromSetting:NO];
+    [self jumpToViewController:viewCtrl];
+}
 @end

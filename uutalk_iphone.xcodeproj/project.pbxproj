@@ -88,6 +88,10 @@
 		F8C973C5174C75450066F37E /* btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C4174C75450066F37E /* btn_green.png */; };
 		F8C973C9174CA5EA0066F37E /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C8174CA5EA0066F37E /* lock.png */; };
 		F8DCB9E417530E4A00DF8C78 /* btn_dark_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */; };
+		F8E0199D1775435400DF9AA1 /* ECModifyPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */; };
+		F8E019A01775436B00DF9AA1 /* ECModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199F1775436B00DF9AA1 /* ECModifyPasswordViewController.m */; };
+		F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */; };
+		F8E019A717759CCF00DF9AA1 /* ECFindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A617759CCF00DF9AA1 /* ECFindPasswordView.m */; };
 		F8F656CF174DF73200803E4E /* ECMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656CE174DF73200803E4E /* ECMainTabController.m */; };
 		F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */; };
 		F8F656D7174DFB4900803E4E /* tab_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656D6174DFB4900803E4E /* tab_more@2x.png */; };
@@ -510,6 +514,14 @@
 		F8C973C4174C75450066F37E /* btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_green.png; path = common/btn_green.png; sourceTree = "<group>"; };
 		F8C973C8174CA5EA0066F37E /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = login/lock.png; sourceTree = "<group>"; };
 		F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_dark_green.png; path = common/btn_dark_green.png; sourceTree = "<group>"; };
+		F8E0199B1775435400DF9AA1 /* ECModifyPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordView.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.h; sourceTree = "<group>"; };
+		F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECModifyPasswordView.m; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.m; sourceTree = "<group>"; };
+		F8E0199E1775436B00DF9AA1 /* ECModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordViewController.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordViewController.h; sourceTree = "<group>"; };
+		F8E0199F1775436B00DF9AA1 /* ECModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECModifyPasswordViewController.m; path = AppViews/Settings/ModifyPassword/ECModifyPasswordViewController.m; sourceTree = "<group>"; };
+		F8E019A217759CB800DF9AA1 /* ECFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECFindPasswordViewController.h; path = AppViews/System/FindPassword/ECFindPasswordViewController.h; sourceTree = "<group>"; };
+		F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECFindPasswordViewController.m; path = AppViews/System/FindPassword/ECFindPasswordViewController.m; sourceTree = "<group>"; };
+		F8E019A517759CCF00DF9AA1 /* ECFindPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECFindPasswordView.h; path = AppViews/System/FindPassword/ECFindPasswordView.h; sourceTree = "<group>"; };
+		F8E019A617759CCF00DF9AA1 /* ECFindPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECFindPasswordView.m; path = AppViews/System/FindPassword/ECFindPasswordView.m; sourceTree = "<group>"; };
 		F8F656CD174DF73200803E4E /* ECMainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECMainTabController.h; path = AppViews/MainPage/ECMainTabController.h; sourceTree = "<group>"; };
 		F8F656CE174DF73200803E4E /* ECMainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECMainTabController.m; path = AppViews/MainPage/ECMainTabController.m; sourceTree = "<group>"; };
 		F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSettingViewController.h; path = AppViews/Settings/ECSettingViewController.h; sourceTree = "<group>"; };
@@ -528,7 +540,7 @@
 		F8FEF33817742AAB00370A56 /* ECTopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECTopupView.m; path = AppViews/Settings/Topup/ECTopupView.m; sourceTree = "<group>"; };
 		F8FEF33A17742AC400370A56 /* ECTopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECTopupViewController.h; path = AppViews/Settings/Topup/ECTopupViewController.h; sourceTree = "<group>"; };
 		F8FEF33B17742AC400370A56 /* ECTopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECTopupViewController.m; path = AppViews/Settings/Topup/ECTopupViewController.m; sourceTree = "<group>"; };
-		F8FEF3421774422000370A56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/uutalk_charge_card.png"; sourceTree = "<group>"; };
+		F8FEF3421774422000370A56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/uutalk_charge_card.png"; sourceTree = "<group>"; };
 		F8FEF3441774454F00370A56 /* btn_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_gray.png; path = common/btn_gray.png; sourceTree = "<group>"; };
 		F8FEF34717744DDB00370A56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "setting/zh-Hans.lproj/uutalk_charge_card@2x.png"; sourceTree = "<group>"; };
 		F8FEF3491774567800370A56 /* ECUUTalkCardChargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECUUTalkCardChargeViewController.h; path = AppViews/Settings/Topup/ECUUTalkCardChargeViewController.h; sourceTree = "<group>"; };
@@ -1343,6 +1355,7 @@
 		F87AC848174B500A00CA8A2B /* System */ = {
 			isa = PBXGroup;
 			children = (
+				F8E019A117759C9000DF9AA1 /* FindPassword */,
 				F8F656E2174E083900803E4E /* Register */,
 				F877815C174CB99100B9909D /* User */,
 				F87AC84A174B501200CA8A2B /* Login */,
@@ -1385,6 +1398,28 @@
 			name = login;
 			sourceTree = "<group>";
 		};
+		F8E0199A1775432300DF9AA1 /* ModifyPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0199B1775435400DF9AA1 /* ECModifyPasswordView.h */,
+				F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */,
+				F8E0199E1775436B00DF9AA1 /* ECModifyPasswordViewController.h */,
+				F8E0199F1775436B00DF9AA1 /* ECModifyPasswordViewController.m */,
+			);
+			name = ModifyPassword;
+			sourceTree = "<group>";
+		};
+		F8E019A117759C9000DF9AA1 /* FindPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F8E019A217759CB800DF9AA1 /* ECFindPasswordViewController.h */,
+				F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */,
+				F8E019A517759CCF00DF9AA1 /* ECFindPasswordView.h */,
+				F8E019A617759CCF00DF9AA1 /* ECFindPasswordView.m */,
+			);
+			name = FindPassword;
+			sourceTree = "<group>";
+		};
 		F8F656CB174DF6B400803E4E /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1397,6 +1432,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F8E0199A1775432300DF9AA1 /* ModifyPassword */,
 				F8FEF33617742A7A00370A56 /* Topup */,
 				F811A65B1755D6B100FCDC0C /* MoneyGain */,
 				F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */,
@@ -1581,6 +1617,10 @@
 				F8FEF33C17742AC400370A56 /* ECTopupViewController.m in Sources */,
 				F8FEF34B1774567900370A56 /* ECUUTalkCardChargeViewController.m in Sources */,
 				F8FEF34E1774569500370A56 /* ECUUTalkCardChargeView.m in Sources */,
+				F8E0199D1775435400DF9AA1 /* ECModifyPasswordView.m in Sources */,
+				F8E019A01775436B00DF9AA1 /* ECModifyPasswordViewController.m in Sources */,
+				F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */,
+				F8E019A717759CCF00DF9AA1 /* ECFindPasswordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

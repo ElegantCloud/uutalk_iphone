@@ -11,6 +11,8 @@
 #import "ECSettingView.h"
 #import "ECMoneyGainViewController.h"
 #import "ECTopupViewController.h"
+#import "ECModifyPasswordViewController.h"
+#import "ECFindPasswordViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -57,5 +59,16 @@
 - (void)jumpToTopup {
     UIViewController *topupController = [[ECTopupViewController alloc] init];
     [self jumpToViewController:topupController];
+}
+
+- (void)jumpToModifyPassword {
+    UIViewController *viewCtrl = [[ECModifyPasswordViewController alloc] init];
+    [self jumpToViewController:viewCtrl];
+}
+
+- (void)jumpToFindPassword {
+    ECFindPasswordViewController *viewCtrl = [[ECFindPasswordViewController alloc] init];
+    [viewCtrl setFromSetting:YES];
+    [self jumpToViewController:viewCtrl];
 }
 @end

@@ -169,6 +169,14 @@ static CGFloat GAP = 6;
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToTopup)]) {
             [self.viewControllerRef performSelector:@selector(jumpToTopup)];
         }
+    } else if ([name isEqualToString:NSLocalizedString(@"Password Reset", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToModifyPassword)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToModifyPassword)];
+        }
+    } else if ([name isEqualToString:NSLocalizedString(@"Find Password", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToFindPassword)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToFindPassword)];
+        }
     }
 }
 /*

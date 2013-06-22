@@ -13,4 +13,5 @@
 
 - (void)login;
 - (void)jumpToRegisterView;
+- (void)jumpToFindPwdView;
 @end

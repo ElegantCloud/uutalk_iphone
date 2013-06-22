@@ -13,6 +13,7 @@
 "UU-Talk Alert" = "悠聊提示";
 "Fail to init phone engine, need exit." = "电话引擎初始化失败，请退出。";
 "OK" = "好";
+"Processing" = "处理中…";
 
 // Login related
 "Welcome to use uutalk" = "欢迎使用悠聊";
@@ -106,3 +107,18 @@
 "charge_failed_invalid_card_number" = "充值失败，卡号或密码不正确！";
 "card_already_used" = "对不起，充值卡已被使用！";
 "charge_failed" = "充值操作失败，请稍后重试！";
+
+// Modify Password
+"Modify" = "修改";
+"Please input old password" = "请输入旧密码";
+"Please input new password" = "请输入新密码";
+"Please input confirmation password" = "请再次输入新密码";
+"Confirmation Password is different with new password" = "两次新密码不一致";
+"Password is changed!" = "密码修改成功！";
+"auth_not_pass" = "原有密码输入错误";
+"new_psw_error" = "新密码为空，或者两次输入不一致";
+"server_error" = "服务器出错，请重试";
+
+// Find Password
+"phone_number_not_exist" = "手机号码不存在！";
+"Find Password Successfully, login in login page" = "新的密码将会通过短信发送给你，请用新密码登录，登录后请自行修改密码";

@@ -12,4 +12,6 @@
 
 - (void)jumpToMoneyGain;
 - (void)jumpToTopup;
+- (void)jumpToModifyPassword;
+- (void)jumpToFindPassword;
 @end

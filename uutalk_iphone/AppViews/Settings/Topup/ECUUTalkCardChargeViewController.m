@@ -45,7 +45,7 @@
     NSString *cardPassword = [cardInfo objectForKey:@"cardPassword"];
     UserBean *user = [[UserManager shareUserManager] userBean];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:cardNumber, @"pin", cardPassword, @"password", user.countryCode, COUNTRYCODE, nil];
-    [HttpUtil postSignatureRequestWithUrl:CARD_CHARGE_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:asynchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedTopup:) andFailedRespSelector:nil];
+    [HttpUtil postSignatureRequestWithUrl:CARD_CHARGE_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedTopup:) andFailedRespSelector:nil];
     
     
 }
