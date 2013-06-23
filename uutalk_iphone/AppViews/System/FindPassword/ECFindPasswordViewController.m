@@ -66,7 +66,10 @@
         case 201: {
             RIButtonItem *okItem = [RIButtonItem item];
             okItem.label = NSLocalizedString(@"OK", "");
-            okItem.action = ^{[self.navigationController popViewControllerAnimated:YES];};
+            okItem.action = ^{
+                ECFindPasswordView *view = (ECFindPasswordView*)self.view;
+                [view onBackAction];
+            };
             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"UU-Talk Alert", "") message:NSLocalizedString(@"Find Password Successfully, login in login page", "") cancelButtonItem:okItem otherButtonItems:nil, nil] show];
         }
             break;

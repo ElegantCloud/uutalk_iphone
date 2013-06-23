@@ -173,9 +173,13 @@ static CGFloat GAP = 6;
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToModifyPassword)]) {
             [self.viewControllerRef performSelector:@selector(jumpToModifyPassword)];
         }
-    } else if ([name isEqualToString:NSLocalizedString(@"Find Password", "")]) {
-        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToFindPassword)]) {
-            [self.viewControllerRef performSelector:@selector(jumpToFindPassword)];
+    } else if ([name isEqualToString:NSLocalizedString(@"Sign Out", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(signOut)]) {
+            [self.viewControllerRef performSelector:@selector(signOut)];
+        }
+    } else if ([name isEqualToString:NSLocalizedString(@"Balance Query", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToBalanceQuery)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToBalanceQuery)];
         }
     }
 }

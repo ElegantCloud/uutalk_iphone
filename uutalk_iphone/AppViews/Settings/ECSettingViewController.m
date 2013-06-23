@@ -13,6 +13,8 @@
 #import "ECTopupViewController.h"
 #import "ECModifyPasswordViewController.h"
 #import "ECFindPasswordViewController.h"
+#import "ECConstants.h"
+#import "ECBalanceQueryViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -69,6 +71,33 @@
 - (void)jumpToFindPassword {
     ECFindPasswordViewController *viewCtrl = [[ECFindPasswordViewController alloc] init];
     [viewCtrl setFromSetting:YES];
+    [self jumpToViewController:viewCtrl];
+}
+
+- (void)signOut {
+    RIButtonItem *okItem = [RIButtonItem item];
+    okItem.label = NSLocalizedString(@"OK", "");
+    okItem.action = ^{
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:nil forKey:USERNAME];
+        [userDefaults setObject:nil forKey:PASSWORD];
+        [userDefaults setObject:nil forKey:VOSPHONE];
+        [userDefaults setObject:nil forKey:VOSPHONE_PWD];
+        [userDefaults setObject:nil forKey:USERKEY];
+        [userDefaults setObject:nil forKey:COUNTRYCODE];
+        [userDefaults setObject:nil forKey:DEFAULT_DIAL_COUNTRY_CODE];
+        [userDefaults setObject:nil forKey:CALLBACK_PHONE_NUMBER];
+        [userDefaults setObject:nil forKey:CALLBACK_PHONE_NUMBER_COUNTRY_CODE];
+        
+        exit(0);
+    };
+    RIButtonItem *cancelItem = [RIButtonItem item];
+    cancelItem.label = NSLocalizedString(@"Cancel", "");
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"UU-Talk Alert", "") message:NSLocalizedString(@"Click OK to logout and exit", "") cancelButtonItem:okItem otherButtonItems:cancelItem, nil] show];
+}
+
+- (void)jumpToBalanceQuery {
+    ECBalanceQueryViewController *viewCtrl = [[ECBalanceQueryViewController alloc] init];
     [self jumpToViewController:viewCtrl];
 }
 @end

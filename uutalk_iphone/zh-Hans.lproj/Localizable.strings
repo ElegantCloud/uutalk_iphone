@@ -10,6 +10,7 @@
 // Common
 "Back" = "返回";
 "Exit" = "退出";
+"Cancel" = "取消";
 "UU-Talk Alert" = "悠聊提示";
 "Fail to init phone engine, need exit." = "电话引擎初始化失败，请退出。";
 "OK" = "好";
@@ -89,6 +90,7 @@
 "Callback Number Setting" = "回拨号码设置";
 "Login Setting" = "登录设置";
 "About" = "关于我们";
+"Click OK to logout and exit" = "确定注销登录并退出吗？";
 
 // Money Gain
 "Plese Choose Share Method" = "请选择分享方式";
@@ -121,4 +123,10 @@
 
 // Find Password
 "phone_number_not_exist" = "手机号码不存在！";
-"Find Password Successfully, login in login page" = "新的密码将会通过短信发送给你，请用新密码登录，登录后请自行修改密码";
+"Find Password Successfully, login in login page" = "新的密码将会通过短信发送给你，请使用新密码登录，登录后请自行修改密码";
+
+// Balance Query
+"Country Code:" = "国家代码：";
+"Mobile:" = "手机号：";
+"Querying balance…" = "余额查询中…";
+"Fail to query" = "查询失败";

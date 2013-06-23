@@ -14,4 +14,6 @@
 - (void)jumpToTopup;
 - (void)jumpToModifyPassword;
 - (void)jumpToFindPassword;
+- (void)signOut;
+- (void)jumpToBalanceQuery;
 @end

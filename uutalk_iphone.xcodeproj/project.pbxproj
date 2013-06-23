@@ -88,6 +88,8 @@
 		F8C973C5174C75450066F37E /* btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C4174C75450066F37E /* btn_green.png */; };
 		F8C973C9174CA5EA0066F37E /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C8174CA5EA0066F37E /* lock.png */; };
 		F8DCB9E417530E4A00DF8C78 /* btn_dark_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */; };
+		F8DF65D31776D4030067AB3E /* ECBalanceQueryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */; };
+		F8DF65D61776D4160067AB3E /* ECBalanceQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D51776D4160067AB3E /* ECBalanceQueryViewController.m */; };
 		F8E0199D1775435400DF9AA1 /* ECModifyPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */; };
 		F8E019A01775436B00DF9AA1 /* ECModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199F1775436B00DF9AA1 /* ECModifyPasswordViewController.m */; };
 		F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */; };
@@ -514,6 +516,10 @@
 		F8C973C4174C75450066F37E /* btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_green.png; path = common/btn_green.png; sourceTree = "<group>"; };
 		F8C973C8174CA5EA0066F37E /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = login/lock.png; sourceTree = "<group>"; };
 		F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_dark_green.png; path = common/btn_dark_green.png; sourceTree = "<group>"; };
+		F8DF65D11776D4030067AB3E /* ECBalanceQueryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECBalanceQueryView.h; path = AppViews/Settings/BalanceQuery/ECBalanceQueryView.h; sourceTree = "<group>"; };
+		F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBalanceQueryView.m; path = AppViews/Settings/BalanceQuery/ECBalanceQueryView.m; sourceTree = "<group>"; };
+		F8DF65D41776D4160067AB3E /* ECBalanceQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECBalanceQueryViewController.h; path = AppViews/Settings/BalanceQuery/ECBalanceQueryViewController.h; sourceTree = "<group>"; };
+		F8DF65D51776D4160067AB3E /* ECBalanceQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBalanceQueryViewController.m; path = AppViews/Settings/BalanceQuery/ECBalanceQueryViewController.m; sourceTree = "<group>"; };
 		F8E0199B1775435400DF9AA1 /* ECModifyPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordView.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.h; sourceTree = "<group>"; };
 		F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECModifyPasswordView.m; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.m; sourceTree = "<group>"; };
 		F8E0199E1775436B00DF9AA1 /* ECModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordViewController.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordViewController.h; sourceTree = "<group>"; };
@@ -1398,6 +1404,17 @@
 			name = login;
 			sourceTree = "<group>";
 		};
+		F8DF65D01776D3D60067AB3E /* BalanceQuery */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF65D11776D4030067AB3E /* ECBalanceQueryView.h */,
+				F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */,
+				F8DF65D41776D4160067AB3E /* ECBalanceQueryViewController.h */,
+				F8DF65D51776D4160067AB3E /* ECBalanceQueryViewController.m */,
+			);
+			name = BalanceQuery;
+			sourceTree = "<group>";
+		};
 		F8E0199A1775432300DF9AA1 /* ModifyPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -1432,6 +1449,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F8DF65D01776D3D60067AB3E /* BalanceQuery */,
 				F8E0199A1775432300DF9AA1 /* ModifyPassword */,
 				F8FEF33617742A7A00370A56 /* Topup */,
 				F811A65B1755D6B100FCDC0C /* MoneyGain */,
@@ -1621,6 +1639,8 @@
 				F8E019A01775436B00DF9AA1 /* ECModifyPasswordViewController.m in Sources */,
 				F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */,
 				F8E019A717759CCF00DF9AA1 /* ECFindPasswordView.m in Sources */,
+				F8DF65D31776D4030067AB3E /* ECBalanceQueryView.m in Sources */,
+				F8DF65D61776D4160067AB3E /* ECBalanceQueryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
