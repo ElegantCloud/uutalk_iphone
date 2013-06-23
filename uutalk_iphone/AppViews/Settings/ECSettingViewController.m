@@ -15,6 +15,7 @@
 #import "ECFindPasswordViewController.h"
 #import "ECConstants.h"
 #import "ECBalanceQueryViewController.h"
+#import "ECAboutViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -98,6 +99,11 @@
 
 - (void)jumpToBalanceQuery {
     ECBalanceQueryViewController *viewCtrl = [[ECBalanceQueryViewController alloc] init];
+    [self jumpToViewController:viewCtrl];
+}
+
+- (void)jumpToAbout {
+    ECAboutViewController *viewCtrl = [[ECAboutViewController alloc] init];
     [self jumpToViewController:viewCtrl];
 }
 @end

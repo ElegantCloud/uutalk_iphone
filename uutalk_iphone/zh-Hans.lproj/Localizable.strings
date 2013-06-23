@@ -130,3 +130,9 @@
 "Mobile:" = "手机号：";
 "Querying balance…" = "余额查询中…";
 "Fail to query" = "查询失败";
+
+// About
+"product_description" = "简单强大便宜的电话软件";
+"Version:" = "版本号:";
+"Service QQ info" = "客服QQ\n1622122511";
+"about paragraph" = "网址\nhttp://www.uu-talk.com\n\n版权所有\n（香港）悠聊科技有限公司";

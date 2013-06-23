@@ -90,6 +90,10 @@
 		F8DCB9E417530E4A00DF8C78 /* btn_dark_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */; };
 		F8DF65D31776D4030067AB3E /* ECBalanceQueryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */; };
 		F8DF65D61776D4160067AB3E /* ECBalanceQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D51776D4160067AB3E /* ECBalanceQueryViewController.m */; };
+		F8DF65DC1776E5CD0067AB3E /* ECAboutUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D91776E5CD0067AB3E /* ECAboutUIView.m */; };
+		F8DF65DD1776E5CD0067AB3E /* ECAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65DB1776E5CD0067AB3E /* ECAboutViewController.m */; };
+		F8DF65E01776EC480067AB3E /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DF65DE1776EC480067AB3E /* phone.png */; };
+		F8DF65E11776EC480067AB3E /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DF65DF1776EC480067AB3E /* phone@2x.png */; };
 		F8E0199D1775435400DF9AA1 /* ECModifyPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */; };
 		F8E019A01775436B00DF9AA1 /* ECModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199F1775436B00DF9AA1 /* ECModifyPasswordViewController.m */; };
 		F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */; };
@@ -520,6 +524,12 @@
 		F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBalanceQueryView.m; path = AppViews/Settings/BalanceQuery/ECBalanceQueryView.m; sourceTree = "<group>"; };
 		F8DF65D41776D4160067AB3E /* ECBalanceQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECBalanceQueryViewController.h; path = AppViews/Settings/BalanceQuery/ECBalanceQueryViewController.h; sourceTree = "<group>"; };
 		F8DF65D51776D4160067AB3E /* ECBalanceQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBalanceQueryViewController.m; path = AppViews/Settings/BalanceQuery/ECBalanceQueryViewController.m; sourceTree = "<group>"; };
+		F8DF65D81776E5CD0067AB3E /* ECAboutUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECAboutUIView.h; path = AppViews/Settings/About/ECAboutUIView.h; sourceTree = "<group>"; };
+		F8DF65D91776E5CD0067AB3E /* ECAboutUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECAboutUIView.m; path = AppViews/Settings/About/ECAboutUIView.m; sourceTree = "<group>"; };
+		F8DF65DA1776E5CD0067AB3E /* ECAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECAboutViewController.h; path = AppViews/Settings/About/ECAboutViewController.h; sourceTree = "<group>"; };
+		F8DF65DB1776E5CD0067AB3E /* ECAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECAboutViewController.m; path = AppViews/Settings/About/ECAboutViewController.m; sourceTree = "<group>"; };
+		F8DF65DE1776EC480067AB3E /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = setting/phone.png; sourceTree = "<group>"; };
+		F8DF65DF1776EC480067AB3E /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone@2x.png"; path = "setting/phone@2x.png"; sourceTree = "<group>"; };
 		F8E0199B1775435400DF9AA1 /* ECModifyPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordView.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.h; sourceTree = "<group>"; };
 		F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECModifyPasswordView.m; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.m; sourceTree = "<group>"; };
 		F8E0199E1775436B00DF9AA1 /* ECModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordViewController.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordViewController.h; sourceTree = "<group>"; };
@@ -603,6 +613,8 @@
 		F80ADCAC17549DFB000B523A /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				F8DF65DE1776EC480067AB3E /* phone.png */,
+				F8DF65DF1776EC480067AB3E /* phone@2x.png */,
 				F8FEF34617744DDB00370A56 /* uutalk_charge_card@2x.png */,
 				F8FEF3431774422000370A56 /* uutalk_charge_card.png */,
 				F80ADCAD17549E0A000B523A /* changepsw.png */,
@@ -1415,6 +1427,17 @@
 			name = BalanceQuery;
 			sourceTree = "<group>";
 		};
+		F8DF65D71776E57C0067AB3E /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF65D81776E5CD0067AB3E /* ECAboutUIView.h */,
+				F8DF65D91776E5CD0067AB3E /* ECAboutUIView.m */,
+				F8DF65DA1776E5CD0067AB3E /* ECAboutViewController.h */,
+				F8DF65DB1776E5CD0067AB3E /* ECAboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		F8E0199A1775432300DF9AA1 /* ModifyPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,6 +1472,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F8DF65D71776E57C0067AB3E /* About */,
 				F8DF65D01776D3D60067AB3E /* BalanceQuery */,
 				F8E0199A1775432300DF9AA1 /* ModifyPassword */,
 				F8FEF33617742A7A00370A56 /* Topup */,
@@ -1602,6 +1626,8 @@
 				F8FEF3411774422000370A56 /* uutalk_charge_card.png in Resources */,
 				F8FEF3451774454F00370A56 /* btn_gray.png in Resources */,
 				F8FEF34817744DDB00370A56 /* uutalk_charge_card@2x.png in Resources */,
+				F8DF65E01776EC480067AB3E /* phone.png in Resources */,
+				F8DF65E11776EC480067AB3E /* phone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1641,6 +1667,8 @@
 				F8E019A717759CCF00DF9AA1 /* ECFindPasswordView.m in Sources */,
 				F8DF65D31776D4030067AB3E /* ECBalanceQueryView.m in Sources */,
 				F8DF65D61776D4160067AB3E /* ECBalanceQueryViewController.m in Sources */,
+				F8DF65DC1776E5CD0067AB3E /* ECAboutUIView.m in Sources */,
+				F8DF65DD1776E5CD0067AB3E /* ECAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
