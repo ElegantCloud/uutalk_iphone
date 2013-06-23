@@ -94,6 +94,8 @@
 		F8DF65DD1776E5CD0067AB3E /* ECAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65DB1776E5CD0067AB3E /* ECAboutViewController.m */; };
 		F8DF65E01776EC480067AB3E /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DF65DE1776EC480067AB3E /* phone.png */; };
 		F8DF65E11776EC480067AB3E /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DF65DF1776EC480067AB3E /* phone@2x.png */; };
+		F8DF65E51776F6BA0067AB3E /* ECCallbackNumberSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65E41776F6BA0067AB3E /* ECCallbackNumberSetViewController.m */; };
+		F8DF65E81776F6D90067AB3E /* ECCallbackNumberSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65E71776F6D90067AB3E /* ECCallbackNumberSetView.m */; };
 		F8E0199D1775435400DF9AA1 /* ECModifyPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */; };
 		F8E019A01775436B00DF9AA1 /* ECModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E0199F1775436B00DF9AA1 /* ECModifyPasswordViewController.m */; };
 		F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */; };
@@ -530,6 +532,10 @@
 		F8DF65DB1776E5CD0067AB3E /* ECAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECAboutViewController.m; path = AppViews/Settings/About/ECAboutViewController.m; sourceTree = "<group>"; };
 		F8DF65DE1776EC480067AB3E /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = setting/phone.png; sourceTree = "<group>"; };
 		F8DF65DF1776EC480067AB3E /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone@2x.png"; path = "setting/phone@2x.png"; sourceTree = "<group>"; };
+		F8DF65E31776F6BA0067AB3E /* ECCallbackNumberSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECCallbackNumberSetViewController.h; path = AppViews/Settings/SetCallbackNumber/ECCallbackNumberSetViewController.h; sourceTree = "<group>"; };
+		F8DF65E41776F6BA0067AB3E /* ECCallbackNumberSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECCallbackNumberSetViewController.m; path = AppViews/Settings/SetCallbackNumber/ECCallbackNumberSetViewController.m; sourceTree = "<group>"; };
+		F8DF65E61776F6D90067AB3E /* ECCallbackNumberSetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECCallbackNumberSetView.h; path = AppViews/Settings/SetCallbackNumber/ECCallbackNumberSetView.h; sourceTree = "<group>"; };
+		F8DF65E71776F6D90067AB3E /* ECCallbackNumberSetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECCallbackNumberSetView.m; path = AppViews/Settings/SetCallbackNumber/ECCallbackNumberSetView.m; sourceTree = "<group>"; };
 		F8E0199B1775435400DF9AA1 /* ECModifyPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordView.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.h; sourceTree = "<group>"; };
 		F8E0199C1775435400DF9AA1 /* ECModifyPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECModifyPasswordView.m; path = AppViews/Settings/ModifyPassword/ECModifyPasswordView.m; sourceTree = "<group>"; };
 		F8E0199E1775436B00DF9AA1 /* ECModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECModifyPasswordViewController.h; path = AppViews/Settings/ModifyPassword/ECModifyPasswordViewController.h; sourceTree = "<group>"; };
@@ -1438,6 +1444,17 @@
 			name = About;
 			sourceTree = "<group>";
 		};
+		F8DF65E21776F68F0067AB3E /* SetCallbackNumber */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF65E31776F6BA0067AB3E /* ECCallbackNumberSetViewController.h */,
+				F8DF65E41776F6BA0067AB3E /* ECCallbackNumberSetViewController.m */,
+				F8DF65E61776F6D90067AB3E /* ECCallbackNumberSetView.h */,
+				F8DF65E71776F6D90067AB3E /* ECCallbackNumberSetView.m */,
+			);
+			name = SetCallbackNumber;
+			sourceTree = "<group>";
+		};
 		F8E0199A1775432300DF9AA1 /* ModifyPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -1472,6 +1489,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F8DF65E21776F68F0067AB3E /* SetCallbackNumber */,
 				F8DF65D71776E57C0067AB3E /* About */,
 				F8DF65D01776D3D60067AB3E /* BalanceQuery */,
 				F8E0199A1775432300DF9AA1 /* ModifyPassword */,
@@ -1669,6 +1687,8 @@
 				F8DF65D61776D4160067AB3E /* ECBalanceQueryViewController.m in Sources */,
 				F8DF65DC1776E5CD0067AB3E /* ECAboutUIView.m in Sources */,
 				F8DF65DD1776E5CD0067AB3E /* ECAboutViewController.m in Sources */,
+				F8DF65E51776F6BA0067AB3E /* ECCallbackNumberSetViewController.m in Sources */,
+				F8DF65E81776F6D90067AB3E /* ECCallbackNumberSetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

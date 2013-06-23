@@ -17,4 +17,5 @@
 - (void)signOut;
 - (void)jumpToBalanceQuery;
 - (void)jumpToAbout;
+- (void)jumpToCallbackNumberSet;
 @end

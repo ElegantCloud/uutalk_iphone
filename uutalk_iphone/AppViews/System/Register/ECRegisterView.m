@@ -55,7 +55,7 @@
     labelView.backgroundColor = [UIColor clearColor];
     
     UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
-    label1.textAlignment = NSTextAlignmentLeft;
+    label1.textAlignment = UITextAlignmentLeft;
     label1.textColor = [UIColor blackColor];
     label1.font = [UIFont fontWithName:CHINESE_FONT size:26];
     label1.text = preTitle;
@@ -65,7 +65,7 @@
     UILabel *stepLabel = [self makeLabel:text frame:CGRectMake(labelView.frame.size.width - 200, 14, 200, 22)];
     stepLabel.font = [UIFont fontWithName:CHINESE_FONT size:13];
     stepLabel.textColor = [UIColor colorWithIntegerRed:94 integerGreen:109 integerBlue:122 alpha:1];
-    stepLabel.textAlignment = NSTextAlignmentRight;
+    stepLabel.textAlignment = UITextAlignmentRight;
     [labelView addSubview:stepLabel];
     return labelView;
 }
@@ -91,8 +91,8 @@
     getValidateCodeButton.frame = CGRectMake((_mStep1View.frame.size.width - BUTTON_WIDTH) / 2, _mUserNameInput.frame.origin.y + _mUserNameInput.frame.size.height + GAP, BUTTON_WIDTH, BUTTON_HEIGHT);
     getValidateCodeButton.titleLabel.font = [UIFont fontWithName:CHINESE_BOLD_FONT size:16.0];
     [getValidateCodeButton setTitle:NSLocalizedString(@"get validate code", "get validate code button string") forState:UIControlStateNormal];
-    [getValidateCodeButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
-    [getValidateCodeButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
+    [getValidateCodeButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateNormal];
+    [getValidateCodeButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateHighlighted];
     [getValidateCodeButton addTarget:self action:@selector(getValidationCodeAction) forControlEvents:UIControlEventTouchUpInside];
     [_mStep1View addSubview:getValidateCodeButton];
     
@@ -118,8 +118,8 @@
     nextButton.frame = getValidateCodeButton.frame;
     nextButton.titleLabel.font = [UIFont fontWithName:CHINESE_BOLD_FONT size:16.0];
     [nextButton setTitle:NSLocalizedString(@"Next", "next step") forState:UIControlStateNormal];
-    [nextButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
-    [nextButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
+    [nextButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateNormal];
+    [nextButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateHighlighted];
     [nextButton addTarget:self action:@selector(verifyCodeAction) forControlEvents:UIControlEventTouchUpInside];
     [_mStep2View addSubview:nextButton];
     
@@ -141,8 +141,8 @@
     finishButton.frame = CGRectMake((_mStep3View.frame.size.width - BUTTON_WIDTH) / 2, _mPwdConfirmInput.frame.origin.y + _mPwdConfirmInput.frame.size.height + 8, BUTTON_WIDTH, BUTTON_HEIGHT);
     finishButton.titleLabel.font = nextButton.titleLabel.font;
     [finishButton setTitle:NSLocalizedString(@"Finish Register", nil) forState:UIControlStateNormal];
-    [finishButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
-    [finishButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
+    [finishButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateNormal];
+    [finishButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateHighlighted];
     [finishButton addTarget:self action:@selector(finishRegistrationAction) forControlEvents:UIControlEventTouchUpInside];
     [_mStep3View addSubview:finishButton];
     

@@ -37,4 +37,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)callService {
+    
+}
 @end

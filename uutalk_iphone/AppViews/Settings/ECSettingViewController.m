@@ -16,6 +16,7 @@
 #import "ECConstants.h"
 #import "ECBalanceQueryViewController.h"
 #import "ECAboutViewController.h"
+#import "ECCallbackNumberSetViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -104,6 +105,11 @@
 
 - (void)jumpToAbout {
     ECAboutViewController *viewCtrl = [[ECAboutViewController alloc] init];
+    [self jumpToViewController:viewCtrl];
+}
+
+- (void)jumpToCallbackNumberSet {
+    ECCallbackNumberSetViewController *viewCtrl = [[ECCallbackNumberSetViewController alloc] init];
     [self jumpToViewController:viewCtrl];
 }
 @end

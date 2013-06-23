@@ -33,7 +33,7 @@ static CGFloat GAP = 6;
         
         _nameView = [[UILabel alloc] initWithFrame:CGRectMake(_iconView.frame.origin.x + _iconView.frame.size.width + GAP, (CellHeight - NameHeight) / 2, NameWidth, NameHeight)];
         _nameView.text = itemName;
-        _nameView.textAlignment = NSTextAlignmentLeft;
+        _nameView.textAlignment = UITextAlignmentLeft;
         _nameView.textColor = [UIColor blackColor];
         _nameView.font = [UIFont fontWithName:CHINESE_FONT size:16];
         _nameView.backgroundColor = [UIColor clearColor];
@@ -55,7 +55,7 @@ static CGFloat GAP = 6;
 
 #define SECTION_TITLES     [NSArray arrayWithObjects:NSLocalizedString(@"Account", ""), NSLocalizedString(@"Query", ""), NSLocalizedString(@"Setting", ""), NSLocalizedString(@"Help", ""), nil]
 
-#define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Account Top Up", ""), NSLocalizedString(@"Password Reset", ""), NSLocalizedString(@"Find Password", ""), NSLocalizedString(@"Sign Out", ""), nil]
+#define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Account Top Up", ""), NSLocalizedString(@"Password Reset", ""), /*NSLocalizedString(@"Find Password", ""),*/ NSLocalizedString(@"Sign Out", ""), nil]
 #define QUERY_ITEMS        [NSArray arrayWithObjects:NSLocalizedString(@"Balance Query", ""), /*NSLocalizedString(@"Fee Query", ""),*/ nil]
 #define SETTING_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Dial Setting", ""), /*NSLocalizedString(@"Local Area Code Setting", ""),*/ NSLocalizedString(@"Callback Number Setting", ""), NSLocalizedString(@"Login Setting", ""), nil]
 #define HELP_ITEMS         [NSArray arrayWithObjects:NSLocalizedString(@"About", ""), nil]
@@ -184,6 +184,10 @@ static CGFloat GAP = 6;
     } else if ([name isEqualToString:NSLocalizedString(@"About", "")]) {
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToAbout)]) {
             [self.viewControllerRef performSelector:@selector(jumpToAbout)];
+        }
+    } else if ([name isEqualToString:NSLocalizedString(@"Callback Number Setting", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToCallbackNumberSet)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToCallbackNumberSet)];
         }
     }
 }

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ECAboutViewController : UIViewController
-
+- (void)callService;
 @end

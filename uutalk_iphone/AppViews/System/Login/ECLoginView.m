@@ -47,7 +47,7 @@
         
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((loginFormView.frame.size.width - 180) / 2 , 10, 180, 40)];
     titleLabel.textColor = [UIColor blackColor];
-    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.font = [UIFont fontWithName:CHINESE_FONT size:25];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.text = NSLocalizedString(@"Welcome to use uutalk", "");
@@ -74,8 +74,8 @@
     
     _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _loginButton.frame = CGRectMake((loginFormView.frame.size.width - LOGIN_BUTTON_WIDTH) / 2, autoLoginLabel.frame.origin.y + autoLoginLabel.frame.size.height + GAP, LOGIN_BUTTON_WIDTH, LOGIN_BUTTON_HEIGHT);
-    [_loginButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateNormal];
-    [_loginButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9, 9, 9)] forState:UIControlStateHighlighted];
+    [_loginButton setBackgroundImage:[[UIImage imageNamed:@"btn_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateNormal];
+    [_loginButton setBackgroundImage:[[UIImage imageNamed:@"btn_dark_green"] stretchableImageWithLeftCapWidth:9 topCapHeight:9] forState:UIControlStateHighlighted];
     [_loginButton setTitle:NSLocalizedString(@"login", "") forState:UIControlStateNormal];
     _loginButton.titleLabel.font = [UIFont fontWithName:CHINESE_FONT size:16];
     [_loginButton addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];

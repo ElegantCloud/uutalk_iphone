@@ -136,3 +136,13 @@
 "Version:" = "版本号:";
 "Service QQ info" = "客服QQ\n1622122511";
 "about paragraph" = "网址\nhttp://www.uu-talk.com\n\n版权所有\n（香港）悠聊科技有限公司";
+
+// Set Callback Number
+"bind_number_inform" = "提示：通过设置回拨号码，使用回拨功能时将会回拨绑定的号码";
+"Callback Number:" = "回拨号码：";
+"Please input callback number" = "请输入回拨号码";
+"Get callback failed" = "无法获取回拨号码";
+"Getting callback number" = "获取回拨号码…";
+"Callback number set successfully" = "回拨号码设置成功！";
+"Setting callback number…" = "正在设置回拨号码…";
+"Set" = "设置";

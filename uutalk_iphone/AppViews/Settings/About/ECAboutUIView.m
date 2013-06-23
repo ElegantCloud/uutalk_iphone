@@ -116,7 +116,9 @@
 }
 
 - (void)clickFreeServiceCall {
-    
+    if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(callService)]) {
+        [self.viewControllerRef performSelector:@selector(callService)];
+    }
 }
 
 @end

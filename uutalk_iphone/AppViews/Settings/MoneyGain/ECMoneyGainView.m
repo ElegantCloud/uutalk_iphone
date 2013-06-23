@@ -67,7 +67,7 @@
     _inviteSummaryLabel.text = @"A Boolean value that determines";
     _inviteSummaryLabel.textColor = [UIColor blueColor];
     _inviteSummaryLabel.font = [UIFont fontWithName:CHINESE_FONT size:15];
-    _inviteSummaryLabel.textAlignment = NSTextAlignmentCenter;
+    _inviteSummaryLabel.textAlignment = UITextAlignmentCenter;
     [_inviteSectionView addSubview:_inviteSummaryLabel];
     
     UILabel *shareDescLabel = [[UILabel alloc] initWithFrame:CGRectMake(MARGIN, _inviteSummaryLabel.frame.origin.y + _inviteSummaryLabel.frame.size.height + MARGIN * 2, 200, 30)];

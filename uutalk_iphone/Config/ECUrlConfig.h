@@ -18,3 +18,5 @@
 #define CARD_CHARGE_URL             [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/cardCharge"]
 #define MODIFY_PWD_URL              [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/profile/changePwd"]
 #define BALANCE_QUERY_URL           [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/accountBalance"]
+#define SET_CALLBACK_NUMBER_URL     [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/profile/setBindPhone"]
+#define GET_CALLBACK_NUMBER_URL     [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/profile/getBindPhone"]

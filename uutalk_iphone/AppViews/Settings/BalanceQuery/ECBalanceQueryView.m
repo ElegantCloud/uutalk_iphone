@@ -38,7 +38,7 @@ static CGFloat GAP = 6;
     if (self) {
         _nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(GAP, (CellHeight - NameHeight) / 2, NameWidth, NameHeight)];
         _nameLabel.text = name;
-        _nameLabel.textAlignment = NSTextAlignmentRight;
+        _nameLabel.textAlignment = UITextAlignmentRight;
         _nameLabel.font = [UIFont fontWithName:CHINESE_FONT size:16];
         _nameLabel.backgroundColor = [UIColor clearColor];
         _nameLabel.textColor = [UIColor blackColor];
@@ -46,7 +46,7 @@ static CGFloat GAP = 6;
         
         _valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(_nameLabel.frame.origin.x + _nameLabel.frame.size.width + 4, _nameLabel.frame.origin.y, ValueWidth, NameHeight)];
         _valueLabel.text = value;
-        _valueLabel.textAlignment = NSTextAlignmentLeft;
+        _valueLabel.textAlignment = UITextAlignmentLeft;
         _valueLabel.font = [UIFont fontWithName:CHINESE_FONT size:16];
         _valueLabel.backgroundColor = [UIColor clearColor];
         _valueLabel.textColor = [UIColor colorWithIntegerRed:0x24 integerGreen:0x70 integerBlue:0xd8 alpha:1];
