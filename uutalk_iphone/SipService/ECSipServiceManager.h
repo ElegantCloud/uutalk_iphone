@@ -7,17 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ECSipRegisterBean.h"
+#import "SipRegistrationBean.h"
 #import "ECConstants.h"
+#import "SipInviteStateChangedProtocol.h"
+#import "SipRegistrationStateChangedProtocol.h"
 
 @interface ECSipServiceManager : NSObject
+@property id<SipInviteStateChangedProtocol> callListener;
+@property id<SipRegistrationStateChangedProtocol> registerListener;
 
 + (ECSipServiceManager *)shareSipServiceManager;
 
 - (BOOL)initSipEngine;
-
-- (void)registerSipAccount:(ECSipRegisterBean *)sipRegisterBean;
-- (void)makeCall:(NSString *)number;
+- (void)destroySipEngine;
+- (void)registerSipAccount:(SipRegistrationBean *)sipRegisterBean;
+- (BOOL)makeCall:(NSString *)number;
 - (void)hangup;
 - (void)onCallStateChange:(NSNumber *)state;
+- (void)onRegistrationStateChange:(NSNumber *)regState;
 @end

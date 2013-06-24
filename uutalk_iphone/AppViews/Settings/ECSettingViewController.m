@@ -17,6 +17,7 @@
 #import "ECBalanceQueryViewController.h"
 #import "ECAboutViewController.h"
 #import "ECCallbackNumberSetViewController.h"
+#import "ECDialSettingViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -110,6 +111,11 @@
 
 - (void)jumpToCallbackNumberSet {
     ECCallbackNumberSetViewController *viewCtrl = [[ECCallbackNumberSetViewController alloc] init];
+    [self jumpToViewController:viewCtrl];
+}
+
+- (void)jumpToDialSetting {
+    ECDialSettingViewController *viewCtrl = [[ECDialSettingViewController alloc] init];
     [self jumpToViewController:viewCtrl];
 }
 @end

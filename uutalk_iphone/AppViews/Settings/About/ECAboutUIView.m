@@ -36,7 +36,7 @@
     CGRect _screenBounds = [[UIScreen mainScreen] bounds];
     
     // update contacts select container view frame
-    self.frame = CGRectMake(_screenBounds.origin.x, _screenBounds.origin.y, _screenBounds.size.width, _screenBounds.size.height - /*statusBar height*/[[UIDevice currentDevice] statusBarHeight] - /*navigationBar height*/[[UIDevice currentDevice] navigationBarHeight]);
+    self.frame = CGRectMake(_screenBounds.origin.x, _screenBounds.origin.y, _screenBounds.size.width, _screenBounds.size.height - /*statusBar height*/[DisplayScreenUtils statusBarHeight] - /*navigationBar height*/[DisplayScreenUtils navigationBarHeight]);
     
     UIView *descRegion = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 240)];
     descRegion.backgroundColor = [UIColor clearColor];

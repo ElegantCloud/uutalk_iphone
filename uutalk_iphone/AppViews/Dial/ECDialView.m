@@ -24,7 +24,7 @@
     if (self) {
         // Initialization code
         CGRect screenBounds = [[UIScreen mainScreen] bounds];
-        self.frame = CGRectMake(screenBounds.origin.x, screenBounds.origin.y, screenBounds.size.width, screenBounds.size.height - ([[UIDevice currentDevice] statusBarHeight] + [[UIDevice currentDevice] navigationBarHeight]) - 50);
+        self.frame = CGRectMake(screenBounds.origin.x, screenBounds.origin.y, screenBounds.size.width, screenBounds.size.height - ([DisplayScreenUtils statusBarHeight] + [DisplayScreenUtils navigationBarHeight]) - 50);
         
         _numberInput = [self makeTextFieldWithPlaceholder:@"Input Number" frame:CGRectMake(0, 10, self.frame.size.width, 30) keyboardType:UIKeyboardTypePhonePad];
         _dialButton = [self makeButtonWithTitle:@"Dial" frame:CGRectMake(0, _numberInput.frame.origin.y + _numberInput.frame.size.height + 5, self.frame.size.width, 30)];

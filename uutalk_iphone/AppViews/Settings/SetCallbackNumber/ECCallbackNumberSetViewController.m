@@ -43,7 +43,7 @@
 - (void)loadCallbackNumber {
     UserBean *user = [[UserManager shareUserManager] userBean];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:user.countryCode, COUNTRYCODE, nil];
-    [HttpUtil postSignatureRequestWithUrl:GET_CALLBACK_NUMBER_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedGetCallbackNumber:) andFailedRespSelector:nil];
+    [HttpUtils postSignatureRequestWithUrl:GET_CALLBACK_NUMBER_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedGetCallbackNumber:) andFailedRespSelector:nil];
 }
 
 - (void)onFinishedGetCallbackNumber:(ASIHTTPRequest *)pRequest {
@@ -87,7 +87,7 @@
     _currentCallbackNumberCountryCode = DEFAULT_COUNTRY_CODE;
     UserBean *user = [[UserManager shareUserManager] userBean];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:user.countryCode, COUNTRYCODE, number, @"bindphone", DEFAULT_COUNTRY_CODE, @"bindphone_country_code", nil];
-    [HttpUtil postSignatureRequestWithUrl:SET_CALLBACK_NUMBER_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedSetCallbackNumber:) andFailedRespSelector:nil];
+    [HttpUtils postSignatureRequestWithUrl:SET_CALLBACK_NUMBER_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedSetCallbackNumber:) andFailedRespSelector:nil];
     
 }
 

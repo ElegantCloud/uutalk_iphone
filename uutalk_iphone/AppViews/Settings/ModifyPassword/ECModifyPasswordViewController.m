@@ -51,7 +51,7 @@
     NSString *confirmPwd = [pwds objectAtIndex:2];
     _currentNewPwd = newPwd;
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:user.countryCode, COUNTRYCODE, [oldPwd md5], @"oldPwd", newPwd, @"newPwd", confirmPwd, @"newPwdConfirm", nil];
-    [HttpUtil postSignatureRequestWithUrl:MODIFY_PWD_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedModifyPwd:) andFailedRespSelector:nil];
+    [HttpUtils postSignatureRequestWithUrl:MODIFY_PWD_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedModifyPwd:) andFailedRespSelector:nil];
 }
 
 - (void)onFinishedModifyPwd:(ASIHTTPRequest *)pRequest {

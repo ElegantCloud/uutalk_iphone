@@ -11,9 +11,12 @@
 #import "ECDialContentViewController.h"
 #import "CommonToolkit/CommonToolkit.h"
 #import "UserBean+UUTalk.h"
-#import "ECSipRegisterBean.h"
-#import "ECSipServiceManager.h"
+#import "SipRegistrationBean.h"
+#import "SipUtils.h"
 #import "ECConfig.h"
+#import "CallRecordHistoryListTabContentViewController.h"
+#import "DialTabContentViewController.h"
+#import "ContactListTabContentViewController.h"
 
 @interface ECMainTabController ()
 
@@ -25,12 +28,16 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIViewController *dialTabController = [[ECDialContentViewController alloc] init];
+        UIViewController *callRecordController = [[UINavigationController alloc] initWithRootViewController:[[CallRecordHistoryListTabContentViewController alloc] init]];
+        UIViewController *dialTabController = [[DialTabContentViewController alloc] init];
+        UIViewController *contactListController = [[ContactListTabContentViewController alloc] init];
         UINavigationController *settingController = [[UINavigationController alloc] initWithRootViewController:[[ECSettingViewController alloc] init]];
-        [dialTabController.tabBarItem initWithTitle:NSLocalizedString(@"dial", "") image:[UIImage imageNamed:@"tab_dial"] tag:2];
-        [settingController.tabBarItem initWithTitle:NSLocalizedString(@"more", "") image:[UIImage imageNamed:@"tab_more"] tag:4];
-        self.viewControllers = [NSArray arrayWithObjects:dialTabController, settingController, nil];
+        
+        [settingController.tabBarItem initWithTabBarSystemItem:UITabBarSystemItemMore tag:3];
+
+        self.viewControllers = [NSArray arrayWithObjects:callRecordController, dialTabController, contactListController, settingController, nil];
         self.selectedViewController = dialTabController;
+        
         
         
         [self registerSipAccount];
@@ -58,14 +65,14 @@
 
 - (void)registerSipAccount {
     UserBean *user = [[UserManager shareUserManager] userBean];
-    ECSipRegisterBean *sipBean = [[ECSipRegisterBean alloc] init];
-    sipBean.sipUserName = user.vosphone;
-    sipBean.sipPwd = user.vosphonePwd;
-    sipBean.sipPort = [NSNumber numberWithInt:7788];
-    sipBean.sipRealm = SIP_REALM;
-    sipBean.sipServer = SIP_SERVER;
+    SipRegistrationBean *sipBean = [[SipRegistrationBean alloc] init];
+    sipBean.userName = user.vosphone;
+    sipBean.password = user.vosphonePwd;
+    sipBean.port = SIP_PORT;
+    sipBean.realm = SIP_REALM;
+    sipBean.serverAddr = SIP_SERVER;
     
-    [[ECSipServiceManager shareSipServiceManager] registerSipAccount:sipBean];
+    [SipUtils registerSipAccount:sipBean stateChangedProtocolImpl:nil];
 }
 
 @end

@@ -57,12 +57,12 @@ static CGFloat GAP = 6;
 
 #define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Account Top Up", ""), NSLocalizedString(@"Password Reset", ""), /*NSLocalizedString(@"Find Password", ""),*/ NSLocalizedString(@"Sign Out", ""), nil]
 #define QUERY_ITEMS        [NSArray arrayWithObjects:NSLocalizedString(@"Balance Query", ""), /*NSLocalizedString(@"Fee Query", ""),*/ nil]
-#define SETTING_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Dial Setting", ""), /*NSLocalizedString(@"Local Area Code Setting", ""),*/ NSLocalizedString(@"Callback Number Setting", ""), NSLocalizedString(@"Login Setting", ""), nil]
+#define SETTING_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Dial Setting", ""), /*NSLocalizedString(@"Local Area Code Setting", ""),*/ NSLocalizedString(@"Callback Number Setting", ""), /*NSLocalizedString(@"Login Setting", ""),*/ nil]
 #define HELP_ITEMS         [NSArray arrayWithObjects:NSLocalizedString(@"About", ""), nil]
 
 #define ACCOUNT_ICONS       [NSArray arrayWithObjects:@"charge", @"changepsw", @"getpsw", @"menuexit", nil]
 #define QUERY_ICONS         [NSArray arrayWithObjects:@"search_remainmoney", /*@"zifeichaxun",*/ nil]
-#define SETTING_ICONS       [NSArray arrayWithObjects:@"setting_dial", /*@"setting_countrycode",*/ @"setauthnumber", @"setting_setup", nil]
+#define SETTING_ICONS       [NSArray arrayWithObjects:@"setting_dial", /*@"setting_countrycode",*/ @"setauthnumber", /*@"setting_setup",*/ nil]
 #define HELP_ICONS          [NSArray arrayWithObjects:@"uutalk", nil]
 
 #define HEADER_HEIGHT   20
@@ -86,7 +86,7 @@ static CGFloat GAP = 6;
     if (self) {
         // Initialization code
         CGRect screenBounds = [[UIScreen mainScreen] bounds];
-        self.frame = CGRectMake(screenBounds.origin.x, screenBounds.origin.y, screenBounds.size.width, screenBounds.size.height - ([[UIDevice currentDevice] statusBarHeight] + [[UIDevice currentDevice] navigationBarHeight]) - 50);
+        self.frame = CGRectMake(screenBounds.origin.x, screenBounds.origin.y, screenBounds.size.width, screenBounds.size.height - ([DisplayScreenUtils statusBarHeight] + [DisplayScreenUtils navigationBarHeight]) - 50);
         
         _titles = SECTION_TITLES;
         _sectionArray = [NSMutableArray arrayWithCapacity:[_titles count]];
@@ -188,6 +188,10 @@ static CGFloat GAP = 6;
     } else if ([name isEqualToString:NSLocalizedString(@"Callback Number Setting", "")]) {
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToCallbackNumberSet)]) {
             [self.viewControllerRef performSelector:@selector(jumpToCallbackNumberSet)];
+        }
+    } else if ([name isEqualToString:NSLocalizedString(@"Dial Setting", "")]) {
+        if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToDialSetting)]) {
+            [self.viewControllerRef performSelector:@selector(jumpToDialSetting)];
         }
     }
 }

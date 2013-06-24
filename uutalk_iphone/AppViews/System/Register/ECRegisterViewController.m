@@ -54,14 +54,14 @@
     // send request to server to get validation code
     NSMutableDictionary *param = [[NSMutableDictionary alloc] initWithObjectsAndKeys:phoneNumber, @"phone", DEFAULT_COUNTRY_CODE, COUNTRYCODE, nil];
     
-    [HttpUtil postRequestWithUrl:RETRIEVE_PHONE_CODE_URL andPostFormat:urlEncoded andParameter:param andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedGetPhoneCode:) andFailedRespSelector:nil];
+    [HttpUtils postRequestWithUrl:RETRIEVE_PHONE_CODE_URL andPostFormat:urlEncoded andParameter:param andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedGetPhoneCode:) andFailedRespSelector:nil];
 }
 
 - (void)verifyCode:(NSString *)code {
     NSLog(@"verify code");
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc] initWithObjectsAndKeys:code, @"code", nil];
-    [HttpUtil postRequestWithUrl:CHECK_PHONE_CODE_URL andPostFormat:urlEncoded andParameter:param andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedCheckPhoneCode:) andFailedRespSelector:nil];
+    [HttpUtils postRequestWithUrl:CHECK_PHONE_CODE_URL andPostFormat:urlEncoded andParameter:param andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedCheckPhoneCode:) andFailedRespSelector:nil];
 }
 
 - (void)finishRegisterWithPwds:(NSArray*)pwds {
@@ -69,7 +69,7 @@
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[pwds objectAtIndex:0], @"password", [pwds objectAtIndex:1], @"password1", CLIENT_SOURCE, @"source", nil];
     
-    [HttpUtil postRequestWithUrl:USER_REGISTER_URL andPostFormat:urlEncoded andParameter:param andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedRegister:) andFailedRespSelector:nil];
+    [HttpUtils postRequestWithUrl:USER_REGISTER_URL andPostFormat:urlEncoded andParameter:param andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedRegister:) andFailedRespSelector:nil];
 }
 
 - (void)jumpToLoginView {

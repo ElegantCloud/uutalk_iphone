@@ -52,7 +52,7 @@
 
 - (void)findPasswordWithNumber:(NSString *)number {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:number, USERNAME, DEFAULT_COUNTRY_CODE, COUNTRYCODE, nil];
-    [HttpUtil postRequestWithUrl:GET_PWD_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedFindPassword:) andFailedRespSelector:nil];
+    [HttpUtils postRequestWithUrl:GET_PWD_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:synchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedFindPassword:) andFailedRespSelector:nil];
     
 }
 

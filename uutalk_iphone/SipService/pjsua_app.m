@@ -2563,6 +2563,17 @@ static void postCallState(pjsua_call_id call_id, pjsua_call_info *call_info) {
             [ssm performSelectorOnMainThread:@selector(onCallStateChange:) withObject:[NSNumber numberWithInt:CALL_DISCONNECTED] waitUntilDone:NO];
             
             break;
+            
+        case PJSIP_INV_STATE_EARLY:
+            NSLog(@"PJSIP_INV_STATE_EARLY");
+            [ssm performSelectorOnMainThread:@selector(onCallStateChange:) withObject:[NSNumber numberWithInt:CALL_EARLY] waitUntilDone:NO];
+            break;
+        case PJSIP_INV_STATE_CONFIRMED:
+            NSLog(@"PJSIP_INV_STATE_CONFIRMED");
+            break;
+        case PJSIP_INV_STATE_NULL:
+            NSLog(@"PJSIP_INV_STATE_NULL");
+            break;
         default:
             break;
     }
@@ -2683,10 +2694,9 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
         
     }
     
-    if (call_info.state != PJSIP_INV_STATE_NULL)
-    {
-        postCallState(call_id, &call_info);
-    }
+ 
+    postCallState(call_id, &call_info);
+
 }
 
 
@@ -3117,11 +3127,27 @@ static pjsip_redirect_op call_on_redirected(pjsua_call_id call_id,
 static void on_reg_state(pjsua_acc_id acc_id)
 {
     NSLog(@"on_reg_state");
-    PJ_UNUSED_ARG(acc_id);
+//    PJ_UNUSED_ARG(acc_id);
     
     // Log already written.
-}
+    
+    pj_status_t status;
+    pjsua_acc_info info;
+    
+    status = pjsua_acc_get_info(acc_id, &info);
+    if (status != PJ_SUCCESS)
+        return;
 
+    NSLog(@"Status changed acc %d %.*s (%d)", acc_id, (int)info.status_text.slen,
+          info.status_text.ptr, info.status);
+    
+    ECSipServiceManager *ssm = [ECSipServiceManager shareSipServiceManager];
+    if (info.status == 200) {
+        [ssm performSelectorOnMainThread:@selector(onRegistrationStateChange:) withObject:[NSNumber numberWithInt:REG_OK] waitUntilDone:NO];
+    } else {
+        [ssm performSelectorOnMainThread:@selector(onRegistrationStateChange:) withObject:[NSNumber numberWithInt:REG_FAILED] waitUntilDone:NO];
+    }
+}
 
 /*
  * Handler for incoming presence subscription request
@@ -6386,7 +6412,7 @@ void console_app_main(const pj_str_t *uri_to_call)
         return status;
     }
     
-    void make_call(char *sip_dest_uri) {
+    pj_status_t make_call(char *sip_dest_uri) {
         pjsua_call_setting call_opt;
         pjsua_call_setting_default(&call_opt);
         call_opt.aud_cnt = app_config.aud_cnt;
@@ -6399,7 +6425,8 @@ void console_app_main(const pj_str_t *uri_to_call)
         pjsua_msg_data_init(&msg_data);
         TEST_MULTIPART(&msg_data);
         
-        pjsua_call_make_call(current_acc, &tmp, &call_opt, NULL, &msg_data, NULL);
+        pj_status_t result = pjsua_call_make_call(current_acc, &tmp, &call_opt, NULL, &msg_data, NULL);
+        return result;
         
     }
    

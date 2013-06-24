@@ -11,4 +11,42 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+// tab content navigation bar tint color
+#define NAVIGATIONBAR_TINTCOLOR [UIColor colorWithIntegerRed:39 integerGreen:39 integerBlue:39 alpha:1.0]
+
+// application documents path
+#define APP_DOCUMENTSPATH   [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+// Chinese telephone sqlite database name
+#define CHINESETELEPHONE_DATABASENAME   @"ChineseTelephoneDB.db"
+
+// call records sqlite table name, create statement and fields
+#define CALLRECORDS_TABLENAME   @"callrecords"
+
+#define CALLRECORDSTABLE_CREATESTATEMENT    @"CREATE TABLE IF NOT EXISTS %@ (%@ INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, %@ TEXT, %@ TEXT NOT NULL, %@ DATETIME NOT NULL, %@ INTEGER NOT NULL DEFAULT 0, %@ INTEGER NOT NULL DEFAULT 0);"
+
+#define CALLRECORDSTABLE_ROWID_FIELDNAME    @"ROWID"
+#define CALLRECORDSTABLE_NAME_FIELDNAME @"name"
+#define CALLRECORDSTABLE_PHONE_FIELDNAME    @"phone"
+#define CALLRECORDSTABLE_DATE_FIELDNAME @"date"
+#define CALLRECORDSTABLE_DUDATION_FIELDNAME @"duration"
+#define CALLRECORDSTABLE_FLAGS_FIELDNAME    @"flags"
+
+// call records sqlite table flags
+#define OUTGOINGCALL_CALLRECORDSFLAG    0
+#define CALLBACKCALL_CALLRECORDSFLAG    4
+
+// insert one call record record to call records table statement
+#define INSERTCALLRECORD2CALLRECORDSTABLESTATEMENT  @"INSERT OR REPLACE INTO %@ (%@, %@, %@, %@, %@) VALUES (?,?,?,?,?);"
+
+// update call record duration statement
+#define UPDATECALLRECORDDURATIONSTATEMENT   @"UPDATE %@ SET %@ = ? WHERE %@ = ?;"
+
+// query all call records statement
+#define QUERYALLCALLRECORDSSTATEMENT    @"SELECT * FROM %@ ORDER BY %@ DESC LIMIT 100;"
+
+// delete one call record from call records table statement
+#define DELETECALLRECORDFROMCALLRECORDSTABLESTATEMENT   @"DELETE FROM %@ WHERE %@ = ?;"
+
 #endif

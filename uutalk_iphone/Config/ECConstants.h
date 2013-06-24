@@ -17,8 +17,18 @@
 typedef enum CALL_STATE {
     CALLING = 0,
     CALL_ESTABLISHED = 1,
-    CALL_DISCONNECTED = 2
+    CALL_DISCONNECTED = 2,
+    CALL_FAILED = 3,
+    CALL_EARLY = 4
 } EC_CALL_STATE;
+
+typedef enum REG_STATE {
+    REG_OK = 0,
+    REG_FAILED = 1,
+    UNREG_OK = 2,
+    UNREG_FAILED = 3,
+    REGISTERING = 4
+} EC_REG_STATE;
 
 // Account CONSTANTS
 static NSString *PASSWORD = @"password";

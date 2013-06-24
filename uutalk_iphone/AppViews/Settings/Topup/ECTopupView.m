@@ -17,7 +17,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [[UIDevice currentDevice] navigationBarHeight]);
+        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
         _titleView.text = NSLocalizedString(@"Account Top Up", "");
         self.titleView = _titleView;
         self.backgroundColor = [UIColor whiteColor];

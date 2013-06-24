@@ -18,4 +18,5 @@
 - (void)jumpToBalanceQuery;
 - (void)jumpToAbout;
 - (void)jumpToCallbackNumberSet;
+- (void)jumpToDialSetting;
 @end

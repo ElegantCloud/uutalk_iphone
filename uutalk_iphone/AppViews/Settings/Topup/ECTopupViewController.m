@@ -50,7 +50,7 @@
 - (void)getBalance {
     UserBean *user = [[UserManager shareUserManager] userBean];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:user.countryCode, COUNTRYCODE, nil];
-    [HttpUtil postSignatureRequestWithUrl:BALANCE_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:asynchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedGetBalance:) andFailedRespSelector:@selector(onNetworkFailed:)];
+    [HttpUtils postSignatureRequestWithUrl:BALANCE_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:asynchronous andProcessor:self andFinishedRespSelector:@selector(onFinishedGetBalance:) andFailedRespSelector:@selector(onNetworkFailed:)];
 }
 
 - (void)onFinishedGetBalance:(ASIHTTPRequest *)pRequest {

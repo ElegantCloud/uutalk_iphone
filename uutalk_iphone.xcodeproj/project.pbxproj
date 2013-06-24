@@ -45,7 +45,6 @@
 		F81C6D611761BBE400824601 /* ECSipServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C6D601761BBE400824601 /* ECSipServiceManager.m */; };
 		F81C6D631761E06000824601 /* pjsua_app.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C6D621761E06000824601 /* pjsua_app.m */; };
 		F84495621762DBC100EDFC6E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84495611762DBC100EDFC6E /* AudioToolbox.framework */; };
-		F84495651763160500EDFC6E /* ECSipRegisterBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F84495641763160400EDFC6E /* ECSipRegisterBean.m */; };
 		F84A32DB177309E7002C73B6 /* libpj-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32DA177309E7002C73B6 /* libpj-i386-apple-darwin9.a */; };
 		F84A32DE177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32DD177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a */; };
 		F84A32E417730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A32DF17730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a */; };
@@ -87,6 +86,140 @@
 		F87AC877174B69FD00CA8A2B /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87AC874174B69FD00CA8A2B /* bg@2x.png */; };
 		F8C973C5174C75450066F37E /* btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C4174C75450066F37E /* btn_green.png */; };
 		F8C973C9174CA5EA0066F37E /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C973C8174CA5EA0066F37E /* lock.png */; };
+		F8DB49F31777F39900129A88 /* ECDialSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB49F21777F39900129A88 /* ECDialSettingViewController.m */; };
+		F8DB49F61777F3B700129A88 /* ECDialSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB49F51777F3B700129A88 /* ECDialSettingView.m */; };
+		F8DB4A581778316B00129A88 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB4A571778316B00129A88 /* AddressBookUI.framework */; };
+		F8DB4A5A1778317200129A88 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB4A591778317200129A88 /* libsqlite3.dylib */; };
+		F8DB4ACC177838F900129A88 /* img_addnewcontact6cleardialnumber_btn_normal_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A5E177838F900129A88 /* img_addnewcontact6cleardialnumber_btn_normal_bg.png */; };
+		F8DB4ACD177838F900129A88 /* img_back4waitingcallbackcallbtn-en.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A5F177838F900129A88 /* img_back4waitingcallbackcallbtn-en.png */; };
+		F8DB4ACE177838F900129A88 /* img_back4waitingcallbackcallbtn-hs.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A60177838F900129A88 /* img_back4waitingcallbackcallbtn-hs.png */; };
+		F8DB4ACF177838F900129A88 /* img_back4waitingcallbackcallbtn-ht.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A61177838F900129A88 /* img_back4waitingcallbackcallbtn-ht.png */; };
+		F8DB4AD0177838F900129A88 /* img_back4waitingcallbackcallbtn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A62177838F900129A88 /* img_back4waitingcallbackcallbtn_bg.png */; };
+		F8DB4AD1177838F900129A88 /* img_callbackview_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A63177838F900129A88 /* img_callbackview_bg.png */; };
+		F8DB4AD2177838F900129A88 /* img_callbtn-568h-en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A64177838F900129A88 /* img_callbtn-568h-en@2x.png */; };
+		F8DB4AD3177838F900129A88 /* img_callbtn-568h-hs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A65177838F900129A88 /* img_callbtn-568h-hs@2x.png */; };
+		F8DB4AD4177838F900129A88 /* img_callbtn-568h-ht@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A66177838F900129A88 /* img_callbtn-568h-ht@2x.png */; };
+		F8DB4AD5177838F900129A88 /* img_callbtn-en.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A67177838F900129A88 /* img_callbtn-en.png */; };
+		F8DB4AD6177838F900129A88 /* img_callbtn-en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A68177838F900129A88 /* img_callbtn-en@2x.png */; };
+		F8DB4AD7177838F900129A88 /* img_callbtn-hs.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A69177838F900129A88 /* img_callbtn-hs.png */; };
+		F8DB4AD8177838F900129A88 /* img_callbtn-hs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A6A177838F900129A88 /* img_callbtn-hs@2x.png */; };
+		F8DB4AD9177838F900129A88 /* img_callbtn-ht.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A6B177838F900129A88 /* img_callbtn-ht.png */; };
+		F8DB4ADA177838F900129A88 /* img_callbtn-ht@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A6C177838F900129A88 /* img_callbtn-ht@2x.png */; };
+		F8DB4ADB177838F900129A88 /* img_callbtn_highlighted_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A6D177838F900129A88 /* img_callbtn_highlighted_bg.png */; };
+		F8DB4ADC177838F900129A88 /* img_callbtn_normal_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A6E177838F900129A88 /* img_callbtn_normal_bg.png */; };
+		F8DB4ADD177838F900129A88 /* img_callcontroller_contactsbtn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A6F177838F900129A88 /* img_callcontroller_contactsbtn-568h@2x.png */; };
+		F8DB4ADE177838F900129A88 /* img_callcontroller_contactsbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A70177838F900129A88 /* img_callcontroller_contactsbtn.png */; };
+		F8DB4ADF177838F900129A88 /* img_callcontroller_contactsbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A71177838F900129A88 /* img_callcontroller_contactsbtn@2x.png */; };
+		F8DB4AE0177838F900129A88 /* img_callcontroller_keyboardbtn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A72177838F900129A88 /* img_callcontroller_keyboardbtn-568h@2x.png */; };
+		F8DB4AE1177838F900129A88 /* img_callcontroller_keyboardbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A73177838F900129A88 /* img_callcontroller_keyboardbtn.png */; };
+		F8DB4AE2177838F900129A88 /* img_callcontroller_keyboardbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A74177838F900129A88 /* img_callcontroller_keyboardbtn@2x.png */; };
+		F8DB4AE3177838F900129A88 /* img_callcontroller_mutebtn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A75177838F900129A88 /* img_callcontroller_mutebtn-568h@2x.png */; };
+		F8DB4AE4177838F900129A88 /* img_callcontroller_mutebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A76177838F900129A88 /* img_callcontroller_mutebtn.png */; };
+		F8DB4AE5177838F900129A88 /* img_callcontroller_mutebtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A77177838F900129A88 /* img_callcontroller_mutebtn@2x.png */; };
+		F8DB4AE6177838F900129A88 /* img_callcontroller_speakerbtn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A78177838F900129A88 /* img_callcontroller_speakerbtn-568h@2x.png */; };
+		F8DB4AE7177838F900129A88 /* img_callcontroller_speakerbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A79177838F900129A88 /* img_callcontroller_speakerbtn.png */; };
+		F8DB4AE8177838F900129A88 /* img_callcontroller_speakerbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A7A177838F900129A88 /* img_callcontroller_speakerbtn@2x.png */; };
+		F8DB4AE9177838F900129A88 /* img_callcontrollerbtn_highlighted_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A7B177838F900129A88 /* img_callcontrollerbtn_highlighted_bg.png */; };
+		F8DB4AEA177838F900129A88 /* img_callcontrollerbtn_normal_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A7C177838F900129A88 /* img_callcontrollerbtn_normal_bg.png */; };
+		F8DB4AEB177838F900129A88 /* img_cleardialphone_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A7D177838F900129A88 /* img_cleardialphone_btn-568h@2x.png */; };
+		F8DB4AEC177838F900129A88 /* img_cleardialphone_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A7E177838F900129A88 /* img_cleardialphone_btn.png */; };
+		F8DB4AED177838F900129A88 /* img_cleardialphone_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A7F177838F900129A88 /* img_cleardialphone_btn@2x.png */; };
+		F8DB4AEE177838F900129A88 /* img_default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A80177838F900129A88 /* img_default_avatar.png */; };
+		F8DB4AEF177838F900129A88 /* img_default_gray_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A81177838F900129A88 /* img_default_gray_avatar.png */; };
+		F8DB4AF0177838F900129A88 /* img_dial_0_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A82177838F900129A88 /* img_dial_0_btn-568h@2x.png */; };
+		F8DB4AF1177838F900129A88 /* img_dial_0_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A83177838F900129A88 /* img_dial_0_btn.png */; };
+		F8DB4AF2177838F900129A88 /* img_dial_0_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A84177838F900129A88 /* img_dial_0_btn@2x.png */; };
+		F8DB4AF3177838F900129A88 /* img_dial_1_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A85177838F900129A88 /* img_dial_1_btn-568h@2x.png */; };
+		F8DB4AF4177838F900129A88 /* img_dial_1_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A86177838F900129A88 /* img_dial_1_btn.png */; };
+		F8DB4AF5177838F900129A88 /* img_dial_1_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A87177838F900129A88 /* img_dial_1_btn@2x.png */; };
+		F8DB4AF6177838F900129A88 /* img_dial_2_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A88177838F900129A88 /* img_dial_2_btn-568h@2x.png */; };
+		F8DB4AF7177838F900129A88 /* img_dial_2_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A89177838F900129A88 /* img_dial_2_btn.png */; };
+		F8DB4AF8177838F900129A88 /* img_dial_2_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A8A177838F900129A88 /* img_dial_2_btn@2x.png */; };
+		F8DB4AF9177838F900129A88 /* img_dial_3_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A8B177838F900129A88 /* img_dial_3_btn-568h@2x.png */; };
+		F8DB4AFA177838F900129A88 /* img_dial_3_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A8C177838F900129A88 /* img_dial_3_btn.png */; };
+		F8DB4AFB177838F900129A88 /* img_dial_3_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A8D177838F900129A88 /* img_dial_3_btn@2x.png */; };
+		F8DB4AFC177838F900129A88 /* img_dial_4_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A8E177838F900129A88 /* img_dial_4_btn-568h@2x.png */; };
+		F8DB4AFD177838F900129A88 /* img_dial_4_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A8F177838F900129A88 /* img_dial_4_btn.png */; };
+		F8DB4AFE177838F900129A88 /* img_dial_4_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A90177838F900129A88 /* img_dial_4_btn@2x.png */; };
+		F8DB4AFF177838F900129A88 /* img_dial_5_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A91177838F900129A88 /* img_dial_5_btn-568h@2x.png */; };
+		F8DB4B00177838F900129A88 /* img_dial_5_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A92177838F900129A88 /* img_dial_5_btn.png */; };
+		F8DB4B01177838F900129A88 /* img_dial_5_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A93177838F900129A88 /* img_dial_5_btn@2x.png */; };
+		F8DB4B02177838F900129A88 /* img_dial_6_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A94177838F900129A88 /* img_dial_6_btn-568h@2x.png */; };
+		F8DB4B03177838F900129A88 /* img_dial_6_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A95177838F900129A88 /* img_dial_6_btn.png */; };
+		F8DB4B04177838F900129A88 /* img_dial_6_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A96177838F900129A88 /* img_dial_6_btn@2x.png */; };
+		F8DB4B05177838F900129A88 /* img_dial_7_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A97177838F900129A88 /* img_dial_7_btn-568h@2x.png */; };
+		F8DB4B06177838F900129A88 /* img_dial_7_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A98177838F900129A88 /* img_dial_7_btn.png */; };
+		F8DB4B07177838F900129A88 /* img_dial_7_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A99177838F900129A88 /* img_dial_7_btn@2x.png */; };
+		F8DB4B08177838F900129A88 /* img_dial_8_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A9A177838F900129A88 /* img_dial_8_btn-568h@2x.png */; };
+		F8DB4B09177838F900129A88 /* img_dial_8_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A9B177838F900129A88 /* img_dial_8_btn.png */; };
+		F8DB4B0A177838F900129A88 /* img_dial_8_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A9C177838F900129A88 /* img_dial_8_btn@2x.png */; };
+		F8DB4B0B177838F900129A88 /* img_dial_9_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A9D177838F900129A88 /* img_dial_9_btn-568h@2x.png */; };
+		F8DB4B0C177838F900129A88 /* img_dial_9_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A9E177838F900129A88 /* img_dial_9_btn.png */; };
+		F8DB4B0D177838F900129A88 /* img_dial_9_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4A9F177838F900129A88 /* img_dial_9_btn@2x.png */; };
+		F8DB4B0E177838F900129A88 /* img_dial_pound_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA0177838F900129A88 /* img_dial_pound_btn-568h@2x.png */; };
+		F8DB4B0F177838F900129A88 /* img_dial_pound_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA1177838F900129A88 /* img_dial_pound_btn.png */; };
+		F8DB4B10177838F900129A88 /* img_dial_pound_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA2177838F900129A88 /* img_dial_pound_btn@2x.png */; };
+		F8DB4B11177838F900129A88 /* img_dial_star_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA3177838F900129A88 /* img_dial_star_btn-568h@2x.png */; };
+		F8DB4B12177838F900129A88 /* img_dial_star_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA4177838F900129A88 /* img_dial_star_btn.png */; };
+		F8DB4B13177838F900129A88 /* img_dial_star_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA5177838F900129A88 /* img_dial_star_btn@2x.png */; };
+		F8DB4B14177838F900129A88 /* img_dialbtn_highlighted_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA6177838F900129A88 /* img_dialbtn_highlighted_bg.png */; };
+		F8DB4B15177838F900129A88 /* img_dialbtn_normal_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA7177838F900129A88 /* img_dialbtn_normal_bg.png */; };
+		F8DB4B16177838F900129A88 /* img_dialnumber7ownnershiplabel_bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA8177838F900129A88 /* img_dialnumber7ownnershiplabel_bg-568h@2x.png */; };
+		F8DB4B17177838F900129A88 /* img_dialnumber7ownnershiplabel_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AA9177838F900129A88 /* img_dialnumber7ownnershiplabel_bg.png */; };
+		F8DB4B18177838F900129A88 /* img_dialnumber7ownnershiplabel_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AAA177838F900129A88 /* img_dialnumber7ownnershiplabel_bg@2x.png */; };
+		F8DB4B19177838F900129A88 /* img_hangup_longbtn-en.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AAB177838F900129A88 /* img_hangup_longbtn-en.png */; };
+		F8DB4B1A177838F900129A88 /* img_hangup_longbtn-hs.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AAC177838F900129A88 /* img_hangup_longbtn-hs.png */; };
+		F8DB4B1B177838F900129A88 /* img_hangup_longbtn-ht.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AAD177838F900129A88 /* img_hangup_longbtn-ht.png */; };
+		F8DB4B1C177838F900129A88 /* img_hangup_longbtn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AAE177838F900129A88 /* img_hangup_longbtn_bg.png */; };
+		F8DB4B1D177838F900129A88 /* img_hangup_shortbtn-en.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AAF177838F900129A88 /* img_hangup_shortbtn-en.png */; };
+		F8DB4B1E177838F900129A88 /* img_hangup_shortbtn-hs.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB0177838F900129A88 /* img_hangup_shortbtn-hs.png */; };
+		F8DB4B1F177838F900129A88 /* img_hangup_shortbtn-ht.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB1177838F900129A88 /* img_hangup_shortbtn-ht.png */; };
+		F8DB4B20177838F900129A88 /* img_hangup_shortbtn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB2177838F900129A88 /* img_hangup_shortbtn_bg.png */; };
+		F8DB4B21177838F900129A88 /* img_hidekeyboardbtn-en.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB3177838F900129A88 /* img_hidekeyboardbtn-en.png */; };
+		F8DB4B22177838F900129A88 /* img_hidekeyboardbtn-hs.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB4177838F900129A88 /* img_hidekeyboardbtn-hs.png */; };
+		F8DB4B23177838F900129A88 /* img_hidekeyboardbtn-ht.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB5177838F900129A88 /* img_hidekeyboardbtn-ht.png */; };
+		F8DB4B24177838F900129A88 /* img_hidekeyboardbtn_highlighted_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB6177838F900129A88 /* img_hidekeyboardbtn_highlighted_bg.png */; };
+		F8DB4B25177838F900129A88 /* img_hidekeyboardbtn_normal_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB7177838F900129A88 /* img_hidekeyboardbtn_normal_bg.png */; };
+		F8DB4B26177838F900129A88 /* img_newcontact_btn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB8177838F900129A88 /* img_newcontact_btn-568h@2x.png */; };
+		F8DB4B27177838F900129A88 /* img_newcontact_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AB9177838F900129A88 /* img_newcontact_btn.png */; };
+		F8DB4B28177838F900129A88 /* img_newcontact_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ABA177838F900129A88 /* img_newcontact_btn@2x.png */; };
+		F8DB4B29177838F900129A88 /* img_outgoingcall.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ABB177838F900129A88 /* img_outgoingcall.png */; };
+		F8DB4B2A177838F900129A88 /* img_outgoingcall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ABC177838F900129A88 /* img_outgoingcall@2x.png */; };
+		F8DB4B2B177838F900129A88 /* img_outgoingcall_bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ABD177838F900129A88 /* img_outgoingcall_bg-568h@2x.png */; };
+		F8DB4B2C177838F900129A88 /* img_outgoingcall_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ABE177838F900129A88 /* img_outgoingcall_bg.png */; };
+		F8DB4B2D177838F900129A88 /* img_outgoingcall_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ABF177838F900129A88 /* img_outgoingcall_bg@2x.png */; };
+		F8DB4B2E177838F900129A88 /* img_outgoingcall_footerview_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC0177838F900129A88 /* img_outgoingcall_footerview_bg.png */; };
+		F8DB4B2F177838F900129A88 /* img_outgoingcall_footerview_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC1177838F900129A88 /* img_outgoingcall_footerview_bg@2x.png */; };
+		F8DB4B30177838F900129A88 /* img_outgoingcall_headerview_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC2177838F900129A88 /* img_outgoingcall_headerview_bg.png */; };
+		F8DB4B31177838F900129A88 /* img_outgoingcall_headerview_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC3177838F900129A88 /* img_outgoingcall_headerview_bg@2x.png */; };
+		F8DB4B32177838F900129A88 /* img_sendcallbackcall_failed.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC4177838F900129A88 /* img_sendcallbackcall_failed.png */; };
+		F8DB4B33177838F900129A88 /* img_sendcallbackcall_succeed.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC5177838F900129A88 /* img_sendcallbackcall_succeed.png */; };
+		F8DB4B34177838F900129A88 /* img_tab_callrecord.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC6177838F900129A88 /* img_tab_callrecord.png */; };
+		F8DB4B35177838F900129A88 /* img_tab_callrecord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC7177838F900129A88 /* img_tab_callrecord@2x.png */; };
+		F8DB4B36177838F900129A88 /* img_tab_contactlist.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC8177838F900129A88 /* img_tab_contactlist.png */; };
+		F8DB4B37177838F900129A88 /* img_tab_contactlist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4AC9177838F900129A88 /* img_tab_contactlist@2x.png */; };
+		F8DB4B38177838F900129A88 /* img_tab_dial.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ACA177838F900129A88 /* img_tab_dial.png */; };
+		F8DB4B39177838F900129A88 /* img_tab_dial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DB4ACB177838F900129A88 /* img_tab_dial@2x.png */; };
+		F8DB4B3F1778399B00129A88 /* OutgoingCallGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B3C1778399B00129A88 /* OutgoingCallGenerator.m */; };
+		F8DB4B401778399B00129A88 /* SipCallDialModeSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B3E1778399B00129A88 /* SipCallDialModeSelector.m */; };
+		F8DB4B44177839C900129A88 /* OutgoingCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B43177839C900129A88 /* OutgoingCallViewController.m */; };
+		F8DB4B47177839EC00129A88 /* OutgoingCallView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B46177839EC00129A88 /* OutgoingCallView.m */; };
+		F8DB4B5117783A6400129A88 /* PJSipImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B4E17783A6400129A88 /* PJSipImplementation.m */; };
+		F8DB4B5217783A6400129A88 /* SipBaseImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B5017783A6400129A88 /* SipBaseImplementation.m */; };
+		F8DB4B5717783A8700129A88 /* SipRegistrationBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B5417783A8700129A88 /* SipRegistrationBean.m */; };
+		F8DB4B5817783A8700129A88 /* SipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B5617783A8700129A88 /* SipUtils.m */; };
+		F8DB4B5D17783ACD00129A88 /* CallRecordBean.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B5C17783ACD00129A88 /* CallRecordBean.m */; };
+		F8DB4B6217783AED00129A88 /* CallRecordDetailInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B5F17783AED00129A88 /* CallRecordDetailInfoViewController.m */; };
+		F8DB4B6317783AED00129A88 /* CallRecordHistoryListTabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B6117783AED00129A88 /* CallRecordHistoryListTabContentViewController.m */; };
+		F8DB4B6A17783AFB00129A88 /* CallRecordDetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B6517783AFB00129A88 /* CallRecordDetailInfoView.m */; };
+		F8DB4B6B17783AFB00129A88 /* CallRecordHistoryListTabContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B6717783AFB00129A88 /* CallRecordHistoryListTabContentView.m */; };
+		F8DB4B6C17783AFB00129A88 /* CallRecordHistoryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B6917783AFB00129A88 /* CallRecordHistoryListTableViewCell.m */; };
+		F8DB4B7017783B3A00129A88 /* ContactListTabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B6F17783B3A00129A88 /* ContactListTabContentViewController.m */; };
+		F8DB4B7517783B4700129A88 /* ContactListTabContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B7217783B4700129A88 /* ContactListTabContentView.m */; };
+		F8DB4B7617783B4700129A88 /* ContactListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B7417783B4700129A88 /* ContactListTableViewCell.m */; };
+		F8DB4B7A17783B6700129A88 /* DialTabContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B7917783B6700129A88 /* DialTabContentView.m */; };
+		F8DB4B7D17783B7100129A88 /* DialTabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B7C17783B7100129A88 /* DialTabContentViewController.m */; };
+		F8DB4B8117783EB100129A88 /* OutgoingCallControllerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB4B8017783EB100129A88 /* OutgoingCallControllerButton.m */; };
 		F8DCB9E417530E4A00DF8C78 /* btn_dark_green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */; };
 		F8DF65D31776D4030067AB3E /* ECBalanceQueryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */; };
 		F8DF65D61776D4160067AB3E /* ECBalanceQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DF65D51776D4160067AB3E /* ECBalanceQueryViewController.m */; };
@@ -470,8 +603,6 @@
 		F844955D1762DB9300EDFC6E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F844955F1762DBA200EDFC6E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		F84495611762DBC100EDFC6E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F84495631763160400EDFC6E /* ECSipRegisterBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSipRegisterBean.h; path = SipService/ECSipRegisterBean.h; sourceTree = "<group>"; };
-		F84495641763160400EDFC6E /* ECSipRegisterBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSipRegisterBean.m; path = SipService/ECSipRegisterBean.m; sourceTree = "<group>"; };
 		F84A32DA177309E7002C73B6 /* libpj-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpj-i386-apple-darwin9.a"; path = "Libraries/pjlib/lib/libpj-i386-apple-darwin9.a"; sourceTree = "<group>"; };
 		F84A32DD177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjlib-util-i386-apple-darwin9.a"; path = "Libraries/pjlib-util/lib/libpjlib-util-i386-apple-darwin9.a"; sourceTree = "<group>"; };
 		F84A32DF17730A0C002C73B6 /* libpjmedia-audiodev-i386-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev-i386-apple-darwin9.a"; path = "Libraries/pjmedia/lib/libpjmedia-audiodev-i386-apple-darwin9.a"; sourceTree = "<group>"; };
@@ -521,6 +652,166 @@
 		F87AC874174B69FD00CA8A2B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "common/bg@2x.png"; sourceTree = "<group>"; };
 		F8C973C4174C75450066F37E /* btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_green.png; path = common/btn_green.png; sourceTree = "<group>"; };
 		F8C973C8174CA5EA0066F37E /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = login/lock.png; sourceTree = "<group>"; };
+		F8DB49F11777F39900129A88 /* ECDialSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECDialSettingViewController.h; path = AppViews/Settings/DialSetting/ECDialSettingViewController.h; sourceTree = "<group>"; };
+		F8DB49F21777F39900129A88 /* ECDialSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECDialSettingViewController.m; path = AppViews/Settings/DialSetting/ECDialSettingViewController.m; sourceTree = "<group>"; };
+		F8DB49F41777F3B700129A88 /* ECDialSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECDialSettingView.h; path = AppViews/Settings/DialSetting/ECDialSettingView.h; sourceTree = "<group>"; };
+		F8DB49F51777F3B700129A88 /* ECDialSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECDialSettingView.m; path = AppViews/Settings/DialSetting/ECDialSettingView.m; sourceTree = "<group>"; };
+		F8DB4A571778316B00129A88 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		F8DB4A591778317200129A88 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F8DB4A5E177838F900129A88 /* img_addnewcontact6cleardialnumber_btn_normal_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_addnewcontact6cleardialnumber_btn_normal_bg.png; sourceTree = "<group>"; };
+		F8DB4A5F177838F900129A88 /* img_back4waitingcallbackcallbtn-en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_back4waitingcallbackcallbtn-en.png"; sourceTree = "<group>"; };
+		F8DB4A60177838F900129A88 /* img_back4waitingcallbackcallbtn-hs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_back4waitingcallbackcallbtn-hs.png"; sourceTree = "<group>"; };
+		F8DB4A61177838F900129A88 /* img_back4waitingcallbackcallbtn-ht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_back4waitingcallbackcallbtn-ht.png"; sourceTree = "<group>"; };
+		F8DB4A62177838F900129A88 /* img_back4waitingcallbackcallbtn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_back4waitingcallbackcallbtn_bg.png; sourceTree = "<group>"; };
+		F8DB4A63177838F900129A88 /* img_callbackview_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callbackview_bg.png; sourceTree = "<group>"; };
+		F8DB4A64177838F900129A88 /* img_callbtn-568h-en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-568h-en@2x.png"; sourceTree = "<group>"; };
+		F8DB4A65177838F900129A88 /* img_callbtn-568h-hs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-568h-hs@2x.png"; sourceTree = "<group>"; };
+		F8DB4A66177838F900129A88 /* img_callbtn-568h-ht@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-568h-ht@2x.png"; sourceTree = "<group>"; };
+		F8DB4A67177838F900129A88 /* img_callbtn-en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-en.png"; sourceTree = "<group>"; };
+		F8DB4A68177838F900129A88 /* img_callbtn-en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-en@2x.png"; sourceTree = "<group>"; };
+		F8DB4A69177838F900129A88 /* img_callbtn-hs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-hs.png"; sourceTree = "<group>"; };
+		F8DB4A6A177838F900129A88 /* img_callbtn-hs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-hs@2x.png"; sourceTree = "<group>"; };
+		F8DB4A6B177838F900129A88 /* img_callbtn-ht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-ht.png"; sourceTree = "<group>"; };
+		F8DB4A6C177838F900129A88 /* img_callbtn-ht@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callbtn-ht@2x.png"; sourceTree = "<group>"; };
+		F8DB4A6D177838F900129A88 /* img_callbtn_highlighted_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callbtn_highlighted_bg.png; sourceTree = "<group>"; };
+		F8DB4A6E177838F900129A88 /* img_callbtn_normal_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callbtn_normal_bg.png; sourceTree = "<group>"; };
+		F8DB4A6F177838F900129A88 /* img_callcontroller_contactsbtn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_contactsbtn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A70177838F900129A88 /* img_callcontroller_contactsbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callcontroller_contactsbtn.png; sourceTree = "<group>"; };
+		F8DB4A71177838F900129A88 /* img_callcontroller_contactsbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_contactsbtn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A72177838F900129A88 /* img_callcontroller_keyboardbtn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_keyboardbtn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A73177838F900129A88 /* img_callcontroller_keyboardbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callcontroller_keyboardbtn.png; sourceTree = "<group>"; };
+		F8DB4A74177838F900129A88 /* img_callcontroller_keyboardbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_keyboardbtn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A75177838F900129A88 /* img_callcontroller_mutebtn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_mutebtn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A76177838F900129A88 /* img_callcontroller_mutebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callcontroller_mutebtn.png; sourceTree = "<group>"; };
+		F8DB4A77177838F900129A88 /* img_callcontroller_mutebtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_mutebtn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A78177838F900129A88 /* img_callcontroller_speakerbtn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_speakerbtn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A79177838F900129A88 /* img_callcontroller_speakerbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callcontroller_speakerbtn.png; sourceTree = "<group>"; };
+		F8DB4A7A177838F900129A88 /* img_callcontroller_speakerbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_callcontroller_speakerbtn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A7B177838F900129A88 /* img_callcontrollerbtn_highlighted_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callcontrollerbtn_highlighted_bg.png; sourceTree = "<group>"; };
+		F8DB4A7C177838F900129A88 /* img_callcontrollerbtn_normal_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_callcontrollerbtn_normal_bg.png; sourceTree = "<group>"; };
+		F8DB4A7D177838F900129A88 /* img_cleardialphone_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_cleardialphone_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A7E177838F900129A88 /* img_cleardialphone_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_cleardialphone_btn.png; sourceTree = "<group>"; };
+		F8DB4A7F177838F900129A88 /* img_cleardialphone_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_cleardialphone_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A80177838F900129A88 /* img_default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_default_avatar.png; sourceTree = "<group>"; };
+		F8DB4A81177838F900129A88 /* img_default_gray_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_default_gray_avatar.png; sourceTree = "<group>"; };
+		F8DB4A82177838F900129A88 /* img_dial_0_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_0_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A83177838F900129A88 /* img_dial_0_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_0_btn.png; sourceTree = "<group>"; };
+		F8DB4A84177838F900129A88 /* img_dial_0_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_0_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A85177838F900129A88 /* img_dial_1_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_1_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A86177838F900129A88 /* img_dial_1_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_1_btn.png; sourceTree = "<group>"; };
+		F8DB4A87177838F900129A88 /* img_dial_1_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_1_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A88177838F900129A88 /* img_dial_2_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_2_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A89177838F900129A88 /* img_dial_2_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_2_btn.png; sourceTree = "<group>"; };
+		F8DB4A8A177838F900129A88 /* img_dial_2_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_2_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A8B177838F900129A88 /* img_dial_3_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_3_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A8C177838F900129A88 /* img_dial_3_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_3_btn.png; sourceTree = "<group>"; };
+		F8DB4A8D177838F900129A88 /* img_dial_3_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_3_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A8E177838F900129A88 /* img_dial_4_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_4_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A8F177838F900129A88 /* img_dial_4_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_4_btn.png; sourceTree = "<group>"; };
+		F8DB4A90177838F900129A88 /* img_dial_4_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_4_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A91177838F900129A88 /* img_dial_5_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_5_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A92177838F900129A88 /* img_dial_5_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_5_btn.png; sourceTree = "<group>"; };
+		F8DB4A93177838F900129A88 /* img_dial_5_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_5_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A94177838F900129A88 /* img_dial_6_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_6_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A95177838F900129A88 /* img_dial_6_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_6_btn.png; sourceTree = "<group>"; };
+		F8DB4A96177838F900129A88 /* img_dial_6_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_6_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A97177838F900129A88 /* img_dial_7_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_7_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A98177838F900129A88 /* img_dial_7_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_7_btn.png; sourceTree = "<group>"; };
+		F8DB4A99177838F900129A88 /* img_dial_7_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_7_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A9A177838F900129A88 /* img_dial_8_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_8_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A9B177838F900129A88 /* img_dial_8_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_8_btn.png; sourceTree = "<group>"; };
+		F8DB4A9C177838F900129A88 /* img_dial_8_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_8_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4A9D177838F900129A88 /* img_dial_9_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_9_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4A9E177838F900129A88 /* img_dial_9_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_9_btn.png; sourceTree = "<group>"; };
+		F8DB4A9F177838F900129A88 /* img_dial_9_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_9_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4AA0177838F900129A88 /* img_dial_pound_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_pound_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4AA1177838F900129A88 /* img_dial_pound_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_pound_btn.png; sourceTree = "<group>"; };
+		F8DB4AA2177838F900129A88 /* img_dial_pound_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_pound_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4AA3177838F900129A88 /* img_dial_star_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_star_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4AA4177838F900129A88 /* img_dial_star_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dial_star_btn.png; sourceTree = "<group>"; };
+		F8DB4AA5177838F900129A88 /* img_dial_star_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dial_star_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4AA6177838F900129A88 /* img_dialbtn_highlighted_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dialbtn_highlighted_bg.png; sourceTree = "<group>"; };
+		F8DB4AA7177838F900129A88 /* img_dialbtn_normal_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dialbtn_normal_bg.png; sourceTree = "<group>"; };
+		F8DB4AA8177838F900129A88 /* img_dialnumber7ownnershiplabel_bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dialnumber7ownnershiplabel_bg-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4AA9177838F900129A88 /* img_dialnumber7ownnershiplabel_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dialnumber7ownnershiplabel_bg.png; sourceTree = "<group>"; };
+		F8DB4AAA177838F900129A88 /* img_dialnumber7ownnershiplabel_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_dialnumber7ownnershiplabel_bg@2x.png"; sourceTree = "<group>"; };
+		F8DB4AAB177838F900129A88 /* img_hangup_longbtn-en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hangup_longbtn-en.png"; sourceTree = "<group>"; };
+		F8DB4AAC177838F900129A88 /* img_hangup_longbtn-hs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hangup_longbtn-hs.png"; sourceTree = "<group>"; };
+		F8DB4AAD177838F900129A88 /* img_hangup_longbtn-ht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hangup_longbtn-ht.png"; sourceTree = "<group>"; };
+		F8DB4AAE177838F900129A88 /* img_hangup_longbtn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_hangup_longbtn_bg.png; sourceTree = "<group>"; };
+		F8DB4AAF177838F900129A88 /* img_hangup_shortbtn-en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hangup_shortbtn-en.png"; sourceTree = "<group>"; };
+		F8DB4AB0177838F900129A88 /* img_hangup_shortbtn-hs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hangup_shortbtn-hs.png"; sourceTree = "<group>"; };
+		F8DB4AB1177838F900129A88 /* img_hangup_shortbtn-ht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hangup_shortbtn-ht.png"; sourceTree = "<group>"; };
+		F8DB4AB2177838F900129A88 /* img_hangup_shortbtn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_hangup_shortbtn_bg.png; sourceTree = "<group>"; };
+		F8DB4AB3177838F900129A88 /* img_hidekeyboardbtn-en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hidekeyboardbtn-en.png"; sourceTree = "<group>"; };
+		F8DB4AB4177838F900129A88 /* img_hidekeyboardbtn-hs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hidekeyboardbtn-hs.png"; sourceTree = "<group>"; };
+		F8DB4AB5177838F900129A88 /* img_hidekeyboardbtn-ht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_hidekeyboardbtn-ht.png"; sourceTree = "<group>"; };
+		F8DB4AB6177838F900129A88 /* img_hidekeyboardbtn_highlighted_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_hidekeyboardbtn_highlighted_bg.png; sourceTree = "<group>"; };
+		F8DB4AB7177838F900129A88 /* img_hidekeyboardbtn_normal_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_hidekeyboardbtn_normal_bg.png; sourceTree = "<group>"; };
+		F8DB4AB8177838F900129A88 /* img_newcontact_btn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_newcontact_btn-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4AB9177838F900129A88 /* img_newcontact_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_newcontact_btn.png; sourceTree = "<group>"; };
+		F8DB4ABA177838F900129A88 /* img_newcontact_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_newcontact_btn@2x.png"; sourceTree = "<group>"; };
+		F8DB4ABB177838F900129A88 /* img_outgoingcall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_outgoingcall.png; sourceTree = "<group>"; };
+		F8DB4ABC177838F900129A88 /* img_outgoingcall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_outgoingcall@2x.png"; sourceTree = "<group>"; };
+		F8DB4ABD177838F900129A88 /* img_outgoingcall_bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_outgoingcall_bg-568h@2x.png"; sourceTree = "<group>"; };
+		F8DB4ABE177838F900129A88 /* img_outgoingcall_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_outgoingcall_bg.png; sourceTree = "<group>"; };
+		F8DB4ABF177838F900129A88 /* img_outgoingcall_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_outgoingcall_bg@2x.png"; sourceTree = "<group>"; };
+		F8DB4AC0177838F900129A88 /* img_outgoingcall_footerview_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_outgoingcall_footerview_bg.png; sourceTree = "<group>"; };
+		F8DB4AC1177838F900129A88 /* img_outgoingcall_footerview_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_outgoingcall_footerview_bg@2x.png"; sourceTree = "<group>"; };
+		F8DB4AC2177838F900129A88 /* img_outgoingcall_headerview_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_outgoingcall_headerview_bg.png; sourceTree = "<group>"; };
+		F8DB4AC3177838F900129A88 /* img_outgoingcall_headerview_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_outgoingcall_headerview_bg@2x.png"; sourceTree = "<group>"; };
+		F8DB4AC4177838F900129A88 /* img_sendcallbackcall_failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_sendcallbackcall_failed.png; sourceTree = "<group>"; };
+		F8DB4AC5177838F900129A88 /* img_sendcallbackcall_succeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_sendcallbackcall_succeed.png; sourceTree = "<group>"; };
+		F8DB4AC6177838F900129A88 /* img_tab_callrecord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_tab_callrecord.png; sourceTree = "<group>"; };
+		F8DB4AC7177838F900129A88 /* img_tab_callrecord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_tab_callrecord@2x.png"; sourceTree = "<group>"; };
+		F8DB4AC8177838F900129A88 /* img_tab_contactlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_tab_contactlist.png; sourceTree = "<group>"; };
+		F8DB4AC9177838F900129A88 /* img_tab_contactlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_tab_contactlist@2x.png"; sourceTree = "<group>"; };
+		F8DB4ACA177838F900129A88 /* img_tab_dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_tab_dial.png; sourceTree = "<group>"; };
+		F8DB4ACB177838F900129A88 /* img_tab_dial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_tab_dial@2x.png"; sourceTree = "<group>"; };
+		F8DB4B3B1778399B00129A88 /* OutgoingCallGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OutgoingCallGenerator.h; path = AppViews/CallRelated/Controller/OutgoingCallGenerator.h; sourceTree = "<group>"; };
+		F8DB4B3C1778399B00129A88 /* OutgoingCallGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OutgoingCallGenerator.m; path = AppViews/CallRelated/Controller/OutgoingCallGenerator.m; sourceTree = "<group>"; };
+		F8DB4B3D1778399B00129A88 /* SipCallDialModeSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipCallDialModeSelector.h; path = AppViews/CallRelated/Controller/SipCallDialModeSelector.h; sourceTree = "<group>"; };
+		F8DB4B3E1778399B00129A88 /* SipCallDialModeSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SipCallDialModeSelector.m; path = AppViews/CallRelated/Controller/SipCallDialModeSelector.m; sourceTree = "<group>"; };
+		F8DB4B41177839AB00129A88 /* SipCallMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipCallMode.h; path = AppViews/CallRelated/Data/SipCallMode.h; sourceTree = "<group>"; };
+		F8DB4B42177839C900129A88 /* OutgoingCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OutgoingCallViewController.h; path = AppViews/CallRelated/ViewControllers/OutgoingCallViewController.h; sourceTree = "<group>"; };
+		F8DB4B43177839C900129A88 /* OutgoingCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OutgoingCallViewController.m; path = AppViews/CallRelated/ViewControllers/OutgoingCallViewController.m; sourceTree = "<group>"; };
+		F8DB4B45177839DE00129A88 /* OutgoingCallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OutgoingCallView.h; path = AppViews/CallRelated/Views/OutgoingCallView.h; sourceTree = "<group>"; };
+		F8DB4B46177839EC00129A88 /* OutgoingCallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OutgoingCallView.m; path = AppViews/CallRelated/Views/OutgoingCallView.m; sourceTree = "<group>"; };
+		F8DB4B4A17783A4F00129A88 /* SipInviteStateChangedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipInviteStateChangedProtocol.h; path = AppViews/CallRelated/Controller/SipInviteStateChangedProtocol.h; sourceTree = "<group>"; };
+		F8DB4B4B17783A4F00129A88 /* SipRegistrationStateChangedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipRegistrationStateChangedProtocol.h; path = AppViews/CallRelated/Controller/SipRegistrationStateChangedProtocol.h; sourceTree = "<group>"; };
+		F8DB4B4C17783A6400129A88 /* ISipProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISipProtocol.h; path = AppViews/CallRelated/Controller/ISipProtocol.h; sourceTree = "<group>"; };
+		F8DB4B4D17783A6400129A88 /* PJSipImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PJSipImplementation.h; path = AppViews/CallRelated/Controller/PJSipImplementation.h; sourceTree = "<group>"; };
+		F8DB4B4E17783A6400129A88 /* PJSipImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PJSipImplementation.m; path = AppViews/CallRelated/Controller/PJSipImplementation.m; sourceTree = "<group>"; };
+		F8DB4B4F17783A6400129A88 /* SipBaseImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipBaseImplementation.h; path = AppViews/CallRelated/Controller/SipBaseImplementation.h; sourceTree = "<group>"; };
+		F8DB4B5017783A6400129A88 /* SipBaseImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SipBaseImplementation.m; path = AppViews/CallRelated/Controller/SipBaseImplementation.m; sourceTree = "<group>"; };
+		F8DB4B5317783A8700129A88 /* SipRegistrationBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipRegistrationBean.h; path = AppViews/CallRelated/Data/SipRegistrationBean.h; sourceTree = "<group>"; };
+		F8DB4B5417783A8700129A88 /* SipRegistrationBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SipRegistrationBean.m; path = AppViews/CallRelated/Data/SipRegistrationBean.m; sourceTree = "<group>"; };
+		F8DB4B5517783A8700129A88 /* SipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SipUtils.h; path = AppViews/CallRelated/Data/SipUtils.h; sourceTree = "<group>"; };
+		F8DB4B5617783A8700129A88 /* SipUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SipUtils.m; path = AppViews/CallRelated/Data/SipUtils.m; sourceTree = "<group>"; };
+		F8DB4B5B17783AC400129A88 /* CallRecordBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordBean.h; path = AppViews/CallRelated/Data/CallRecordBean.h; sourceTree = "<group>"; };
+		F8DB4B5C17783ACD00129A88 /* CallRecordBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordBean.m; path = AppViews/CallRelated/Data/CallRecordBean.m; sourceTree = "<group>"; };
+		F8DB4B5E17783AED00129A88 /* CallRecordDetailInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordDetailInfoViewController.h; path = AppViews/CallRelated/ViewControllers/CallRecordDetailInfoViewController.h; sourceTree = "<group>"; };
+		F8DB4B5F17783AED00129A88 /* CallRecordDetailInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordDetailInfoViewController.m; path = AppViews/CallRelated/ViewControllers/CallRecordDetailInfoViewController.m; sourceTree = "<group>"; };
+		F8DB4B6017783AED00129A88 /* CallRecordHistoryListTabContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordHistoryListTabContentViewController.h; path = AppViews/CallRelated/ViewControllers/CallRecordHistoryListTabContentViewController.h; sourceTree = "<group>"; };
+		F8DB4B6117783AED00129A88 /* CallRecordHistoryListTabContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordHistoryListTabContentViewController.m; path = AppViews/CallRelated/ViewControllers/CallRecordHistoryListTabContentViewController.m; sourceTree = "<group>"; };
+		F8DB4B6417783AFB00129A88 /* CallRecordDetailInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordDetailInfoView.h; path = AppViews/CallRelated/Views/CallRecordDetailInfoView.h; sourceTree = "<group>"; };
+		F8DB4B6517783AFB00129A88 /* CallRecordDetailInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordDetailInfoView.m; path = AppViews/CallRelated/Views/CallRecordDetailInfoView.m; sourceTree = "<group>"; };
+		F8DB4B6617783AFB00129A88 /* CallRecordHistoryListTabContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordHistoryListTabContentView.h; path = AppViews/CallRelated/Views/CallRecordHistoryListTabContentView.h; sourceTree = "<group>"; };
+		F8DB4B6717783AFB00129A88 /* CallRecordHistoryListTabContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordHistoryListTabContentView.m; path = AppViews/CallRelated/Views/CallRecordHistoryListTabContentView.m; sourceTree = "<group>"; };
+		F8DB4B6817783AFB00129A88 /* CallRecordHistoryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordHistoryListTableViewCell.h; path = AppViews/CallRelated/Views/CallRecordHistoryListTableViewCell.h; sourceTree = "<group>"; };
+		F8DB4B6917783AFB00129A88 /* CallRecordHistoryListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordHistoryListTableViewCell.m; path = AppViews/CallRelated/Views/CallRecordHistoryListTableViewCell.m; sourceTree = "<group>"; };
+		F8DB4B6E17783B3A00129A88 /* ContactListTabContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactListTabContentViewController.h; path = AppViews/CallRelated/ViewControllers/ContactListTabContentViewController.h; sourceTree = "<group>"; };
+		F8DB4B6F17783B3A00129A88 /* ContactListTabContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactListTabContentViewController.m; path = AppViews/CallRelated/ViewControllers/ContactListTabContentViewController.m; sourceTree = "<group>"; };
+		F8DB4B7117783B4700129A88 /* ContactListTabContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactListTabContentView.h; path = AppViews/CallRelated/Views/ContactListTabContentView.h; sourceTree = "<group>"; };
+		F8DB4B7217783B4700129A88 /* ContactListTabContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactListTabContentView.m; path = AppViews/CallRelated/Views/ContactListTabContentView.m; sourceTree = "<group>"; };
+		F8DB4B7317783B4700129A88 /* ContactListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactListTableViewCell.h; path = AppViews/CallRelated/Views/ContactListTableViewCell.h; sourceTree = "<group>"; };
+		F8DB4B7417783B4700129A88 /* ContactListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactListTableViewCell.m; path = AppViews/CallRelated/Views/ContactListTableViewCell.m; sourceTree = "<group>"; };
+		F8DB4B7817783B6700129A88 /* DialTabContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DialTabContentView.h; path = AppViews/CallRelated/Views/DialTabContentView.h; sourceTree = "<group>"; };
+		F8DB4B7917783B6700129A88 /* DialTabContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DialTabContentView.m; path = AppViews/CallRelated/Views/DialTabContentView.m; sourceTree = "<group>"; };
+		F8DB4B7B17783B7100129A88 /* DialTabContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DialTabContentViewController.h; path = AppViews/CallRelated/ViewControllers/DialTabContentViewController.h; sourceTree = "<group>"; };
+		F8DB4B7C17783B7100129A88 /* DialTabContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DialTabContentViewController.m; path = AppViews/CallRelated/ViewControllers/DialTabContentViewController.m; sourceTree = "<group>"; };
+		F8DB4B7F17783EB100129A88 /* OutgoingCallControllerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OutgoingCallControllerButton.h; path = AppViews/CallRelated/CustomComponents/OutgoingCallControllerButton.h; sourceTree = "<group>"; };
+		F8DB4B8017783EB100129A88 /* OutgoingCallControllerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OutgoingCallControllerButton.m; path = AppViews/CallRelated/CustomComponents/OutgoingCallControllerButton.m; sourceTree = "<group>"; };
 		F8DCB9E317530E4A00DF8C78 /* btn_dark_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_dark_green.png; path = common/btn_dark_green.png; sourceTree = "<group>"; };
 		F8DF65D11776D4030067AB3E /* ECBalanceQueryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECBalanceQueryView.h; path = AppViews/Settings/BalanceQuery/ECBalanceQueryView.h; sourceTree = "<group>"; };
 		F8DF65D21776D4030067AB3E /* ECBalanceQueryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECBalanceQueryView.m; path = AppViews/Settings/BalanceQuery/ECBalanceQueryView.m; sourceTree = "<group>"; };
@@ -576,6 +867,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DB4A5A1778317200129A88 /* libsqlite3.dylib in Frameworks */,
+				F8DB4A581778316B00129A88 /* AddressBookUI.framework in Frameworks */,
+				F84495621762DBC100EDFC6E /* AudioToolbox.framework in Frameworks */,
 				F84A32FA17730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a in Frameworks */,
 				F84A32FB17730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a in Frameworks */,
 				F84A32FC17730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a in Frameworks */,
@@ -595,7 +889,6 @@
 				F84A32E817730A0C002C73B6 /* libpjsdp-i386-apple-darwin9.a in Frameworks */,
 				F84A32DE177309F4002C73B6 /* libpjlib-util-i386-apple-darwin9.a in Frameworks */,
 				F84A32DB177309E7002C73B6 /* libpj-i386-apple-darwin9.a in Frameworks */,
-				F84495621762DBC100EDFC6E /* AudioToolbox.framework in Frameworks */,
 				F87AC871174B650600CA8A2B /* libicucore.dylib in Frameworks */,
 				F87AC86E174B64DA00CA8A2B /* libz.1.2.5.dylib in Frameworks */,
 				F87AC86C174B64C900CA8A2B /* libbz2.1.0.dylib in Frameworks */,
@@ -1220,6 +1513,8 @@
 		F81B5BA71749F69F00279D32 = {
 			isa = PBXGroup;
 			children = (
+				F8DB4A591778317200129A88 /* libsqlite3.dylib */,
+				F8DB4A571778316B00129A88 /* AddressBookUI.framework */,
 				F84A32F317730A4F002C73B6 /* libg7221codec-i386-apple-darwin9.a */,
 				F84A32F417730A4F002C73B6 /* libgsmcodec-i386-apple-darwin9.a */,
 				F84A32F517730A4F002C73B6 /* libilbccodec-i386-apple-darwin9.a */,
@@ -1284,7 +1579,7 @@
 		F81B5BBC1749F69F00279D32 /* uutalk_iphone */ = {
 			isa = PBXGroup;
 			children = (
-				F81C6D5E1761BBAB00824601 /* SipService */,
+				F81C6D5E1761BBAB00824601 /* Sip */,
 				F81297CD174F6C72002487A2 /* Util */,
 				F84CA253174A123B000E368D /* Config */,
 				F84CA24F174A08AA000E368D /* AppViews */,
@@ -1310,21 +1605,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F81C6D5E1761BBAB00824601 /* SipService */ = {
+		F81C6D5E1761BBAB00824601 /* Sip */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB4B5317783A8700129A88 /* SipRegistrationBean.h */,
+				F8DB4B5417783A8700129A88 /* SipRegistrationBean.m */,
+				F8DB4B5517783A8700129A88 /* SipUtils.h */,
+				F8DB4B5617783A8700129A88 /* SipUtils.m */,
+				F8DB4B4917783A2E00129A88 /* Services */,
+				F8DB4B4817783A1F00129A88 /* Listeners */,
 				F81C6D621761E06000824601 /* pjsua_app.m */,
 				F81C6D5F1761BBE400824601 /* ECSipServiceManager.h */,
 				F81C6D601761BBE400824601 /* ECSipServiceManager.m */,
-				F84495631763160400EDFC6E /* ECSipRegisterBean.h */,
-				F84495641763160400EDFC6E /* ECSipRegisterBean.m */,
 			);
-			name = SipService;
+			name = Sip;
 			sourceTree = "<group>";
 		};
 		F84CA249174A081F000E368D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB4A5D177838F900129A88 /* callrelated */,
 				F80ADCAC17549DFB000B523A /* setting */,
 				F8F656D5174DFB1900803E4E /* mainpage */,
 				F8C973C7174CA5CF0066F37E /* login */,
@@ -1347,6 +1647,9 @@
 		F84CA24F174A08AA000E368D /* AppViews */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB4B7E17783E9700129A88 /* CustomComponents */,
+				F8DB4B5917783A9500129A88 /* Tab&TabContent */,
+				F8DB4B3A1778395600129A88 /* OutgoingCall */,
 				F8F656DA174DFE5F00803E4E /* Dial */,
 				F8F656D1174DF79000803E4E /* Settings */,
 				F8F656CB174DF6B400803E4E /* MainPage */,
@@ -1422,6 +1725,233 @@
 			name = login;
 			sourceTree = "<group>";
 		};
+		F8DB49F01777F37400129A88 /* DialSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB49F11777F39900129A88 /* ECDialSettingViewController.h */,
+				F8DB49F21777F39900129A88 /* ECDialSettingViewController.m */,
+				F8DB49F41777F3B700129A88 /* ECDialSettingView.h */,
+				F8DB49F51777F3B700129A88 /* ECDialSettingView.m */,
+			);
+			name = DialSetting;
+			sourceTree = "<group>";
+		};
+		F8DB4A5D177838F900129A88 /* callrelated */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4A5E177838F900129A88 /* img_addnewcontact6cleardialnumber_btn_normal_bg.png */,
+				F8DB4A5F177838F900129A88 /* img_back4waitingcallbackcallbtn-en.png */,
+				F8DB4A60177838F900129A88 /* img_back4waitingcallbackcallbtn-hs.png */,
+				F8DB4A61177838F900129A88 /* img_back4waitingcallbackcallbtn-ht.png */,
+				F8DB4A62177838F900129A88 /* img_back4waitingcallbackcallbtn_bg.png */,
+				F8DB4A63177838F900129A88 /* img_callbackview_bg.png */,
+				F8DB4A64177838F900129A88 /* img_callbtn-568h-en@2x.png */,
+				F8DB4A65177838F900129A88 /* img_callbtn-568h-hs@2x.png */,
+				F8DB4A66177838F900129A88 /* img_callbtn-568h-ht@2x.png */,
+				F8DB4A67177838F900129A88 /* img_callbtn-en.png */,
+				F8DB4A68177838F900129A88 /* img_callbtn-en@2x.png */,
+				F8DB4A69177838F900129A88 /* img_callbtn-hs.png */,
+				F8DB4A6A177838F900129A88 /* img_callbtn-hs@2x.png */,
+				F8DB4A6B177838F900129A88 /* img_callbtn-ht.png */,
+				F8DB4A6C177838F900129A88 /* img_callbtn-ht@2x.png */,
+				F8DB4A6D177838F900129A88 /* img_callbtn_highlighted_bg.png */,
+				F8DB4A6E177838F900129A88 /* img_callbtn_normal_bg.png */,
+				F8DB4A6F177838F900129A88 /* img_callcontroller_contactsbtn-568h@2x.png */,
+				F8DB4A70177838F900129A88 /* img_callcontroller_contactsbtn.png */,
+				F8DB4A71177838F900129A88 /* img_callcontroller_contactsbtn@2x.png */,
+				F8DB4A72177838F900129A88 /* img_callcontroller_keyboardbtn-568h@2x.png */,
+				F8DB4A73177838F900129A88 /* img_callcontroller_keyboardbtn.png */,
+				F8DB4A74177838F900129A88 /* img_callcontroller_keyboardbtn@2x.png */,
+				F8DB4A75177838F900129A88 /* img_callcontroller_mutebtn-568h@2x.png */,
+				F8DB4A76177838F900129A88 /* img_callcontroller_mutebtn.png */,
+				F8DB4A77177838F900129A88 /* img_callcontroller_mutebtn@2x.png */,
+				F8DB4A78177838F900129A88 /* img_callcontroller_speakerbtn-568h@2x.png */,
+				F8DB4A79177838F900129A88 /* img_callcontroller_speakerbtn.png */,
+				F8DB4A7A177838F900129A88 /* img_callcontroller_speakerbtn@2x.png */,
+				F8DB4A7B177838F900129A88 /* img_callcontrollerbtn_highlighted_bg.png */,
+				F8DB4A7C177838F900129A88 /* img_callcontrollerbtn_normal_bg.png */,
+				F8DB4A7D177838F900129A88 /* img_cleardialphone_btn-568h@2x.png */,
+				F8DB4A7E177838F900129A88 /* img_cleardialphone_btn.png */,
+				F8DB4A7F177838F900129A88 /* img_cleardialphone_btn@2x.png */,
+				F8DB4A80177838F900129A88 /* img_default_avatar.png */,
+				F8DB4A81177838F900129A88 /* img_default_gray_avatar.png */,
+				F8DB4A82177838F900129A88 /* img_dial_0_btn-568h@2x.png */,
+				F8DB4A83177838F900129A88 /* img_dial_0_btn.png */,
+				F8DB4A84177838F900129A88 /* img_dial_0_btn@2x.png */,
+				F8DB4A85177838F900129A88 /* img_dial_1_btn-568h@2x.png */,
+				F8DB4A86177838F900129A88 /* img_dial_1_btn.png */,
+				F8DB4A87177838F900129A88 /* img_dial_1_btn@2x.png */,
+				F8DB4A88177838F900129A88 /* img_dial_2_btn-568h@2x.png */,
+				F8DB4A89177838F900129A88 /* img_dial_2_btn.png */,
+				F8DB4A8A177838F900129A88 /* img_dial_2_btn@2x.png */,
+				F8DB4A8B177838F900129A88 /* img_dial_3_btn-568h@2x.png */,
+				F8DB4A8C177838F900129A88 /* img_dial_3_btn.png */,
+				F8DB4A8D177838F900129A88 /* img_dial_3_btn@2x.png */,
+				F8DB4A8E177838F900129A88 /* img_dial_4_btn-568h@2x.png */,
+				F8DB4A8F177838F900129A88 /* img_dial_4_btn.png */,
+				F8DB4A90177838F900129A88 /* img_dial_4_btn@2x.png */,
+				F8DB4A91177838F900129A88 /* img_dial_5_btn-568h@2x.png */,
+				F8DB4A92177838F900129A88 /* img_dial_5_btn.png */,
+				F8DB4A93177838F900129A88 /* img_dial_5_btn@2x.png */,
+				F8DB4A94177838F900129A88 /* img_dial_6_btn-568h@2x.png */,
+				F8DB4A95177838F900129A88 /* img_dial_6_btn.png */,
+				F8DB4A96177838F900129A88 /* img_dial_6_btn@2x.png */,
+				F8DB4A97177838F900129A88 /* img_dial_7_btn-568h@2x.png */,
+				F8DB4A98177838F900129A88 /* img_dial_7_btn.png */,
+				F8DB4A99177838F900129A88 /* img_dial_7_btn@2x.png */,
+				F8DB4A9A177838F900129A88 /* img_dial_8_btn-568h@2x.png */,
+				F8DB4A9B177838F900129A88 /* img_dial_8_btn.png */,
+				F8DB4A9C177838F900129A88 /* img_dial_8_btn@2x.png */,
+				F8DB4A9D177838F900129A88 /* img_dial_9_btn-568h@2x.png */,
+				F8DB4A9E177838F900129A88 /* img_dial_9_btn.png */,
+				F8DB4A9F177838F900129A88 /* img_dial_9_btn@2x.png */,
+				F8DB4AA0177838F900129A88 /* img_dial_pound_btn-568h@2x.png */,
+				F8DB4AA1177838F900129A88 /* img_dial_pound_btn.png */,
+				F8DB4AA2177838F900129A88 /* img_dial_pound_btn@2x.png */,
+				F8DB4AA3177838F900129A88 /* img_dial_star_btn-568h@2x.png */,
+				F8DB4AA4177838F900129A88 /* img_dial_star_btn.png */,
+				F8DB4AA5177838F900129A88 /* img_dial_star_btn@2x.png */,
+				F8DB4AA6177838F900129A88 /* img_dialbtn_highlighted_bg.png */,
+				F8DB4AA7177838F900129A88 /* img_dialbtn_normal_bg.png */,
+				F8DB4AA8177838F900129A88 /* img_dialnumber7ownnershiplabel_bg-568h@2x.png */,
+				F8DB4AA9177838F900129A88 /* img_dialnumber7ownnershiplabel_bg.png */,
+				F8DB4AAA177838F900129A88 /* img_dialnumber7ownnershiplabel_bg@2x.png */,
+				F8DB4AAB177838F900129A88 /* img_hangup_longbtn-en.png */,
+				F8DB4AAC177838F900129A88 /* img_hangup_longbtn-hs.png */,
+				F8DB4AAD177838F900129A88 /* img_hangup_longbtn-ht.png */,
+				F8DB4AAE177838F900129A88 /* img_hangup_longbtn_bg.png */,
+				F8DB4AAF177838F900129A88 /* img_hangup_shortbtn-en.png */,
+				F8DB4AB0177838F900129A88 /* img_hangup_shortbtn-hs.png */,
+				F8DB4AB1177838F900129A88 /* img_hangup_shortbtn-ht.png */,
+				F8DB4AB2177838F900129A88 /* img_hangup_shortbtn_bg.png */,
+				F8DB4AB3177838F900129A88 /* img_hidekeyboardbtn-en.png */,
+				F8DB4AB4177838F900129A88 /* img_hidekeyboardbtn-hs.png */,
+				F8DB4AB5177838F900129A88 /* img_hidekeyboardbtn-ht.png */,
+				F8DB4AB6177838F900129A88 /* img_hidekeyboardbtn_highlighted_bg.png */,
+				F8DB4AB7177838F900129A88 /* img_hidekeyboardbtn_normal_bg.png */,
+				F8DB4AB8177838F900129A88 /* img_newcontact_btn-568h@2x.png */,
+				F8DB4AB9177838F900129A88 /* img_newcontact_btn.png */,
+				F8DB4ABA177838F900129A88 /* img_newcontact_btn@2x.png */,
+				F8DB4ABB177838F900129A88 /* img_outgoingcall.png */,
+				F8DB4ABC177838F900129A88 /* img_outgoingcall@2x.png */,
+				F8DB4ABD177838F900129A88 /* img_outgoingcall_bg-568h@2x.png */,
+				F8DB4ABE177838F900129A88 /* img_outgoingcall_bg.png */,
+				F8DB4ABF177838F900129A88 /* img_outgoingcall_bg@2x.png */,
+				F8DB4AC0177838F900129A88 /* img_outgoingcall_footerview_bg.png */,
+				F8DB4AC1177838F900129A88 /* img_outgoingcall_footerview_bg@2x.png */,
+				F8DB4AC2177838F900129A88 /* img_outgoingcall_headerview_bg.png */,
+				F8DB4AC3177838F900129A88 /* img_outgoingcall_headerview_bg@2x.png */,
+				F8DB4AC4177838F900129A88 /* img_sendcallbackcall_failed.png */,
+				F8DB4AC5177838F900129A88 /* img_sendcallbackcall_succeed.png */,
+				F8DB4AC6177838F900129A88 /* img_tab_callrecord.png */,
+				F8DB4AC7177838F900129A88 /* img_tab_callrecord@2x.png */,
+				F8DB4AC8177838F900129A88 /* img_tab_contactlist.png */,
+				F8DB4AC9177838F900129A88 /* img_tab_contactlist@2x.png */,
+				F8DB4ACA177838F900129A88 /* img_tab_dial.png */,
+				F8DB4ACB177838F900129A88 /* img_tab_dial@2x.png */,
+			);
+			path = callrelated;
+			sourceTree = "<group>";
+		};
+		F8DB4B3A1778395600129A88 /* OutgoingCall */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B46177839EC00129A88 /* OutgoingCallView.m */,
+				F8DB4B45177839DE00129A88 /* OutgoingCallView.h */,
+				F8DB4B42177839C900129A88 /* OutgoingCallViewController.h */,
+				F8DB4B43177839C900129A88 /* OutgoingCallViewController.m */,
+				F8DB4B41177839AB00129A88 /* SipCallMode.h */,
+				F8DB4B3B1778399B00129A88 /* OutgoingCallGenerator.h */,
+				F8DB4B3C1778399B00129A88 /* OutgoingCallGenerator.m */,
+				F8DB4B3D1778399B00129A88 /* SipCallDialModeSelector.h */,
+				F8DB4B3E1778399B00129A88 /* SipCallDialModeSelector.m */,
+			);
+			name = OutgoingCall;
+			sourceTree = "<group>";
+		};
+		F8DB4B4817783A1F00129A88 /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B4A17783A4F00129A88 /* SipInviteStateChangedProtocol.h */,
+				F8DB4B4B17783A4F00129A88 /* SipRegistrationStateChangedProtocol.h */,
+			);
+			name = Listeners;
+			sourceTree = "<group>";
+		};
+		F8DB4B4917783A2E00129A88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B4C17783A6400129A88 /* ISipProtocol.h */,
+				F8DB4B4D17783A6400129A88 /* PJSipImplementation.h */,
+				F8DB4B4E17783A6400129A88 /* PJSipImplementation.m */,
+				F8DB4B4F17783A6400129A88 /* SipBaseImplementation.h */,
+				F8DB4B5017783A6400129A88 /* SipBaseImplementation.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F8DB4B5917783A9500129A88 /* Tab&TabContent */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B7717783B5200129A88 /* Keypad */,
+				F8DB4B6D17783B1200129A88 /* ContactList */,
+				F8DB4B5A17783AAD00129A88 /* CallRecords */,
+			);
+			name = "Tab&TabContent";
+			sourceTree = "<group>";
+		};
+		F8DB4B5A17783AAD00129A88 /* CallRecords */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B6417783AFB00129A88 /* CallRecordDetailInfoView.h */,
+				F8DB4B6517783AFB00129A88 /* CallRecordDetailInfoView.m */,
+				F8DB4B6617783AFB00129A88 /* CallRecordHistoryListTabContentView.h */,
+				F8DB4B6717783AFB00129A88 /* CallRecordHistoryListTabContentView.m */,
+				F8DB4B6817783AFB00129A88 /* CallRecordHistoryListTableViewCell.h */,
+				F8DB4B6917783AFB00129A88 /* CallRecordHistoryListTableViewCell.m */,
+				F8DB4B5E17783AED00129A88 /* CallRecordDetailInfoViewController.h */,
+				F8DB4B5F17783AED00129A88 /* CallRecordDetailInfoViewController.m */,
+				F8DB4B6017783AED00129A88 /* CallRecordHistoryListTabContentViewController.h */,
+				F8DB4B6117783AED00129A88 /* CallRecordHistoryListTabContentViewController.m */,
+				F8DB4B5C17783ACD00129A88 /* CallRecordBean.m */,
+				F8DB4B5B17783AC400129A88 /* CallRecordBean.h */,
+			);
+			name = CallRecords;
+			sourceTree = "<group>";
+		};
+		F8DB4B6D17783B1200129A88 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B7117783B4700129A88 /* ContactListTabContentView.h */,
+				F8DB4B7217783B4700129A88 /* ContactListTabContentView.m */,
+				F8DB4B7317783B4700129A88 /* ContactListTableViewCell.h */,
+				F8DB4B7417783B4700129A88 /* ContactListTableViewCell.m */,
+				F8DB4B6E17783B3A00129A88 /* ContactListTabContentViewController.h */,
+				F8DB4B6F17783B3A00129A88 /* ContactListTabContentViewController.m */,
+			);
+			name = ContactList;
+			sourceTree = "<group>";
+		};
+		F8DB4B7717783B5200129A88 /* Keypad */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B7B17783B7100129A88 /* DialTabContentViewController.h */,
+				F8DB4B7C17783B7100129A88 /* DialTabContentViewController.m */,
+				F8DB4B7817783B6700129A88 /* DialTabContentView.h */,
+				F8DB4B7917783B6700129A88 /* DialTabContentView.m */,
+			);
+			name = Keypad;
+			sourceTree = "<group>";
+		};
+		F8DB4B7E17783E9700129A88 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB4B7F17783EB100129A88 /* OutgoingCallControllerButton.h */,
+				F8DB4B8017783EB100129A88 /* OutgoingCallControllerButton.m */,
+			);
+			name = CustomComponents;
+			sourceTree = "<group>";
+		};
 		F8DF65D01776D3D60067AB3E /* BalanceQuery */ = {
 			isa = PBXGroup;
 			children = (
@@ -1489,6 +2019,7 @@
 		F8F656D1174DF79000803E4E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB49F01777F37400129A88 /* DialSetting */,
 				F8DF65E21776F68F0067AB3E /* SetCallbackNumber */,
 				F8DF65D71776E57C0067AB3E /* About */,
 				F8DF65D01776D3D60067AB3E /* BalanceQuery */,
@@ -1646,6 +2177,116 @@
 				F8FEF34817744DDB00370A56 /* uutalk_charge_card@2x.png in Resources */,
 				F8DF65E01776EC480067AB3E /* phone.png in Resources */,
 				F8DF65E11776EC480067AB3E /* phone@2x.png in Resources */,
+				F8DB4ACC177838F900129A88 /* img_addnewcontact6cleardialnumber_btn_normal_bg.png in Resources */,
+				F8DB4ACD177838F900129A88 /* img_back4waitingcallbackcallbtn-en.png in Resources */,
+				F8DB4ACE177838F900129A88 /* img_back4waitingcallbackcallbtn-hs.png in Resources */,
+				F8DB4ACF177838F900129A88 /* img_back4waitingcallbackcallbtn-ht.png in Resources */,
+				F8DB4AD0177838F900129A88 /* img_back4waitingcallbackcallbtn_bg.png in Resources */,
+				F8DB4AD1177838F900129A88 /* img_callbackview_bg.png in Resources */,
+				F8DB4AD2177838F900129A88 /* img_callbtn-568h-en@2x.png in Resources */,
+				F8DB4AD3177838F900129A88 /* img_callbtn-568h-hs@2x.png in Resources */,
+				F8DB4AD4177838F900129A88 /* img_callbtn-568h-ht@2x.png in Resources */,
+				F8DB4AD5177838F900129A88 /* img_callbtn-en.png in Resources */,
+				F8DB4AD6177838F900129A88 /* img_callbtn-en@2x.png in Resources */,
+				F8DB4AD7177838F900129A88 /* img_callbtn-hs.png in Resources */,
+				F8DB4AD8177838F900129A88 /* img_callbtn-hs@2x.png in Resources */,
+				F8DB4AD9177838F900129A88 /* img_callbtn-ht.png in Resources */,
+				F8DB4ADA177838F900129A88 /* img_callbtn-ht@2x.png in Resources */,
+				F8DB4ADB177838F900129A88 /* img_callbtn_highlighted_bg.png in Resources */,
+				F8DB4ADC177838F900129A88 /* img_callbtn_normal_bg.png in Resources */,
+				F8DB4ADD177838F900129A88 /* img_callcontroller_contactsbtn-568h@2x.png in Resources */,
+				F8DB4ADE177838F900129A88 /* img_callcontroller_contactsbtn.png in Resources */,
+				F8DB4ADF177838F900129A88 /* img_callcontroller_contactsbtn@2x.png in Resources */,
+				F8DB4AE0177838F900129A88 /* img_callcontroller_keyboardbtn-568h@2x.png in Resources */,
+				F8DB4AE1177838F900129A88 /* img_callcontroller_keyboardbtn.png in Resources */,
+				F8DB4AE2177838F900129A88 /* img_callcontroller_keyboardbtn@2x.png in Resources */,
+				F8DB4AE3177838F900129A88 /* img_callcontroller_mutebtn-568h@2x.png in Resources */,
+				F8DB4AE4177838F900129A88 /* img_callcontroller_mutebtn.png in Resources */,
+				F8DB4AE5177838F900129A88 /* img_callcontroller_mutebtn@2x.png in Resources */,
+				F8DB4AE6177838F900129A88 /* img_callcontroller_speakerbtn-568h@2x.png in Resources */,
+				F8DB4AE7177838F900129A88 /* img_callcontroller_speakerbtn.png in Resources */,
+				F8DB4AE8177838F900129A88 /* img_callcontroller_speakerbtn@2x.png in Resources */,
+				F8DB4AE9177838F900129A88 /* img_callcontrollerbtn_highlighted_bg.png in Resources */,
+				F8DB4AEA177838F900129A88 /* img_callcontrollerbtn_normal_bg.png in Resources */,
+				F8DB4AEB177838F900129A88 /* img_cleardialphone_btn-568h@2x.png in Resources */,
+				F8DB4AEC177838F900129A88 /* img_cleardialphone_btn.png in Resources */,
+				F8DB4AED177838F900129A88 /* img_cleardialphone_btn@2x.png in Resources */,
+				F8DB4AEE177838F900129A88 /* img_default_avatar.png in Resources */,
+				F8DB4AEF177838F900129A88 /* img_default_gray_avatar.png in Resources */,
+				F8DB4AF0177838F900129A88 /* img_dial_0_btn-568h@2x.png in Resources */,
+				F8DB4AF1177838F900129A88 /* img_dial_0_btn.png in Resources */,
+				F8DB4AF2177838F900129A88 /* img_dial_0_btn@2x.png in Resources */,
+				F8DB4AF3177838F900129A88 /* img_dial_1_btn-568h@2x.png in Resources */,
+				F8DB4AF4177838F900129A88 /* img_dial_1_btn.png in Resources */,
+				F8DB4AF5177838F900129A88 /* img_dial_1_btn@2x.png in Resources */,
+				F8DB4AF6177838F900129A88 /* img_dial_2_btn-568h@2x.png in Resources */,
+				F8DB4AF7177838F900129A88 /* img_dial_2_btn.png in Resources */,
+				F8DB4AF8177838F900129A88 /* img_dial_2_btn@2x.png in Resources */,
+				F8DB4AF9177838F900129A88 /* img_dial_3_btn-568h@2x.png in Resources */,
+				F8DB4AFA177838F900129A88 /* img_dial_3_btn.png in Resources */,
+				F8DB4AFB177838F900129A88 /* img_dial_3_btn@2x.png in Resources */,
+				F8DB4AFC177838F900129A88 /* img_dial_4_btn-568h@2x.png in Resources */,
+				F8DB4AFD177838F900129A88 /* img_dial_4_btn.png in Resources */,
+				F8DB4AFE177838F900129A88 /* img_dial_4_btn@2x.png in Resources */,
+				F8DB4AFF177838F900129A88 /* img_dial_5_btn-568h@2x.png in Resources */,
+				F8DB4B00177838F900129A88 /* img_dial_5_btn.png in Resources */,
+				F8DB4B01177838F900129A88 /* img_dial_5_btn@2x.png in Resources */,
+				F8DB4B02177838F900129A88 /* img_dial_6_btn-568h@2x.png in Resources */,
+				F8DB4B03177838F900129A88 /* img_dial_6_btn.png in Resources */,
+				F8DB4B04177838F900129A88 /* img_dial_6_btn@2x.png in Resources */,
+				F8DB4B05177838F900129A88 /* img_dial_7_btn-568h@2x.png in Resources */,
+				F8DB4B06177838F900129A88 /* img_dial_7_btn.png in Resources */,
+				F8DB4B07177838F900129A88 /* img_dial_7_btn@2x.png in Resources */,
+				F8DB4B08177838F900129A88 /* img_dial_8_btn-568h@2x.png in Resources */,
+				F8DB4B09177838F900129A88 /* img_dial_8_btn.png in Resources */,
+				F8DB4B0A177838F900129A88 /* img_dial_8_btn@2x.png in Resources */,
+				F8DB4B0B177838F900129A88 /* img_dial_9_btn-568h@2x.png in Resources */,
+				F8DB4B0C177838F900129A88 /* img_dial_9_btn.png in Resources */,
+				F8DB4B0D177838F900129A88 /* img_dial_9_btn@2x.png in Resources */,
+				F8DB4B0E177838F900129A88 /* img_dial_pound_btn-568h@2x.png in Resources */,
+				F8DB4B0F177838F900129A88 /* img_dial_pound_btn.png in Resources */,
+				F8DB4B10177838F900129A88 /* img_dial_pound_btn@2x.png in Resources */,
+				F8DB4B11177838F900129A88 /* img_dial_star_btn-568h@2x.png in Resources */,
+				F8DB4B12177838F900129A88 /* img_dial_star_btn.png in Resources */,
+				F8DB4B13177838F900129A88 /* img_dial_star_btn@2x.png in Resources */,
+				F8DB4B14177838F900129A88 /* img_dialbtn_highlighted_bg.png in Resources */,
+				F8DB4B15177838F900129A88 /* img_dialbtn_normal_bg.png in Resources */,
+				F8DB4B16177838F900129A88 /* img_dialnumber7ownnershiplabel_bg-568h@2x.png in Resources */,
+				F8DB4B17177838F900129A88 /* img_dialnumber7ownnershiplabel_bg.png in Resources */,
+				F8DB4B18177838F900129A88 /* img_dialnumber7ownnershiplabel_bg@2x.png in Resources */,
+				F8DB4B19177838F900129A88 /* img_hangup_longbtn-en.png in Resources */,
+				F8DB4B1A177838F900129A88 /* img_hangup_longbtn-hs.png in Resources */,
+				F8DB4B1B177838F900129A88 /* img_hangup_longbtn-ht.png in Resources */,
+				F8DB4B1C177838F900129A88 /* img_hangup_longbtn_bg.png in Resources */,
+				F8DB4B1D177838F900129A88 /* img_hangup_shortbtn-en.png in Resources */,
+				F8DB4B1E177838F900129A88 /* img_hangup_shortbtn-hs.png in Resources */,
+				F8DB4B1F177838F900129A88 /* img_hangup_shortbtn-ht.png in Resources */,
+				F8DB4B20177838F900129A88 /* img_hangup_shortbtn_bg.png in Resources */,
+				F8DB4B21177838F900129A88 /* img_hidekeyboardbtn-en.png in Resources */,
+				F8DB4B22177838F900129A88 /* img_hidekeyboardbtn-hs.png in Resources */,
+				F8DB4B23177838F900129A88 /* img_hidekeyboardbtn-ht.png in Resources */,
+				F8DB4B24177838F900129A88 /* img_hidekeyboardbtn_highlighted_bg.png in Resources */,
+				F8DB4B25177838F900129A88 /* img_hidekeyboardbtn_normal_bg.png in Resources */,
+				F8DB4B26177838F900129A88 /* img_newcontact_btn-568h@2x.png in Resources */,
+				F8DB4B27177838F900129A88 /* img_newcontact_btn.png in Resources */,
+				F8DB4B28177838F900129A88 /* img_newcontact_btn@2x.png in Resources */,
+				F8DB4B29177838F900129A88 /* img_outgoingcall.png in Resources */,
+				F8DB4B2A177838F900129A88 /* img_outgoingcall@2x.png in Resources */,
+				F8DB4B2B177838F900129A88 /* img_outgoingcall_bg-568h@2x.png in Resources */,
+				F8DB4B2C177838F900129A88 /* img_outgoingcall_bg.png in Resources */,
+				F8DB4B2D177838F900129A88 /* img_outgoingcall_bg@2x.png in Resources */,
+				F8DB4B2E177838F900129A88 /* img_outgoingcall_footerview_bg.png in Resources */,
+				F8DB4B2F177838F900129A88 /* img_outgoingcall_footerview_bg@2x.png in Resources */,
+				F8DB4B30177838F900129A88 /* img_outgoingcall_headerview_bg.png in Resources */,
+				F8DB4B31177838F900129A88 /* img_outgoingcall_headerview_bg@2x.png in Resources */,
+				F8DB4B32177838F900129A88 /* img_sendcallbackcall_failed.png in Resources */,
+				F8DB4B33177838F900129A88 /* img_sendcallbackcall_succeed.png in Resources */,
+				F8DB4B34177838F900129A88 /* img_tab_callrecord.png in Resources */,
+				F8DB4B35177838F900129A88 /* img_tab_callrecord@2x.png in Resources */,
+				F8DB4B36177838F900129A88 /* img_tab_contactlist.png in Resources */,
+				F8DB4B37177838F900129A88 /* img_tab_contactlist@2x.png in Resources */,
+				F8DB4B38177838F900129A88 /* img_tab_dial.png in Resources */,
+				F8DB4B39177838F900129A88 /* img_tab_dial@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1673,7 +2314,6 @@
 				F811A6611755D8BE00FCDC0C /* ECMoneyGainViewController.m in Sources */,
 				F81C6D611761BBE400824601 /* ECSipServiceManager.m in Sources */,
 				F81C6D631761E06000824601 /* pjsua_app.m in Sources */,
-				F84495651763160500EDFC6E /* ECSipRegisterBean.m in Sources */,
 				F8073ABE17647FAB00A1F171 /* ECDialView.m in Sources */,
 				F8FEF33917742AAB00370A56 /* ECTopupView.m in Sources */,
 				F8FEF33C17742AC400370A56 /* ECTopupViewController.m in Sources */,
@@ -1689,6 +2329,28 @@
 				F8DF65DD1776E5CD0067AB3E /* ECAboutViewController.m in Sources */,
 				F8DF65E51776F6BA0067AB3E /* ECCallbackNumberSetViewController.m in Sources */,
 				F8DF65E81776F6D90067AB3E /* ECCallbackNumberSetView.m in Sources */,
+				F8DB49F31777F39900129A88 /* ECDialSettingViewController.m in Sources */,
+				F8DB49F61777F3B700129A88 /* ECDialSettingView.m in Sources */,
+				F8DB4B3F1778399B00129A88 /* OutgoingCallGenerator.m in Sources */,
+				F8DB4B401778399B00129A88 /* SipCallDialModeSelector.m in Sources */,
+				F8DB4B44177839C900129A88 /* OutgoingCallViewController.m in Sources */,
+				F8DB4B47177839EC00129A88 /* OutgoingCallView.m in Sources */,
+				F8DB4B5117783A6400129A88 /* PJSipImplementation.m in Sources */,
+				F8DB4B5217783A6400129A88 /* SipBaseImplementation.m in Sources */,
+				F8DB4B5717783A8700129A88 /* SipRegistrationBean.m in Sources */,
+				F8DB4B5817783A8700129A88 /* SipUtils.m in Sources */,
+				F8DB4B5D17783ACD00129A88 /* CallRecordBean.m in Sources */,
+				F8DB4B6217783AED00129A88 /* CallRecordDetailInfoViewController.m in Sources */,
+				F8DB4B6317783AED00129A88 /* CallRecordHistoryListTabContentViewController.m in Sources */,
+				F8DB4B6A17783AFB00129A88 /* CallRecordDetailInfoView.m in Sources */,
+				F8DB4B6B17783AFB00129A88 /* CallRecordHistoryListTabContentView.m in Sources */,
+				F8DB4B6C17783AFB00129A88 /* CallRecordHistoryListTableViewCell.m in Sources */,
+				F8DB4B7017783B3A00129A88 /* ContactListTabContentViewController.m in Sources */,
+				F8DB4B7517783B4700129A88 /* ContactListTabContentView.m in Sources */,
+				F8DB4B7617783B4700129A88 /* ContactListTableViewCell.m in Sources */,
+				F8DB4B7A17783B6700129A88 /* DialTabContentView.m in Sources */,
+				F8DB4B7D17783B7100129A88 /* DialTabContentViewController.m in Sources */,
+				F8DB4B8117783EB100129A88 /* OutgoingCallControllerButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
