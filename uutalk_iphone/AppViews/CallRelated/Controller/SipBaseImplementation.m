@@ -13,6 +13,10 @@
 #import "OutgoingCallView.h"
 
 #import <CommonToolkit/CommonToolkit.h>
+#import "ECConfig.h"
+#import "UserBean+UUTalk.h"
+#import "ECConstants.h"
+#import "ECUrlConfig.h"
 
 @interface SipBaseImplementation ()
 
@@ -48,8 +52,33 @@
     [_ChineseTelehoneDatabase close];
 }
 
+#define PHONE_NUMBER_FILTER_PREFIX           [NSArray arrayWithObjects:@"17909", @"11808", @"12593", @"17951", @"17911", nil]
+
 // ISipProtocol
 - (void)makeSipVoiceCall:(NSString *)callee phone:(NSString *)phone callMode:(SipCallMode)callMode fromViewController:(UIViewController *)sponsorViewController{
+    
+    // remove the specified prefix
+    for (NSString *prefix in PHONE_NUMBER_FILTER_PREFIX) {
+        NSRange range = [phone rangeOfString:prefix];
+        if (range.location == 0) {
+            if (range.length < phone.length) {
+                phone = [phone substringFromIndex:range.length];
+            }
+        }
+    }
+
+    if (![phone isEqualToString:SERVICE_NUMBER]) {
+        if ([phone rangeOfString:@"00"].location == 0 && phone.length > 2) {
+            phone = [phone substringFromIndex:2];
+        } else {
+            UserBean *user = [[UserManager shareUserManager] userBean];
+            if ([phone rangeOfString:user.defaultDialCountryCode].location != 0) {
+                phone = [NSString stringWithFormat:@"%@%@", user.defaultDialCountryCode, phone];
+            }
+        }
+    }
+    
+    
     // before make sip voice call
     UIViewController *_outgoingCallViewController = [self beforeMakeSipVoiceCall:callee phone:phone callMode:callMode sponsorViewController:sponsorViewController];
     
@@ -91,12 +120,17 @@
 - (void)setSipVoiceCallUsingLoudspeaker{
     NSLog(@"SipBaseImplementation - setSipVoiceCallUsingLoudspeaker");
     
-    //
+    UInt32 route = kAudioSessionOverrideAudioRoute_Speaker;
+    AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
+                             sizeof(route), &route);
+    
 }
 
 - (void)setSipVoiceCallUsingEarphone{
     NSLog(@"SipBaseImplementation - setSipVoiceCallUsingEarphone");
-    
+    UInt32 route = kAudioSessionOverrideAudioRoute_None;
+    AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
+                             sizeof(route), &route);
     //
 }
 
@@ -139,9 +173,11 @@
     // get callback sip voice call http request processor
     id _callbackSipVoiceCallHttpReqProcessor = [(OutgoingCallViewController *)processorViewController getCallbackSipVoiceCallRequestProcessor];
     
+    UserBean *user = [[UserManager shareUserManager] userBean];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:calleePhone, @"callee", user.countryCode, COUNTRYCODE, user.vosphone, @"vosPhoneNumber", user.vosphonePwd, @"vosPhonePassword", nil];
+
     // send callback sip voice call http request
-    [HttpUtils postRequestWithUrl:@"www.baidu.com" andPostFormat:urlEncoded andParameter:nil andUserInfo:nil andRequestType:asynchronous andProcessor:_callbackSipVoiceCallHttpReqProcessor andFinishedRespSelector:((OutgoingCallView *)_callbackSipVoiceCallHttpReqProcessor).callbackSipVoiceCallHttpReqFinishedRespSelector andFailedRespSelector:((OutgoingCallView *)_callbackSipVoiceCallHttpReqProcessor).callbackSipVoiceCallHttpReqFailedRespSelector];
-    
+    [HttpUtils postSignatureRequestWithUrl:CALLBACK_URL andPostFormat:urlEncoded andParameter:params andUserInfo:nil andRequestType:asynchronous andProcessor:_callbackSipVoiceCallHttpReqProcessor andFinishedRespSelector:((OutgoingCallView *)_callbackSipVoiceCallHttpReqProcessor).callbackSipVoiceCallHttpReqFinishedRespSelector andFailedRespSelector:((OutgoingCallView *)_callbackSipVoiceCallHttpReqProcessor).callbackSipVoiceCallHttpReqFailedRespSelector];
     return YES;
 }
 

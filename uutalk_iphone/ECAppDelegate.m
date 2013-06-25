@@ -47,11 +47,13 @@
     
     [self loadAccount];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     BOOL needLogin = [self isNeedLogin];
     if (needLogin) {
-        self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECLoginViewController alloc] init] andMode:navigationController];
+        self.window.rootViewController = [[AppRootViewController alloc] initWithNavigationViewController:[[ECLoginViewController alloc] init] andBarTintColor:NAVIGATIONBAR_TINTCOLOR];
     } else {
         self.window.rootViewController = [[AppRootViewController alloc] initWithPresentViewController:[[ECMainTabController alloc] init] andMode:normalController];
     }

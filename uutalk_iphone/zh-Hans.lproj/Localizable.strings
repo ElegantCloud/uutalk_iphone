@@ -99,7 +99,7 @@
 "Balance:" = "余额：";
 "Please select top-up method" = "请选择充值方式";
 "yuan" = "元";
-"UU-Talk Card" = "悠聊充值卡";
+"UU-Talk Card" = "悠聊卡充值";
 "Top Up" = "充值";
 "please input card number" = "请输入充值卡卡号";
 "please input card password" = "请输入充值卡密码";
@@ -135,7 +135,9 @@
 "product_description" = "简单强大便宜的电话软件";
 "Version:" = "版本号:";
 "Service QQ info" = "客服QQ\n1622122511";
+"Free Service Call" = "免费客服电话";
 "about paragraph" = "网址\nhttp://www.uu-talk.com\n\n版权所有\n（香港）悠聊科技有限公司";
+
 
 // Set Callback Number
 "bind_number_inform" = "提示：通过设置回拨号码，使用回拨功能时将会回拨绑定的号码";
@@ -146,6 +148,12 @@
 "Callback number set successfully" = "回拨号码设置成功！";
 "Setting callback number…" = "正在设置回拨号码…";
 "Set" = "设置";
+
+// Dial Setting
+"Always dial via network" = "默认直拨";
+"Always dial by callback" = "默认回拨";
+"Manual" = "手动选择";
+"Auto Select" = "自动选择";
 
 // Call Related
 // tab content section

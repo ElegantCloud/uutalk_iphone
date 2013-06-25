@@ -18,6 +18,7 @@
 #import "ECAboutViewController.h"
 #import "ECCallbackNumberSetViewController.h"
 #import "ECDialSettingViewController.h"
+#import "ECUUTalkCardChargeViewController.h"
 
 @interface ECSettingViewController ()
 
@@ -62,8 +63,9 @@
 }
 
 - (void)jumpToTopup {
-    UIViewController *topupController = [[ECTopupViewController alloc] init];
-    [self jumpToViewController:topupController];
+//    UIViewController *topupController = [[ECTopupViewController alloc] init];
+    UIViewController *viewCtrl = [[ECUUTalkCardChargeViewController alloc] init];
+    [self jumpToViewController:viewCtrl];
 }
 
 - (void)jumpToModifyPassword {

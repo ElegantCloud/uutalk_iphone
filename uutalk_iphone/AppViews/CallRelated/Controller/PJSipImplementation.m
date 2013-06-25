@@ -39,19 +39,20 @@
 - (void)muteSipVoiceCall{
     NSLog(@"PJSipImplementation - muteSipVoiceCall");
     
-    //
+    [[ECSipServiceManager shareSipServiceManager] muteSipVoice:YES];
 }
 
 - (void)unmuteSipVoiceCall{
     NSLog(@"PJSipImplementation - unmuteSipVoiceCall");
-    
-    //
+
+    [[ECSipServiceManager shareSipServiceManager] muteSipVoice:NO];
 }
 
 - (void)sendDTMF:(NSString *)dtmfCode{
     NSLog(@"PJSipImplementation - sendDTMF - dtmf code = %@", dtmfCode);
-    
-    //
+    const char *digits = [dtmfCode cStringUsingEncoding:NSUTF8StringEncoding];
+    char digit = digits[0];
+    [[ECSipServiceManager shareSipServiceManager] sendDTMF:digit];
 }
 
 - (BOOL)initSipEngine {

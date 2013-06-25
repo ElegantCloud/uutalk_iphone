@@ -71,7 +71,7 @@
 }
 
 - (void)initUI {
-    self.backgroundImg = [UIImage imageNamed:@"bg"];
+    self.backgroundImg = [UIImage compatibleImageNamed:@"bg"];
     _titleView.text = NSLocalizedString(@"new user", "");
     self.titleView = _titleView;
     self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"login", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];

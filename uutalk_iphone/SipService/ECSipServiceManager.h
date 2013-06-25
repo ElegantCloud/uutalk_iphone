@@ -25,4 +25,6 @@
 - (void)hangup;
 - (void)onCallStateChange:(NSNumber *)state;
 - (void)onRegistrationStateChange:(NSNumber *)regState;
+- (void)muteSipVoice:(BOOL)enabled;
+- (void)sendDTMF:(char)digit;
 @end

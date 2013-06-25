@@ -27,12 +27,9 @@
     if (self) {
         // Initialization code
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
-        _titleView.text = NSLocalizedString(@"Callback Number Setting", "");
-        self.titleView = _titleView;
+        self.title = NSLocalizedString(@"Callback Number Setting", "");
         self.backgroundColor = [UIColor whiteColor];
-        
-        self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"more", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
-        
+                
         UILabel *infoLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.frame.size.width - WIDTH) / 2, 0, WIDTH, 50)];
         infoLabel.backgroundColor = [UIColor clearColor];
         infoLabel.textColor = [UIColor redColor];

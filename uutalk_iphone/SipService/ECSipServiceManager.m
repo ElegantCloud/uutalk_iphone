@@ -22,6 +22,12 @@ extern pj_bool_t app_restart;
 char argv_buf[PATH_LENGTH];
 char *argv[] = {""};
 
+@interface ECSipServiceManager () {
+    pjsua_call_id _call_id;
+}
+
+@end
+
 @implementation ECSipServiceManager
 @synthesize callListener;
 @synthesize registerListener;
@@ -92,7 +98,7 @@ char *argv[] = {""};
 
 - (BOOL)makeCall:(NSString *)number {
     NSString *sipNumberUri = [NSString stringWithFormat:@"sip:%@@%@:%d", number, SIP_SERVER, SIP_PORT];
-    pj_status_t result = make_call([sipNumberUri cStringUsingEncoding:NSUTF8StringEncoding]);
+    pj_status_t result = make_call([sipNumberUri cStringUsingEncoding:NSUTF8StringEncoding], &_call_id);
     if (result != PJ_SUCCESS) {
         [self performSelectorOnMainThread:@selector(onCallStateChange:) withObject:[NSNumber numberWithInt:CALL_FAILED] waitUntilDone:NO];
         return NO;
@@ -161,5 +167,17 @@ char *argv[] = {""};
         default:
             break;
     }
+}
+
+- (void)muteSipVoice:(BOOL)enabled {
+    if (enabled)
+        pjsua_conf_adjust_rx_level(0 /* pjsua_conf_port_id slot*/, 0.0f);
+    else
+        pjsua_conf_adjust_rx_level(0 /* pjsua_conf_port_id slot*/, 1.0f);
+}
+
+- (void)sendDTMF:(char)digit {
+    NSLog(@"dtmf digit: %c", digit);
+    sip_call_play_digit(_call_id, digit);
 }
 @end

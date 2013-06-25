@@ -8,6 +8,6 @@
 
 #import "ECBaseUIView.h"
 
-@interface ECDialSettingView : ECBaseUIView
+@interface ECDialSettingView : ECBaseUIView <UITableViewDataSource, UITableViewDelegate>
 
 @end

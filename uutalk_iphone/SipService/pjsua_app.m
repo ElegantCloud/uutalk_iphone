@@ -6412,7 +6412,7 @@ void console_app_main(const pj_str_t *uri_to_call)
         return status;
     }
     
-    pj_status_t make_call(char *sip_dest_uri) {
+    pj_status_t make_call(char *sip_dest_uri, pjsua_call_id *p_call_id) {
         pjsua_call_setting call_opt;
         pjsua_call_setting_default(&call_opt);
         call_opt.aud_cnt = app_config.aud_cnt;
@@ -6425,7 +6425,7 @@ void console_app_main(const pj_str_t *uri_to_call)
         pjsua_msg_data_init(&msg_data);
         TEST_MULTIPART(&msg_data);
         
-        pj_status_t result = pjsua_call_make_call(current_acc, &tmp, &call_opt, NULL, &msg_data, NULL);
+        pj_status_t result = pjsua_call_make_call(current_acc, &tmp, &call_opt, NULL, &msg_data, p_call_id);
         return result;
         
     }

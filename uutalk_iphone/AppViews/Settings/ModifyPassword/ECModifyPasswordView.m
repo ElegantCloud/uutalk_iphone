@@ -29,11 +29,9 @@
     if (self) {
         // Initialization code
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
-        _titleView.text = NSLocalizedString(@"Password Reset", "");
-        self.titleView = _titleView;
+        self.title = NSLocalizedString(@"Password Reset", "");
         self.backgroundColor = [UIColor whiteColor];
         
-        self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"more", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
         
         _oldPwdInput = [self makeTextFieldWithPlaceholder:NSLocalizedString(@"Please input old password", "") frame:CGRectMake((self.frame.size.width - INPUT_WIDTH) / 2, PAD, INPUT_WIDTH, INPUT_HEIGHT) keyboardType:UIKeyboardTypeDefault];
         _oldPwdInput.secureTextEntry = YES;

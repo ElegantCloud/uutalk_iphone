@@ -17,7 +17,10 @@ static CGFloat NameHeight = 30;
 static CGFloat ArrowWidth = 14;
 static CGFloat ArrowHeight = 14;
 static CGFloat GAP = 6;
+
 @implementation SettingItemCell
+@synthesize icon;
+@synthesize name;
 
 + (CGFloat)cellHeight {
     return CellHeight;
@@ -47,7 +50,13 @@ static CGFloat GAP = 6;
     return self;
 }
 
+- (void)setIcon:(UIImage *)icon {
+    _iconView.image = icon;
+}
 
+- (void)setName:(NSString *)name {
+    _nameView.text = name;
+}
 @end
 
 
@@ -55,7 +64,7 @@ static CGFloat GAP = 6;
 
 #define SECTION_TITLES     [NSArray arrayWithObjects:NSLocalizedString(@"Account", ""), NSLocalizedString(@"Query", ""), NSLocalizedString(@"Setting", ""), NSLocalizedString(@"Help", ""), nil]
 
-#define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Account Top Up", ""), NSLocalizedString(@"Password Reset", ""), /*NSLocalizedString(@"Find Password", ""),*/ NSLocalizedString(@"Sign Out", ""), nil]
+#define ACCOUNT_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"UU-Talk Card", ""), NSLocalizedString(@"Password Reset", ""), /*NSLocalizedString(@"Find Password", ""),*/ NSLocalizedString(@"Sign Out", ""), nil]
 #define QUERY_ITEMS        [NSArray arrayWithObjects:NSLocalizedString(@"Balance Query", ""), /*NSLocalizedString(@"Fee Query", ""),*/ nil]
 #define SETTING_ITEMS      [NSArray arrayWithObjects:NSLocalizedString(@"Dial Setting", ""), /*NSLocalizedString(@"Local Area Code Setting", ""),*/ NSLocalizedString(@"Callback Number Setting", ""), /*NSLocalizedString(@"Login Setting", ""),*/ nil]
 #define HELP_ITEMS         [NSArray arrayWithObjects:NSLocalizedString(@"About", ""), nil]
@@ -106,8 +115,9 @@ static CGFloat GAP = 6;
 }
 
 - (void)initUI {
-    _titleView.text = NSLocalizedString(@"more", "");
-    self.titleView = _titleView;
+//    _titleView.text = NSLocalizedString(@"more", "");
+//    self.titleView = _titleView;
+    self.title = NSLocalizedString(@"more", "");
     
     self.backgroundColor = [UIColor whiteColor];
     
@@ -136,12 +146,15 @@ static CGFloat GAP = 6;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CELLITEM = @"settingitem_cell";
     SettingItemCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLITEM];
+    NSArray *items = [_sectionArray objectAtIndex:indexPath.section];
+    NSString *name = [items objectAtIndex:indexPath.row];
+    NSArray *icons = [_sectionIconArray objectAtIndex:indexPath.section];
+    NSString *iconName = [icons objectAtIndex:indexPath.row];
     if (!cell) {
-        NSArray *items = [_sectionArray objectAtIndex:indexPath.section];
-        NSString *name = [items objectAtIndex:indexPath.row];
-        NSArray *icons = [_sectionIconArray objectAtIndex:indexPath.section];
-        NSString *iconName = [icons objectAtIndex:indexPath.row];
         cell = [[SettingItemCell alloc] initWithItem:name itemIcon:[UIImage imageNamed:iconName]];
+    } else {
+        cell.name = name;
+        cell.icon = [UIImage imageNamed:iconName];
     }
     return cell;
 }
@@ -165,7 +178,7 @@ static CGFloat GAP = 6;
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToMoneyGain)]) {
             [self.viewControllerRef performSelector:@selector(jumpToMoneyGain)];
         }
-    } else if ([name isEqualToString:NSLocalizedString(@"Account Top Up", "")]) {
+    } else if ([name isEqualToString:NSLocalizedString(@"UU-Talk Card", "")]) {
         if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(jumpToTopup)]) {
             [self.viewControllerRef performSelector:@selector(jumpToTopup)];
         }

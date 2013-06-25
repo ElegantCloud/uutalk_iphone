@@ -28,10 +28,10 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIViewController *callRecordController = [[UINavigationController alloc] initWithRootViewController:[[CallRecordHistoryListTabContentViewController alloc] init]];
+        UIViewController *callRecordController = [[UINavigationController alloc] initWithRootViewController:[[CallRecordHistoryListTabContentViewController alloc] init] andBarTintColor:NAVIGATIONBAR_TINTCOLOR];
         UIViewController *dialTabController = [[DialTabContentViewController alloc] init];
-        UIViewController *contactListController = [[ContactListTabContentViewController alloc] init];
-        UINavigationController *settingController = [[UINavigationController alloc] initWithRootViewController:[[ECSettingViewController alloc] init]];
+        UIViewController *contactListController = [[UINavigationController alloc] initWithRootViewController:[[ContactListTabContentViewController alloc] init] andBarTintColor:NAVIGATIONBAR_TINTCOLOR];
+        UINavigationController *settingController = [[UINavigationController alloc] initWithRootViewController:[[ECSettingViewController alloc] init] andBarTintColor:NAVIGATIONBAR_TINTCOLOR];
         
         [settingController.tabBarItem initWithTabBarSystemItem:UITabBarSystemItemMore tag:3];
 

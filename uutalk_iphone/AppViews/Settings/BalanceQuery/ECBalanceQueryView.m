@@ -22,12 +22,15 @@ static CGFloat GAP = 6;
     UILabel *_nameLabel;
     UILabel *_valueLabel;
 }
-
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *value;
 + (CGFloat)cellHeight;
 - (id)initWithName:(NSString *)name Value:(NSString *)value;
 @end
 
 @implementation ItemCell
+@synthesize name;
+@synthesize value;
 
 + (CGFloat)cellHeight {
     return CellHeight;
@@ -57,6 +60,14 @@ static CGFloat GAP = 6;
     return self;
 }
 
+- (void)setName:(NSString *)name {
+    _nameLabel.text = name;
+}
+
+- (void)setValue:(NSString *)value {
+    _valueLabel.text = value;
+}
+
 @end
 
 #define NAME_ARRAY          [NSArray arrayWithObjects:NSLocalizedString(@"Country Code:", ""), NSLocalizedString(@"Mobile:", ""), NSLocalizedString(@"Balance:", ""), nil]
@@ -75,11 +86,9 @@ static CGFloat GAP = 6;
     if (self) {
         // Initialization code
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
-        _titleView.text = NSLocalizedString(@"Balance Query", "");
-        self.titleView = _titleView;
+        self.title = NSLocalizedString(@"Balance Query", "");
         self.backgroundColor = [UIColor whiteColor];
         
-        self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"more", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
 
         _names = NAME_ARRAY;
         UserBean *user = [[UserManager shareUserManager] userBean];
@@ -105,11 +114,14 @@ static CGFloat GAP = 6;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CELLITEM = @"item_cell";
     ItemCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLITEM];
+    NSString *name = [_names objectAtIndex:indexPath.row];
+    NSString *value = [self.valueArray objectAtIndex:indexPath.row];
+
     if (!cell) {
-        NSString *name = [_names objectAtIndex:indexPath.row];
-        NSString *value = [self.valueArray objectAtIndex:indexPath.row];
-        
         cell = [[ItemCell alloc] initWithName:name Value:value];
+    } else {
+        cell.name = name;
+        cell.value = value;
     }
     return cell;
 }

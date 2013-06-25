@@ -34,7 +34,7 @@
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
         _titleView.text = NSLocalizedString(@"Find Password", "");
         self.titleView = _titleView;
-        self.backgroundImg = [UIImage imageNamed:@"bg"];
+        self.backgroundImg = [UIImage compatibleImageNamed:@"bg"];
                
         UIView *formView = [[UIView alloc] initWithFrame:CGRectMake((self.frame.size.width - FORM_WIDTH) / 2, 30, FORM_WIDTH, FORM_HEIGHT)];
         formView.backgroundColor = [UIColor colorWithIntegerRed:0x87 integerGreen:0xce integerBlue:0xff alpha:0.5];

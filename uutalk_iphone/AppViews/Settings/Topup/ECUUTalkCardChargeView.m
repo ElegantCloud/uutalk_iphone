@@ -28,10 +28,8 @@
         // Initialization code
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
         
-        _titleView.text = NSLocalizedString(@"UU-Talk Card", "");
-        self.titleView = _titleView;
+        self.title = NSLocalizedString(@"UU-Talk Card", "");
         self.backgroundColor = [UIColor whiteColor];
-        self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Account Top Up", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
         
         
         _cardNumberInput = [self makeTextFieldWithPlaceholder:NSLocalizedString(@"please input card number", "") frame:CGRectMake((self.frame.size.width - INPUT_WIDTH) / 2, 40, INPUT_WIDTH, INPUT_HEIGHT) keyboardType:UIKeyboardTypeNumberPad];

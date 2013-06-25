@@ -8,6 +8,8 @@
 
 #import "ECAboutViewController.h"
 #import "ECAboutUIView.h"
+#import "SipUtils.h"
+#import "ECConfig.h"
 
 @interface ECAboutViewController ()
 
@@ -38,6 +40,6 @@
 }
 
 - (void)callService {
-    
+    [SipUtils makeSipVoiceCall:NSLocalizedString(@"Free Service Call", "") phone:SERVICE_NUMBER callMode:DIRECT_CALL fromViewController:self];
 }
 @end

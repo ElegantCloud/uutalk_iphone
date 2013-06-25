@@ -13,6 +13,8 @@
     UILabel *_nameView;
     UIImageView *_rightArrowView;
 }
+@property UIImage *icon;
+@property NSString *name;
 
 + (CGFloat)cellHeight;
 - (id)initWithItem:(NSString*)itemName itemIcon:(UIImage*)icon;

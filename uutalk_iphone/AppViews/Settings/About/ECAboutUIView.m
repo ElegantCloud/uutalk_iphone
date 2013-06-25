@@ -25,10 +25,7 @@
 }
 
 - (void)initUI {
-    _titleView.text = NSLocalizedString(@"About", "");
-    self.titleView = _titleView;
-
-    self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"more", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
+    self.title = NSLocalizedString(@"About", "");
     
     self.backgroundColor = [UIColor whiteColor];
     

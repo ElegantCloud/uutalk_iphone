@@ -43,7 +43,7 @@
         self.delegate = self;
         
         // set exit call records as right bar button item
-        self.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editCallRecords)];
+//        self.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editCallRecords)];
         
         //
     }

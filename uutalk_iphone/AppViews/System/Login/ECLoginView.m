@@ -39,7 +39,7 @@
 }
 
 - (void)initUI {
-    self.backgroundImg = [UIImage imageNamed:@"bg"];
+    self.backgroundImg = [UIImage compatibleImageNamed:@"bg"];
 
     UIView *loginFormView = [[UIView alloc] initWithFrame:CGRectMake((self.frame.size.width - LOGIN_FORM_WIDTH) / 2, 30, LOGIN_FORM_WIDTH, LOGIN_FORM_HEIGHT)];
     loginFormView.backgroundColor = [UIColor colorWithIntegerRed:0x87 integerGreen:0xce integerBlue:0xff alpha:0.5];

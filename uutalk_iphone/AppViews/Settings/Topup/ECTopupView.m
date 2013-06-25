@@ -18,12 +18,9 @@
     if (self) {
         // Initialization code
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height - [DisplayScreenUtils navigationBarHeight]);
-        _titleView.text = NSLocalizedString(@"Account Top Up", "");
-        self.titleView = _titleView;
+        self.title = NSLocalizedString(@"Account Top Up", "");
         self.backgroundColor = [UIColor whiteColor];
-        
-        self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"more", "") style:UIBarButtonItemStyleDone target:self action:@selector(onBackAction)];
-        
+                
         UIView *balanceRegionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 40)];
         balanceRegionView.backgroundColor = [UIColor colorWithIntegerRed:0xfa integerGreen:0xea integerBlue:0xa9 alpha:1];
         [self addSubview:balanceRegionView];

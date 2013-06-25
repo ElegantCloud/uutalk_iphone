@@ -13,6 +13,7 @@
 #import "DialTabContentView.h"
 
 #import "SipBaseImplementation.h"
+#import "UserBean+UUTalk.h"
 
 // hearder and footer view height
 #define HEADER6FOOTERVIEW_HEIGHT   96.0 
@@ -137,13 +138,13 @@ typedef NS_ENUM(NSInteger, SipVoiceCallTerminatedType){
 - (void)back4waitingCallbackCall;
 
 // send callback sip voice call successful
-- (void)sendCallbackSipVoiceCallSuccessful;
+- (void)sendCallbackSipVoiceCallSuccessful:(ASIHTTPRequest *)pRequest;
 
 // send callback sip voice call failure
-- (void)sendCallbackSipVoiceCallFailure;
+- (void)sendCallbackSipVoiceCallFailure:(ASIHTTPRequest *)pRequest;
 
 // show callback view and update callback call request result label text and image view image with response result
-- (void)showCallbackViewAndUpdateSubviews:(BOOL)isSucceed;
+- (void)showCallbackViewAndUpdateSubviewsWithRequest:(ASIHTTPRequest *)pRequest;
 
 // outgoing call enter to background
 - (void)outgoingCallEnter2Background;
@@ -397,11 +398,11 @@ typedef NS_ENUM(NSInteger, SipVoiceCallTerminatedType){
 }
 
 - (SEL)callbackSipVoiceCallHttpReqFinishedRespSelector{
-    return @selector(sendCallbackSipVoiceCallSuccessful);
+    return @selector(sendCallbackSipVoiceCallSuccessful:);
 }
 
-- (SEL)CallbackSipVoiceCallHttpReqFailedRespSelector{
-    return @selector(sendCallbackSipVoiceCallFailure);
+- (SEL)callbackSipVoiceCallHttpReqFailedRespSelector{
+    return @selector(sendCallbackSipVoiceCallFailure:);
 }
 
 - (void)setCallMode:(SipCallMode)callMode callee:(NSString *)callee phone:(NSString *)phone{
@@ -543,19 +544,7 @@ typedef NS_ENUM(NSInteger, SipVoiceCallTerminatedType){
     }
 }
 
-- (void)showContactList{
-    // test by ares
-    if (_mSipVoiceCallIsEstablished) {
-        [self onCallFailed];
-        
-        return;
-    }
-    else {
-        [self onCallInitializing];
-        [self performSelector:@selector(onCallRemoteRinging) withObject:[NSNumber numberWithInteger:INITIATIVE] afterDelay:3.0];
-        [self performSelector:@selector(onCallSpeaking) withObject:[NSNumber numberWithInteger:INITIATIVE] afterDelay:5.0];
-    }
-    
+- (void)showContactList{    
     // get address book people picker navigation view controller
     ABPeoplePickerNavigationController *_addressBookPeoplePickerNavigationViewController = [AddressBookUIUtils shareAddressBookUIUtils].addressBookPeoplePickerNavigationViewController;
     
@@ -760,19 +749,45 @@ typedef NS_ENUM(NSInteger, SipVoiceCallTerminatedType){
     [self dismissOutgoingCallView];
 }
 
-- (void)sendCallbackSipVoiceCallSuccessful{
+- (void)sendCallbackSipVoiceCallSuccessful:(ASIHTTPRequest *)pRequest{
     // show callback view and update its subviews
-    [self showCallbackViewAndUpdateSubviews:YES];
+    [self showCallbackViewAndUpdateSubviewsWithRequest:pRequest];
+    
+    
+    
 }
 
-- (void)sendCallbackSipVoiceCallFailure{
+- (void)sendCallbackSipVoiceCallFailure:(ASIHTTPRequest *)pRequest{
     // show callback view and update its subviews
-    [self showCallbackViewAndUpdateSubviews:NO];
+    [self showCallbackViewAndUpdateSubviewsWithRequest:pRequest];
 }
 
-- (void)showCallbackViewAndUpdateSubviews:(BOOL)isSucceed{
+- (void)showCallbackViewAndUpdateSubviewsWithRequest:(ASIHTTPRequest *)pRequest{
     // update call status label text
-    _mCallStatusLabel.text = isSucceed ? NSLocalizedString(@"outgoing call callback succeed status", nil) : NSLocalizedString(@"outgoing call callback failed status", nil);
+//    _mCallStatusLabel.text = isSucceed ? NSLocalizedString(@"outgoing call callback succeed status", nil) : NSLocalizedString(@"outgoing call callback failed status", nil);
+    BOOL isSucceed = NO;
+    _mCallStatusLabel.text = NSLocalizedString(@"outgoing call callback failed status", nil);
+    if (pRequest.responseStatusCode == 200) {
+        NSDictionary *jsonData = [[[NSString alloc] initWithData:pRequest.responseData encoding:NSUTF8StringEncoding] objectFromJSONString];
+        if (jsonData) {
+            NSNumber *vosStatusCode = [jsonData objectForKey:@"vos_status_code"];
+            if ([vosStatusCode intValue] == 200) {
+                isSucceed = YES;
+                _mCallStatusLabel.text = NSLocalizedString(@"outgoing call callback succeed status", nil);
+            }
+        }
+    } else {
+        isSucceed = NO;
+        if (pRequest.responseStatusCode == 500) {
+            NSDictionary *jsonData = [[[NSString alloc] initWithData:pRequest.responseData encoding:NSUTF8StringEncoding] objectFromJSONString];
+            if (jsonData) {
+                NSString *vosInfo = [jsonData objectForKey:@"vos_info"];
+                _mCallStatusLabel.text = vosInfo;
+            }
+        }
+    }
+    
+    UserBean *user = [[UserManager shareUserManager] userBean];
     
     // get and check callback view all subviews
     NSArray *_callbackViewSubviews = [_mCallbackView subviews];
@@ -786,7 +801,7 @@ typedef NS_ENUM(NSInteger, SipVoiceCallTerminatedType){
                 UILabel *_callbackCallReqRespLabel = (UILabel *)_callbackViewSubview;
                 
                 // update callback call request response result label text
-                _callbackCallReqRespLabel.text = isSucceed ? [NSString stringWithFormat:NSLocalizedString(@"outgoing call callback succeed comment format string", nil), @"8618001582338", _mSipCallPhone] : NSLocalizedString(@"outgoing call callback failed comment", nil);
+                _callbackCallReqRespLabel.text = isSucceed ? [NSString stringWithFormat:NSLocalizedString(@"outgoing call callback succeed comment format string", nil), user.callbackPhoneNumber, _mSipCallPhone] : NSLocalizedString(@"outgoing call callback failed comment", nil);
                 
                 // get number of lines float
                 float _numberOfLinesFloat = [_callbackCallReqRespLabel.text stringPixelLengthByFontSize:CALLBACKVIEW_REQUESTRESULTLABEL_FONTSIZE andIsBold:NO] / _callbackCallReqRespLabel.bounds.size.width;

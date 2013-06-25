@@ -20,3 +20,4 @@
 #define BALANCE_QUERY_URL           [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/accountBalance"]
 #define SET_CALLBACK_NUMBER_URL     [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/profile/setBindPhone"]
 #define GET_CALLBACK_NUMBER_URL     [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/profile/getBindPhone"]
+#define CALLBACK_URL                [NSString stringWithFormat:@"%@%@", SERVER_ADDR, @"/callop/callback"]
