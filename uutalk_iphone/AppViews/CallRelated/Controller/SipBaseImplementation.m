@@ -68,11 +68,11 @@
     }
 
     if (![phone isEqualToString:SERVICE_NUMBER]) {
-        if ([phone rangeOfString:@"00"].location == 0 && phone.length > 2) {
+        if ([phone hasPrefix:@"00"] && phone.length > 2) {
             phone = [phone substringFromIndex:2];
         } else {
             UserBean *user = [[UserManager shareUserManager] userBean];
-            if ([phone rangeOfString:user.defaultDialCountryCode].location != 0) {
+            if (![phone hasPrefix:user.defaultDialCountryCode]) {
                 phone = [NSString stringWithFormat:@"%@%@", user.defaultDialCountryCode, phone];
             }
         }

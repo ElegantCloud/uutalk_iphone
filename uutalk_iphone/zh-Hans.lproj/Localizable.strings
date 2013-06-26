@@ -61,14 +61,9 @@
 "Wrong Validation Code!" = "验证码错误, 请重新输入！";
 "code check session timeout" = "验证码过期，请重新获取！";
 "Error in checking validation code, please retry." = "验证出错，请重试！";
-"please input password" = "请输入密码";
-"please input confirm password" = "请输入确认密码";
-"pwd1 is different to pwd2" = "两次密码不一致";
-"finishing register.." = "正在完成注册..";
 
 
 // Main Page
-"dial" = "拨号";
 "more" = "更多";
 
 
@@ -198,8 +193,6 @@
 "dial numbers add to new contact button title" = "添加到新建联系人";
 "dial numbers add to existed contact button title" = "添加到已有联系人";
 
-// more
-"more tab content view navigation title" = "更多设置";
 
 // outgoing call
 "no active and available network currently alertView title" = "网络不可达";

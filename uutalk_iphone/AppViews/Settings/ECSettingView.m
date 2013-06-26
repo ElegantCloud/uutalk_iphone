@@ -46,6 +46,8 @@ static CGFloat GAP = 6;
         _rightArrowView.contentMode = UIViewContentModeScaleAspectFill;
         _rightArrowView.image = [UIImage imageNamed:@"into_icon"];
         [self.contentView addSubview:_rightArrowView];
+        
+        self.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     return self;
 }

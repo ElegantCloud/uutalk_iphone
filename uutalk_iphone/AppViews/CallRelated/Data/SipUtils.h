@@ -29,6 +29,7 @@
 // make sip voice call from view controller
 + (void)makeSipVoiceCall:(NSString *)callee phone:(NSString *)phone callMode:(SipCallMode)callMode fromViewController:(UIViewController *)sponsorViewController;
 
++ (BOOL)initSipEngine;
 // destroy sip engine
 + (void)destroySipEngine;
 

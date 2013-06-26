@@ -1,0 +1,226 @@
+/*
+ Localizable.strings
+ uutalk_iphone
+ 
+ Created by king star on 13-5-20.
+ Copyright (c) 2013年 king star. All rights reserved.
+ */
+
+
+// Common
+"Back" = "Back";
+"Exit" = "Exit";
+"Cancel" = "Cancel";
+"UU-Talk Alert" = "UU-Talk Alert";
+"Fail to init phone engine, need exit." = "Fail to init telephone engine, need to exit.";
+"OK" = "OK";
+"Processing" = "Processing…";
+
+// Login related
+"Welcome to use uutalk" = "Welcome to UU-Talk";
+"input phone number" = "Please input mobile number";
+"input password" = "Please input password";
+"auto login" = "Auto Login";
+"login" = "Login";
+"new user" = "New User";
+"find pwd" = "Find Password";
+"please input phone number first" = "Please input mobile number";
+"please input password" = "Please input password";
+"Logining" = "Logining…";
+"Wrong phone number or password" = "Wrong phone number or password!";
+"Error in login, please retry." = "Login failed, pls try later!";
+
+// Register related
+"Step 1" = "Step 1";
+"step 1 description" = "Get Auth Code";
+"phone number" = "Please input mobile number";
+"get validate code" = "Get Auth Code";
+"We won't send junk message to you" = "Your mobile number is used only for authentication, we won\'t send junk messages to you.";
+"Step 2" = "Step 2";
+"step 2 description" = "Input Auth Code";
+"input code" = "Please input auth code";
+"Next" = "Next";
+"Step 3" = "Step 3";
+"step 3 description" = "Finish Registration";
+"input pwd" = "Please input password";
+"confirm pwd" = "Please input confirmation password";
+"Finish Register" = "Finish";
+"please input phone number first" = "Please input mobile number";
+"Retrieving Validation Code.." = "Retrieving Auth Code…";
+"please input code" = "Please input auth code";
+"Checking Validation Code.." = "Verifying…";
+"please input password" = "Please input password";
+"please input confirm password" = "Please input confirmation password";
+"pwd1 is different to pwd2" = "Twice passwords are different";
+"finishing register.." = "Finishing registration…";
+"phone_number_cannot_start_with_countrycode" = "Mobile number cannot start with country code!";
+"phone_wrong_format" = "Invalid format of mobile number!";
+"Invalid Phone Number!" = "Invalid mobile number!";
+"Existed Phone Number!" = "Mobile number exists!";
+"Error in retrieving validation code, please retry." = "Fail to get auth code, pls try later!";
+"Wrong Validation Code!" = "Wrong auth code, pls re-input!";
+"code check session timeout" = "Auth code timeout, pls re-get again!";
+"Error in checking validation code, please retry." = "Fail to verify auth code, pls try again!";
+
+
+
+// Main Page
+"more" = "More";
+
+
+// More Page
+"Account" = "Account";
+"Query" = "Query";
+"Setting" = "Setting";
+"Help" = "Help";
+"Money Gain" = "Earn Money";
+"Account Top Up" = "Account Top Up";
+"My Suites" = "My Suites";
+"Password Reset" = "Modify Password";
+"Find Password" = "Find Password";
+"Sign Out" = "Logout And Exit";
+"Balance Query" = "Balance Query";
+"Fee Query" = "Fee Query";
+"Dial Setting" = "Dial Setting";
+"Local Area Code Setting" = "Local Area Code Setting";
+"Callback Number Setting" = "Callback Number Setting";
+"Login Setting" = "Login Setting";
+"About" = "About";
+"Click OK to logout and exit" = "Sure to logout and exit?";
+
+// Money Gain
+"Plese Choose Share Method" = "Plese Choose Share Method";
+
+// Top-up
+"Balance:" = "Balance:";
+"Please select top-up method" = "Please select top-up method";
+"yuan" = "";
+"UU-Talk Card" = "UU-Talk Card Top Up";
+"Top Up" = "Top Up";
+"please input card number" = "Please input card number";
+"please input card password" = "Please input card password";
+"Top up successfully" = "Top up successfully!";
+"charging_now" = "Finishing…";
+"charge_failed_no_account_exist" = "Top-up failed, account doesn\'t exist!";
+"charge_failed_invalid_card_number" = "Top-up failed, card number or password is incorrect!";
+"card_already_used" = "Sorry, the card has been used!";
+"charge_failed" = "Top-up failed, please try later!";
+
+// Modify Password
+"Modify" = "Modify";
+"Please input old password" = "Please input old password";
+"Please input new password" = "Please input new password";
+"Please input confirmation password" = "Please input new password again";
+"Confirmation Password is different with new password" = "Confirmation Password is different with new password";
+"Password is changed!" = "Password is changed!";
+"auth_not_pass" = "Old password is incorrect.";
+"new_psw_error" = "New password is empty or different with confirmation password.";
+"server_error" = "Server Error. Pls try again.";
+
+// Find Password
+"phone_number_not_exist" = "Mobile number doesn\'t exist!";
+"Find Password Successfully, login in login page" = "You will receive new password by SMS, pls login with your new password.";
+
+// Balance Query
+"Country Code:" = "Country Code:";
+"Mobile:" = "Mobile:";
+"Querying balance…" = "Querying…";
+"Fail to query" = "Fail to query";
+
+// About
+"product_description" = "Simple, Sophisticated, Inexpensive";
+"Version:" = "Version:";
+"Service QQ info" = "Service QQ\n1622122511";
+"Free Service Call" = "Free Service Call";
+"about paragraph" = "Website\nhttp://www.uu-talk.com\n\nCopyright\n(HongKong) UuTalk Technology Ltd.";
+
+
+// Set Callback Number
+"bind_number_inform" = "Info: The binded number will be called in callback mode.";
+"Callback Number:" = "Callback Number:";
+"Please input callback number" = "Please input callback number";
+"Get callback failed" = "Cannot retrieve the callback number due to the unstable network.";
+"Getting callback number" = "Getting callback number…";
+"Callback number set successfully" = "Set callback number successfully!";
+"Setting callback number…" = "Setting callback number…";
+"Set" = "Set";
+
+// Dial Setting
+"Always dial via network" = "Always dial via network";
+"Always dial by callback" = "Always dial by callback";
+"Manual" = "Manual";
+"Auto Select" = "Auto Select";
+
+// Call Related
+// tab content section
+// call record
+"call record history list tab content view navigation title" = "Call Record";
+"call record history list tab item title" = "Recent";
+"call record without call name" = "No Name";
+"call record call created date yesterday" = "Yesterday";
+"call record call created date sunday" = "Sunday";
+"call record call created date monday" = "Monday";
+"call record call created date tuesday" = "Tuesday";
+"call record call created date wednesday" = "Wednesday";
+"call record call created date thursday" = "Thursday";
+"call record call created date friday" = "Friday";
+"call record call created date saturday" = "Saturday";
+"call record detail info view navigation title" = "Call Record Detail";
+"call record call created date format string" = "yyyy-MM-dd";
+"call record outgoing call name" = "Outgoing call";
+"call record incoming call name" = "Incoming call";
+"call record call duration seconds" = "%d seconds";
+"call record call duration minutes" = "%d minutes";
+"call record outgoing call canceled result" = "Call canceled";
+"call record outgoing call failed result" = "Call failed";
+"call record outgoing call callback result" = "Callback call request";
+"call record incoming call missed result" = "Missed incoming call";
+"call record direct call the call phone" = "Dial via network %@";
+"call record callback call the call phone" = "Callback %@";
+"call record sms the call phone" = "SMS %@";
+
+// contact list
+"contact list tab content view navigation title" = "Contact List";
+"contact list tab item title" = "Contacts";
+"contact search bar placeholder" = "Search contact with character or phone";
+"contact has no phone number alertView title" = "The contact has no phone number";
+"contact has no phone number alertView reselect button title" = "Reselect again";
+"contact phone numbers select actionSheet title format" = "Select phones of %@ for %@";
+
+// dial
+"dial tab item title" = "Keypad";
+"dial number label placeholder" = "";
+"dial numbers add to new or existed contact select actionSheet title format" = "Where to add phone number %@ ?";
+"dial numbers add to new contact button title" = "Create new contact";
+"dial numbers add to existed contact button title" = "Save to existing contact";
+
+
+// outgoing call
+"no active and available network currently alertView title" = "Network unavailable";
+"no active and available network currently alertView message" = "There is no active and available network currently, setting immediately?";
+"no active and available network currently alertView cancel button title" = "Remind later";
+"no active and available network currently alertView setting button title" = "Setting";
+
+"outgoing call calling status" = "Calling ...";
+"outgoing call early media or remote ring" = "Ringing ...";
+"outgoing call call failed status" = "Call failed";
+"outgoing call terminating status" = "Terminating ...";
+"outgoing call terminated status" = "Terminated";
+"outgoing call callback succeed status" = "Callback request has submitted";
+"outgoing call callback failed status" = "Callback request failed";
+"outgoing call call controller contacts button title" = "Contacts";
+"outgoing call call controller keyboard button title" = "Keypad";
+"outgoing call call controller mute button title" = "Mute";
+"outgoing call call controller speaker button title" = "Speaker";
+
+"outgoing call call mode select actionSheet title format" = "Select dial mode for %@";
+"outgoing call direct call call mode string format" = "Dial via network(%@)";
+"outgoing call callback call mode string format" = "Callback(%@)";
+"outgoing call phone call call mode string format" = "iPhone call(%@)";
+"outgoing call call mode phones for selecting string format" = "%d numbers to select";
+"outgoing call direct call call mode string" = "Dial via network";
+"outgoing call callback call mode string" = "Callback";
+"outgoing call phone call call mode string" = "iPhone call";
+"outgoing call callback succeed comment format string" = "Callback submitted successfully, your number (%@) will receive callback call later, system will call %@ after answered.";
+"outgoing call callback failed comment" = "Fail to submit callback, please try again later";
+

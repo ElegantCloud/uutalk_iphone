@@ -13,13 +13,12 @@
 #import "UserBean+UUTalk.h"
 #import "ECConfig.h"
 #import "ECMainTabController.h"
-#import "ECSipServiceManager.h"
-
+#import "SipUtils.h"
 @implementation ECAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    BOOL result = [[ECSipServiceManager shareSipServiceManager] initSipEngine];
+    BOOL result = [SipUtils initSipEngine];
     
     if (result == NO) {
         // sip engine init failed, alert and exit
@@ -106,7 +105,7 @@
     UserBean *userBean = [[UserManager shareUserManager] userBean];
     userBean.name = username;
     userBean.password = password;
-    if (password) {
+    if (password && ![password isEqualToString:@""]) {
         userBean.autoLogin = YES;
     } else {
         userBean.autoLogin = NO;
@@ -129,10 +128,10 @@
 - (BOOL)isNeedLogin {
     BOOL flag = NO;
     UserBean *userBean = [[UserManager shareUserManager] userBean];
-    if (!userBean.name || !userBean.password || !userBean.userKey) {
-        flag = YES;
-    }
-    
+//    if (!userBean.name || [userBean.name isEqualToString:@""] || !userBean.password || [userBean.password isEqualToString:@""] || !userBean.userKey || [userBean.userKey isEqualToString:@""]) {
+//        flag = YES;
+//    }
+    flag = !userBean.autoLogin;
     return flag;
 }
 

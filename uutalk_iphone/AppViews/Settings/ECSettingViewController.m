@@ -19,6 +19,8 @@
 #import "ECCallbackNumberSetViewController.h"
 #import "ECDialSettingViewController.h"
 #import "ECUUTalkCardChargeViewController.h"
+#import "UserBean+UUTalk.h"
+#import "ECConfig.h"
 
 @interface ECSettingViewController ()
 
@@ -83,17 +85,22 @@
     RIButtonItem *okItem = [RIButtonItem item];
     okItem.label = NSLocalizedString(@"OK", "");
     okItem.action = ^{
+        NSLog(@"sign out account");
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults setObject:nil forKey:USERNAME];
-        [userDefaults setObject:nil forKey:PASSWORD];
-        [userDefaults setObject:nil forKey:VOSPHONE];
-        [userDefaults setObject:nil forKey:VOSPHONE_PWD];
-        [userDefaults setObject:nil forKey:USERKEY];
-        [userDefaults setObject:nil forKey:COUNTRYCODE];
-        [userDefaults setObject:nil forKey:DEFAULT_DIAL_COUNTRY_CODE];
-        [userDefaults setObject:nil forKey:CALLBACK_PHONE_NUMBER];
-        [userDefaults setObject:nil forKey:CALLBACK_PHONE_NUMBER_COUNTRY_CODE];
+        [userDefaults removeObjectForKey:USERNAME];
+        [userDefaults removeObjectForKey:PASSWORD];
+        [userDefaults removeObjectForKey:VOSPHONE];
+        [userDefaults removeObjectForKey:VOSPHONE_PWD];
+        [userDefaults removeObjectForKey:USERKEY];
+        [userDefaults removeObjectForKey:COUNTRYCODE];
+        [userDefaults removeObjectForKey:DEFAULT_DIAL_COUNTRY_CODE];
+        [userDefaults removeObjectForKey:CALLBACK_PHONE_NUMBER];
+        [userDefaults removeObjectForKey:CALLBACK_PHONE_NUMBER_COUNTRY_CODE];
+        [NSUserDefaults resetStandardUserDefaults];
         
+        
+        UserBean *user = [[UserBean alloc] init];
+        [[UserManager shareUserManager] setUserBean:user];
         exit(0);
     };
     RIButtonItem *cancelItem = [RIButtonItem item];

@@ -32,6 +32,10 @@ static id<ISipProtocol> sipImplementation;
     [[self getSipImplementation] makeSipVoiceCall:callee phone:phone callMode:callMode fromViewController:sponsorViewController];
 }
 
++ (BOOL)initSipEngine {
+    return [[self getSipImplementation] initSipEngine];
+}
+
 +(void)destroySipEngine{
     [[self getSipImplementation] destroySipEngine];
 }

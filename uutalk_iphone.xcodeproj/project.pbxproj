@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8073ABE17647FAB00A1F171 /* ECDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8073ABD17647FAB00A1F171 /* ECDialView.m */; };
 		F80ADCA517544F52000B523A /* ECSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80ADCA417544F52000B523A /* ECSettingView.m */; };
 		F80ADCA71754953F000B523A /* into_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCA61754953F000B523A /* into_icon.png */; };
 		F80ADCA917549D6D000B523A /* uutalk.png in Resources */ = {isa = PBXBuildFile; fileRef = F80ADCA817549D6D000B523A /* uutalk.png */; };
@@ -234,9 +233,6 @@
 		F8E019A417759CB800DF9AA1 /* ECFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A317759CB800DF9AA1 /* ECFindPasswordViewController.m */; };
 		F8E019A717759CCF00DF9AA1 /* ECFindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E019A617759CCF00DF9AA1 /* ECFindPasswordView.m */; };
 		F8E3270F177994DB00F42073 /* dtmf.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E3270E177994DA00F42073 /* dtmf.m */; };
-		F8E327111779B15800F42073 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E327101779B15700F42073 /* Default.png */; };
-		F8E327131779B16C00F42073 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E327121779B16B00F42073 /* Default@2x.png */; };
-		F8E327151779B17C00F42073 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E327141779B17B00F42073 /* Default-568h@2x.png */; };
 		F8E327161779B3AA00F42073 /* libpj-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AD4217574B4A007D0757 /* libpj-arm-apple-darwin9.a */; };
 		F8E327171779B3C200F42073 /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816AD5F17574B4A007D0757 /* libpjlib-util-arm-apple-darwin9.a */; };
 		F8E327181779B3DF00F42073 /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F816ADC817574B4A007D0757 /* libpjmedia-arm-apple-darwin9.a */; };
@@ -260,11 +256,13 @@
 		F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */; };
 		F8F656D7174DFB4900803E4E /* tab_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656D6174DFB4900803E4E /* tab_more@2x.png */; };
 		F8F656D9174DFE1000803E4E /* tab_more.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656D8174DFE1000803E4E /* tab_more.png */; };
-		F8F656DD174DFF3100803E4E /* ECDialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */; };
 		F8F656E0174E035D00803E4E /* tab_dial.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DE174E035C00803E4E /* tab_dial.png */; };
 		F8F656E1174E035D00803E4E /* tab_dial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F656DF174E035D00803E4E /* tab_dial@2x.png */; };
 		F8F656E5174E08AB00803E4E /* ECRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */; };
 		F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F656E7174E08C500803E4E /* ECRegisterView.m */; };
+		F8FCBC12177A9715002EC0CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FCBC0F177A9715002EC0CC /* Default-568h@2x.png */; };
+		F8FCBC13177A9715002EC0CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FCBC10177A9715002EC0CC /* Default.png */; };
+		F8FCBC14177A9715002EC0CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FCBC11177A9715002EC0CC /* Default@2x.png */; };
 		F8FEF33917742AAB00370A56 /* ECTopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEF33817742AAB00370A56 /* ECTopupView.m */; };
 		F8FEF33C17742AC400370A56 /* ECTopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEF33B17742AC400370A56 /* ECTopupViewController.m */; };
 		F8FEF3411774422000370A56 /* uutalk_charge_card.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FEF3431774422000370A56 /* uutalk_charge_card.png */; };
@@ -275,8 +273,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F8073ABC17647FAA00A1F171 /* ECDialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECDialView.h; path = AppViews/Dial/ECDialView.h; sourceTree = "<group>"; };
-		F8073ABD17647FAB00A1F171 /* ECDialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECDialView.m; path = AppViews/Dial/ECDialView.m; sourceTree = "<group>"; };
 		F80ADCA317544F52000B523A /* ECSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSettingView.h; path = AppViews/Settings/ECSettingView.h; sourceTree = "<group>"; };
 		F80ADCA417544F52000B523A /* ECSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSettingView.m; path = AppViews/Settings/ECSettingView.m; sourceTree = "<group>"; };
 		F80ADCA61754953F000B523A /* into_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = into_icon.png; path = common/into_icon.png; sourceTree = "<group>"; };
@@ -854,23 +850,25 @@
 		F8E019A617759CCF00DF9AA1 /* ECFindPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECFindPasswordView.m; path = AppViews/System/FindPassword/ECFindPasswordView.m; sourceTree = "<group>"; };
 		F8E3270D177994DA00F42073 /* dtmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dtmf.h; path = SipService/dtmf.h; sourceTree = "<group>"; };
 		F8E3270E177994DA00F42073 /* dtmf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = dtmf.m; path = SipService/dtmf.m; sourceTree = "<group>"; };
-		F8E327101779B15700F42073 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
-		F8E327121779B16B00F42073 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../Default@2x.png"; sourceTree = "<group>"; };
-		F8E327141779B17B00F42073 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		F8F656CD174DF73200803E4E /* ECMainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECMainTabController.h; path = AppViews/MainPage/ECMainTabController.h; sourceTree = "<group>"; };
 		F8F656CE174DF73200803E4E /* ECMainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECMainTabController.m; path = AppViews/MainPage/ECMainTabController.m; sourceTree = "<group>"; };
 		F8F656D2174DF7ED00803E4E /* ECSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSettingViewController.h; path = AppViews/Settings/ECSettingViewController.h; sourceTree = "<group>"; };
 		F8F656D3174DF7ED00803E4E /* ECSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSettingViewController.m; path = AppViews/Settings/ECSettingViewController.m; sourceTree = "<group>"; };
 		F8F656D6174DFB4900803E4E /* tab_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_more@2x.png"; path = "mainpage/tab_more@2x.png"; sourceTree = "<group>"; };
 		F8F656D8174DFE1000803E4E /* tab_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_more.png; path = mainpage/tab_more.png; sourceTree = "<group>"; };
-		F8F656DB174DFF3100803E4E /* ECDialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECDialContentViewController.h; path = AppViews/Dial/ECDialContentViewController.h; sourceTree = "<group>"; };
-		F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECDialContentViewController.m; path = AppViews/Dial/ECDialContentViewController.m; sourceTree = "<group>"; };
 		F8F656DE174E035C00803E4E /* tab_dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_dial.png; path = mainpage/tab_dial.png; sourceTree = "<group>"; };
 		F8F656DF174E035D00803E4E /* tab_dial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_dial@2x.png"; path = "mainpage/tab_dial@2x.png"; sourceTree = "<group>"; };
 		F8F656E3174E08AB00803E4E /* ECRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECRegisterViewController.h; path = AppViews/System/Register/ECRegisterViewController.h; sourceTree = "<group>"; };
 		F8F656E4174E08AB00803E4E /* ECRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECRegisterViewController.m; path = AppViews/System/Register/ECRegisterViewController.m; sourceTree = "<group>"; };
 		F8F656E6174E08C500803E4E /* ECRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECRegisterView.h; path = AppViews/System/Register/ECRegisterView.h; sourceTree = "<group>"; };
 		F8F656E7174E08C500803E4E /* ECRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECRegisterView.m; path = AppViews/System/Register/ECRegisterView.m; sourceTree = "<group>"; };
+		F8FCBC0F177A9715002EC0CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Splashes/Default-568h@2x.png"; sourceTree = "<group>"; };
+		F8FCBC10177A9715002EC0CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Splashes/Default.png; sourceTree = "<group>"; };
+		F8FCBC11177A9715002EC0CC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Splashes/Default@2x.png"; sourceTree = "<group>"; };
+		F8FCBC15177AD857002EC0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8FCBC16177AD857002EC0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8FCBC17177AD857002EC0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/uutalk_charge_card@2x.png"; sourceTree = "<group>"; };
+		F8FCBC18177AD857002EC0CC /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/uutalk_charge_card.png; sourceTree = "<group>"; };
 		F8FEF33717742AAB00370A56 /* ECTopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECTopupView.h; path = AppViews/Settings/Topup/ECTopupView.h; sourceTree = "<group>"; };
 		F8FEF33817742AAB00370A56 /* ECTopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECTopupView.m; path = AppViews/Settings/Topup/ECTopupView.m; sourceTree = "<group>"; };
 		F8FEF33A17742AC400370A56 /* ECTopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECTopupViewController.h; path = AppViews/Settings/Topup/ECTopupViewController.h; sourceTree = "<group>"; };
@@ -1688,7 +1686,6 @@
 				F8DB4B7E17783E9700129A88 /* CustomComponents */,
 				F8DB4B5917783A9500129A88 /* Tab&TabContent */,
 				F8DB4B3A1778395600129A88 /* OutgoingCall */,
-				F8F656DA174DFE5F00803E4E /* Dial */,
 				F8F656D1174DF79000803E4E /* Settings */,
 				F8F656CB174DF6B400803E4E /* MainPage */,
 				F87AC848174B500A00CA8A2B /* System */,
@@ -2048,9 +2045,9 @@
 		F8E327291779B43D00F42073 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				F8E327141779B17B00F42073 /* Default-568h@2x.png */,
-				F8E327121779B16B00F42073 /* Default@2x.png */,
-				F8E327101779B15700F42073 /* Default.png */,
+				F8FCBC0F177A9715002EC0CC /* Default-568h@2x.png */,
+				F8FCBC10177A9715002EC0CC /* Default.png */,
+				F8FCBC11177A9715002EC0CC /* Default@2x.png */,
 			);
 			name = Splash;
 			sourceTree = "<group>";
@@ -2091,17 +2088,6 @@
 				F8F656D6174DFB4900803E4E /* tab_more@2x.png */,
 			);
 			name = mainpage;
-			sourceTree = "<group>";
-		};
-		F8F656DA174DFE5F00803E4E /* Dial */ = {
-			isa = PBXGroup;
-			children = (
-				F8F656DB174DFF3100803E4E /* ECDialContentViewController.h */,
-				F8F656DC174DFF3100803E4E /* ECDialContentViewController.m */,
-				F8073ABC17647FAA00A1F171 /* ECDialView.h */,
-				F8073ABD17647FAB00A1F171 /* ECDialView.m */,
-			);
-			name = Dial;
 			sourceTree = "<group>";
 		};
 		F8F656E2174E083900803E4E /* Register */ = {
@@ -2335,9 +2321,9 @@
 				F8DB4B37177838F900129A88 /* img_tab_contactlist@2x.png in Resources */,
 				F8DB4B38177838F900129A88 /* img_tab_dial.png in Resources */,
 				F8DB4B39177838F900129A88 /* img_tab_dial@2x.png in Resources */,
-				F8E327111779B15800F42073 /* Default.png in Resources */,
-				F8E327131779B16C00F42073 /* Default@2x.png in Resources */,
-				F8E327151779B17C00F42073 /* Default-568h@2x.png in Resources */,
+				F8FCBC12177A9715002EC0CC /* Default-568h@2x.png in Resources */,
+				F8FCBC13177A9715002EC0CC /* Default.png in Resources */,
+				F8FCBC14177A9715002EC0CC /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2356,7 +2342,6 @@
 				F8778160174CB9CA00B9909D /* UserBean+UUTalk.m in Sources */,
 				F8F656CF174DF73200803E4E /* ECMainTabController.m in Sources */,
 				F8F656D4174DF7ED00803E4E /* ECSettingViewController.m in Sources */,
-				F8F656DD174DFF3100803E4E /* ECDialContentViewController.m in Sources */,
 				F8F656E5174E08AB00803E4E /* ECRegisterViewController.m in Sources */,
 				F8F656E8174E08C500803E4E /* ECRegisterView.m in Sources */,
 				F81297D4174F6CB1002487A2 /* CountryCodeManager.m in Sources */,
@@ -2365,7 +2350,6 @@
 				F811A6611755D8BE00FCDC0C /* ECMoneyGainViewController.m in Sources */,
 				F81C6D611761BBE400824601 /* ECSipServiceManager.m in Sources */,
 				F81C6D631761E06000824601 /* pjsua_app.m in Sources */,
-				F8073ABE17647FAB00A1F171 /* ECDialView.m in Sources */,
 				F8FEF33917742AAB00370A56 /* ECTopupView.m in Sources */,
 				F8FEF33C17742AC400370A56 /* ECTopupViewController.m in Sources */,
 				F8FEF34B1774567900370A56 /* ECUUTalkCardChargeViewController.m in Sources */,
@@ -2413,6 +2397,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F81B5BDA1749F72D00279D32 /* zh-Hans */,
+				F8FCBC15177AD857002EC0CC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2421,6 +2406,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F81B5BDB1749F72D00279D32 /* zh-Hans */,
+				F8FCBC16177AD857002EC0CC /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2429,6 +2415,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F8FEF3421774422000370A56 /* zh-Hans */,
+				F8FCBC18177AD857002EC0CC /* en */,
 			);
 			name = uutalk_charge_card.png;
 			path = setting;
@@ -2438,6 +2425,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F8FEF34717744DDB00370A56 /* zh-Hans */,
+				F8FCBC17177AD857002EC0CC /* en */,
 			);
 			name = "uutalk_charge_card@2x.png";
 			sourceTree = "<group>";
@@ -2497,6 +2485,8 @@
 		F81B5BD11749F69F00279D32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -2522,6 +2512,8 @@
 					"\"$(SRCROOT)/Libraries/third_party/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -2531,6 +2523,8 @@
 		F81B5BD21749F69F00279D32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -2556,6 +2550,7 @@
 					"\"$(SRCROOT)/Libraries/third_party/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;

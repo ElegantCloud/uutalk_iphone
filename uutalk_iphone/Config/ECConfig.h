@@ -14,7 +14,7 @@
 static NSString *DEFAULT_COUNTRY_CODE = @"86";
 static NSString *CLIENT_SOURCE = @"kh";
 
-static NSString *SIP_REALM = @"103.20.193.172";
+static NSString *SIP_REALM = @"*";
 static NSString *SIP_SERVER = @"vos.uu-talk.com";
 static int SIP_PORT = 7788;
 

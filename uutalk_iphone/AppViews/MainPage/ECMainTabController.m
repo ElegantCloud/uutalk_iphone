@@ -8,7 +8,6 @@
 
 #import "ECMainTabController.h"
 #import "ECSettingViewController.h"
-#import "ECDialContentViewController.h"
 #import "CommonToolkit/CommonToolkit.h"
 #import "UserBean+UUTalk.h"
 #import "SipRegistrationBean.h"

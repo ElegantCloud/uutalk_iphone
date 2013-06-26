@@ -344,6 +344,7 @@ typedef NS_ENUM(NSInteger, AddDialPhone2ContactMode){
                 }
             } else {
                 // hide dial number ownnership label
+                _mDialNumberOwnnershipLabel.text = @"";
                 if (![_mDialNumberOwnnershipLabel isHidden]) {
                     _mDialNumberOwnnershipLabel.hidden = YES;
                 }
@@ -500,7 +501,11 @@ typedef NS_ENUM(NSInteger, AddDialPhone2ContactMode){
 
 - (void)clearDialNumber{
     // update dial number label text
-    [self updateDialNumberLabelTextWithUpdateType:TEXT_SUB string:[_mDialNumberLabel.text substringToIndex:_mDialNumberLabel.text.length - 1]];
+    NSString *updateString = @"";
+    if (_mDialNumberLabel.text.length > 0) {
+        updateString = [_mDialNumberLabel.text substringToIndex:_mDialNumberLabel.text.length - 1];
+    }
+    [self updateDialNumberLabelTextWithUpdateType:TEXT_SUB string:updateString];
 }
 
 - (void)updateDialNumberLabelTextWithUpdateType:(DialNumberLabelTextUpdateMode)updateType string:(NSString *)updatedString{

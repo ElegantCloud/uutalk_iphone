@@ -763,6 +763,8 @@ typedef NS_ENUM(NSInteger, SipVoiceCallTerminatedType){
 }
 
 - (void)showCallbackViewAndUpdateSubviewsWithRequest:(ASIHTTPRequest *)pRequest{
+    NSLog(@"callback status code: %d, response: %@", pRequest.responseStatusCode, [[NSString alloc] initWithData:pRequest.responseData encoding:NSUTF8StringEncoding]);
+    
     // update call status label text
 //    _mCallStatusLabel.text = isSucceed ? NSLocalizedString(@"outgoing call callback succeed status", nil) : NSLocalizedString(@"outgoing call callback failed status", nil);
     BOOL isSucceed = NO;
